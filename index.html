@@ -22,6 +22,7 @@
 </head>
 	<script>
 		function myFunction() {
+
 			var dots = document.getElementById("dots");
 			var moreText = document.getElementById("more");
 			var btnText = document.getElementById("myBtn");
@@ -33,7 +34,7 @@
 			} else {
 				dots.style.display = "none";
 				btnText.innerHTML = "Read less";
-				moreText.style.display = "inline";
+				moreText.style.display = "flex";
 			}
 		}
 	</script>
@@ -402,12 +403,12 @@
 	<!--End Services Section-->
 	
 	<!--Services Section Two-->
-<p><section class="services-section-two">
+<section class="services-section-two">
 		<div class="auto-container">
 			<div class="row clearfix">
 			
 				<!-- Services Block Two -->
-				<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<p><div class="services-block-two col-lg-3 col-md-6 col-sm-12">
 					<a href="Services.html" ><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="icon-box">
 							<img src="images/Clubes/portoClube.png">
@@ -448,7 +449,9 @@
 						<div class="text">4º Classificado no campeonato português</div>
 					</div></a>
 				</div>
-				<span id="dots">...</span><span id="more">
+				<span id="dots"></span>
+			</div>
+			<div id="more" class="row clearfix">
 				<!-- Services Block Two -->
 				<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
 					<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
@@ -459,7 +462,6 @@
 						<div class="text">5º Classificado no campeonato português</div>
 					</div></a>
 				</div>
-				
 				<!-- Services Block Two -->
 				<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
 					<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
@@ -604,142 +606,18 @@
 						<div class="text">18º Classificado no campeonato português</div>
 					</div></a>
 				</div>
-			</span></p>
-				<button onclick="myFunction()" id="myBtn">Read more</button>
-			</div>
-		</div>
-	</section>
-	<!--End Services Section Two-->
-	
-	<!--Accordian Section-->
-	<section class="accordian-section" style="background-image:url(images/resource/image-2.png)">
-		<div class="auto-container">
-			<div class="row clearfix">
-				
-				<!--Accordian Column-->
-				<div class="accordian-column col-lg-6 col-md-12 col-sm-12">
-					<div class="inner-column">
-						
-						<ul class="accordion-box accordion-style-one">
-                                    
-							<!--Block-->
-							<li class="accordion block">
-								<div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus flaticon-plus-symbol"></span> <span class="icon icon-minus flaticon-substract"></span></div> Strong Engines Require Strong Parts.</div>
-								<div class="acc-content">
-									<div class="content">
-										<div class="text">
-											<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat </p>
-										</div>
-									</div>
-								</div>
-							</li>
 
-							<!--Block-->
-							<li class="accordion block active-block">
-								<div class="acc-btn active"><div class="icon-outer"><span class="icon icon-plus flaticon-plus-symbol"></span> <span class="icon icon-minus flaticon-substract"></span></div>Working Hard For The Hard Working.</div>
-								<div class="acc-content current">
-									<div class="content">
-										<div class="text">
-											<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat </p>
-										</div>
-									</div>
-								</div>
-							</li>
-							
-							<!--Block-->
-							<li class="accordion block">
-								<div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus flaticon-plus-symbol"></span> <span class="icon icon-minus flaticon-substract"></span></div> Prices Never Lower, Customer Care Never Higher.</div>
-								<div class="acc-content">
-									<div class="content">
-										<div class="text">
-											<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat </p>
-										</div>
-									</div>
-								</div>
-							</li>
-			
-						</ul>
-						
-					</div>
-				</div>
-				
-				<!--Content Column-->
-				<div class="content-column col-lg-6 col-md-12 col-sm-12">
-					<div class="inner-column">
-						<h2>Don’t Let Your Truck Leak Oil, Make It Sweat Horse Power!</h2>
-						<h3>If It Runs On Diesel…We’ll Fix It!</h3>
-						<div class="text">This is Photoshop's version velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </div>
-						<a href="about.html" class="theme-btn btn-style-three">read more</a>
-					</div>
-				</div>
-				
+			</p>
+
+
+
+			<!-------------------------------------------------------------------------------------------------------------------------- -->
 			</div>
 		</div>
+	<button onclick="myFunction()" id="myBtn">Read more</button>
 	</section>
-	<!--End Accordian Section-->
-	
-	<!--Expert Section-->
-	<section class="expert-section" style="background-image:url(images/background/2.png)">
-		<div class="auto-container">
-			<!--Sec Title-->
-			<div class="sec-title centered">
-				<h2>Our Team of Experts</h2>
-				<div class="text">If It Runs On Diesel…We’ll Fix It!</div>
-			</div>
-			
-			<div class="row clearfix">
-				
-				<!--Team Block-->
-				<div class="team-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image">
-							<a href="team.html"><img src="images/resource/team-1.jpg" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<h3><a href="team.html">Jacob Reyes</a></h3>
-							<div class="designation">Master Technician</div>
-							<div class="text">This is Photoshop's version  of Lorem]psukroin nibh vel velit auctor aliquet.</div>
-							<a href="team.html" class="theme-btn btn-style-two">read more</a>
-						</div>
-					</div>
-				</div>
-				
-				<!--Team Block-->
-				<div class="team-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image">
-							<a href="#"><img src="images/resource/team-2.jpg" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<h3><a href="team.html">Jacob Reyes</a></h3>
-							<div class="designation">Master Technician</div>
-							<div class="text">This is Photoshop's version  of Lorem]psukroin nibh vel velit auctor aliquet.</div>
-							<a href="team.html" class="theme-btn btn-style-two">read more</a>
-						</div>
-					</div>
-				</div>
-				
-				<!--Team Block-->
-				<div class="team-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image">
-							<a href="#"><img src="images/resource/team-3.jpg" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<h3><a href="team.html">Jacob Reyes</a></h3>
-							<div class="designation">Master Technician</div>
-							<div class="text">This is Photoshop's version  of Lorem]psukroin nibh vel velit auctor aliquet.</div>
-							<a href="team.html" class="theme-btn btn-style-two">read more</a>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-			
-		</div>
-	</section>
-	<!--End Expert Section-->
-	
+
+	<!--End Services Section Two-->
 	<!--Clients Section-->
     <section class="clients-section" style="background-image:url(images/background/1.jpg)">
         <div class="auto-container">
