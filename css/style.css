@@ -1302,7 +1302,7 @@ img{
 	background-position:left center;
 	background-repeat:no-repeat;*/
 	background-color:#E7E7E5;
-	height: 1500px;
+	height: 1600px;
 }
 
 .services-section .upper-section{
@@ -1971,7 +1971,7 @@ img{
     width: 100%;
     height: 100%;
     display: block;
-    background-color: rgba(193,0,0,0.95);
+    /*background-color: rgba(193,0,0,0.95);*/
 }
 
 .clients-section .sponsors-outer{
