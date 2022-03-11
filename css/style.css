@@ -1302,7 +1302,7 @@ img{
 	background-position:left center;
 	background-repeat:no-repeat;*/
 	background-color:#E7E7E5;
-	height: 1600px;
+	height: 1650px;
 }
 
 .services-section .upper-section{
@@ -2575,7 +2575,7 @@ img{
 
 .page-title .text{
 	position:relative;
-	color:#ffe361;
+	color: darkred;
 	font-size:21px;
 	margin-top:0px;
 }
