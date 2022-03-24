@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b1ba07c-c70f-4194-8e59-ecfb88d8f2ff" name="Changes" comment="Notificações">
+    <list default="true" id="7b1ba07c-c70f-4194-8e59-ecfb88d8f2ff" name="Changes" comment="Classificações">
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
@@ -69,12 +69,7 @@
       <workItem from="1647853865423" duration="30000" />
       <workItem from="1647853897863" duration="713000" />
       <workItem from="1647855366090" duration="237000" />
-      <workItem from="1647855660655" duration="9766000" />
-      <workItem from="1647944580128" duration="343000" />
-      <workItem from="1647946749680" duration="227000" />
-      <workItem from="1647947555633" duration="383000" />
-      <workItem from="1647951985231" duration="1062000" />
-      <workItem from="1648111608127" duration="6473000" />
+      <workItem from="1647855660655" duration="9516000" />
     </task>
     <task id="LOCAL-00001" summary="primeira vez">
       <created>1646391826394</created>
@@ -157,7 +152,6 @@
     <MESSAGE value="Read More" />
     <MESSAGE value="Noticias" />
     <MESSAGE value="Classificações" />
-    <MESSAGE value="Notificações" />
-    <option name="LAST_COMMIT_MESSAGE" value="Notificações" />
+    <option name="LAST_COMMIT_MESSAGE" value="Classificações" />
   </component>
 </project>
