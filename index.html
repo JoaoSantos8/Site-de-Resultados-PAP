@@ -36,17 +36,9 @@
 			btnText.innerHTML = "Read less";
 			moreText.style.display = "flex";
 		}
-	}
+	
+
 </script>
-<style>
-	#more {display: none;}
-	.resultado{
-		padding: 3px;
-		font-family: "Arial Black";
-		font-size: 10px;
-		color: #000;
-	}
-</style>
 <body>
 
 <div class="page-wrapper">
@@ -126,15 +118,40 @@
 									<li><a href="Planteis.html">Plantéis</a></li>
 									<li><a href="gallery.html">Galeira</a></li>
 									<li><a href="ClassiCampeonato.html">Classificação do campeonato</a></li>
+									<li class="dropdown"><a href="#">Notificações</a>
+									<ul>
+										<div>
+											<input type="checkbox" id="Porto" name="Porto"
+												   checked>
+											<label for="Porto"><a>Porto</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Sporting" name="Sporting">
+											<label for="Sporting"><a>Sporting</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Benfica" name="Benfica">
+											<label for="Benfica"><a>Benfica</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Braga" name="Braga">
+											<label for="Braga"><a>Braga</a></label>
+										</div>
+										<div align="center" style="padding-bottom: 7px"><button class="favorite styled"
+													  type="submit"
+														>
+										Selecionar Clubes
+									</button></div>
+							</ul>
+								</li>
 								</ul>
 							</div>
-
 						</nav>
 
 					</div>
 					<!--Option Box
                      <div class="btn-box">
-                         <a href="#" class="theme-btn btn-style-one">Make a Appoinment</a>
+                         <a href="#" class="theme-btn btn-style-one">Ativar notificações</a>
                      </div>-->
 				</div>
 			</div>
@@ -424,7 +441,7 @@
 
 			<!-- Services Block Two -->
 			<p><div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-			<a href="Planteis.html" ><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+			<a href="Services.html" ><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 				<div class="icon-box">
 					<img src="images/Clubes/portoClube.png">
 				</div>
@@ -441,7 +458,7 @@
 		</div>
 			<!-- Services Block Two -->
 			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
 					<div class="icon-box">
 						<img src="images/Clubes/sportingClube.png">
 					</div>
@@ -459,7 +476,7 @@
 
 			<!-- Services Block Two -->
 			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
 					<div class="icon-box">
 						<img src="images/Clubes/benficaClube.png">
 					</div>
@@ -478,7 +495,7 @@
 
 			<!-- Services Block Two -->
 			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
 					<div class="icon-box">
 						<img src="images/Clubes/bragaClube.png">
 					</div>
@@ -499,36 +516,34 @@
 		<div id="more" class="row clearfix">
 			<!-- Services Block Two -->
 			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 					<div class="icon-box">
 						<img src="images/Clubes/gilvicenteClube.png">
 					</div>
 					<h3><font color="black">Gil Vicente Futebol <p>Clube</font></h3>
 					<div >
-						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
-
+						<span class="resultado bg-warning">E</span>
 					</div>
 					<div class="text">5º Classificado no campeonato português</div>
 				</div></a>
 			</div>
 			<!-- Services Block Two -->
 			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 					<div class="icon-box">
 						<img src="images/Clubes/vitóriaClube.png">
 					</div>
 					<h3><font color="black">Vitória Sport Clube de <p>Guimarães</font></h3>
 					<div >
-						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
-
+						<span class="resultado bg-warning">E</span>
 					</div>
 					<div class="text">6º Classificado no campeonato português</div>
 				</div></a>
@@ -536,18 +551,17 @@
 
 			<!-- Services Block Two -->
 			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 					<div class="icon-box">
 						<img src="images/Clubes/estorilClube.png">
 					</div>
 					<h3><font color="black">Grupo Desportivo Estoril<p> de Praia</font></h3>
 					<div >
-						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
-
+						<span class="resultado bg-warning">E</span>
 					</div>
 					<div class="text">7º Classificado no campeonato português</div>
 				</div></a>
@@ -555,18 +569,17 @@
 
 			<!-- Services Block Two -->
 			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 					<div class="icon-box">
 						<img src="images/Clubes/maritimoClube.png">
 					</div>
 					<h3><font color="black">Club Sport Marítimo<p> Funchal</font></h3>
 					<div >
-						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
-
+						<span class="resultado bg-warning">E</span>
 					</div>
 					<div class="text">8º Classificado no campeonato português</div>
 				</div></a>
@@ -574,18 +587,17 @@
 
 			<!-- Services Block Two -->
 			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 					<div class="icon-box">
 						<img src="images/Clubes/portimonenseClube.png">
 					</div>
 					<h3><font color="black">Portimonense Sporting<p>Clube</font></h3>
 					<div >
-						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
-
+						<span class="resultado bg-warning">E</span>
 					</div>
 					<div class="text">9º Classificado no campeonato português</div>
 				</div></a>
@@ -593,108 +605,102 @@
 
 			<!-- Services Block Two -->
 			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 					<div class="icon-box">
 						<img src="images/Clubes/pacoFerrCLube.png">
 					</div>
 					<h3><font color="black">Futebol Clube Paços <p>de Ferreira</font></h3>
 					<div >
-						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
-
+						<span class="resultado bg-warning">E</span>
 					</div>
 					<div class="text">10º Classificado no campeonato português</div>
 				</div></a>
 			</div>
 			<!-- Services Block Two -->
 			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 					<div class="icon-box">
 						<img src="images/Clubes/famalicaClube.png">
 					</div>
 					<h3><font color="black">Futebol Clube <p>Famalicão</font></h3>
 					<div >
-						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
-
+						<span class="resultado bg-warning">E</span>
 					</div>
 					<div class="text">11º Classificado no campeonato português</div>
 				</div></a>
 			</div>
 			<!-- Services Block Two -->
 			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 					<div class="icon-box">
 						<img src="images/Clubes/boavistaClube.png">
 					</div>
 					<h3><font color="black">Boavista Futebol <p>Clube </font></h3>
 					<div >
-						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
-
+						<span class="resultado bg-warning">E</span>
 					</div>
 					<div class="text">12º Classificado no campeonato português</div>
 				</div></a>
 			</div>
 			<!-- Services Block Two -->
 			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 					<div class="icon-box">
 						<img src="images/Clubes/santaclaraClube.png">
 					</div>
 					<h3><font color="black">Santa Clara <p>Açores</font></h3>
 					<div >
-						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
-
+						<span class="resultado bg-warning">E</span>
 					</div>
 					<div class="text">13º Classificado no campeonato português</div>
 				</div></a>
 			</div>
 			<!-- Services Block Two -->
 			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 					<div class="icon-box">
 						<img src="images/Clubes/vizelaClube.png">
 					</div>
 					<h3><font color="black">Futebol Clube <p>Vizela </font></h3>
 					<div >
-						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
-
+						<span class="resultado bg-warning">E</span>
 					</div>
 					<div class="text">14º Classificado no campeonato português</div>
 				</div></a>
 			</div>
 			<!-- Services Block Two -->
 			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 					<div class="icon-box">
 						<img src="images/Clubes/aroucaClube.png">
 					</div>
 					<h3><font color="black">Futebol Clube <p>Arouca </font></h3>
 					<div >
-						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
-
+						<span class="resultado bg-warning">E</span>
 					</div>
 					<div class="text">15º Classificado no campeonato português</div>
 				</div></a>
@@ -702,18 +708,17 @@
 
 			<!-- Services Block Two -->
 			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 					<div class="icon-box">
 						<img src="images/Clubes/tondelaClube.png">
 					</div>
 					<h3><font color="black">Clube Desportivo de<p>Tondela </font></h3>
 					<div >
-						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
-
+						<span class="resultado bg-warning">E</span>
 					</div>
 					<div class="text">16º Classificado no campeonato português</div>
 				</div></a>
@@ -728,18 +733,17 @@
 			</div>
 			<!-- Services Block Two -->
 			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 					<div class="icon-box">
 						<img src="images/Clubes/moreirenseClube.png">
 					</div>
 					<h3><font color="black">Moreirense<p> Futebol Clube </font></h3>
 					<div >
-						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
-
+						<span class="resultado bg-warning">E</span>
 					</div>
 					<div class="text">17º Classificado no campeonato português</div>
 				</div></a>
@@ -747,18 +751,17 @@
 
 			<!-- Services Block Two -->
 			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 					<div class="icon-box">
 						<img src="images/Clubes/belenensesClube.png">
 					</div>
 					<h3><font color="black">Belenenses<p> SAD </font></h3>
 					<div >
-						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-success">V</span>
 						<span class="resultado bg-warning">E</span>
 						<span class="resultado bg-success">V</span>
-
+						<span class="resultado bg-warning">E</span>
 					</div>
 					<div class="text">18º Classificado no campeonato português</div>
 				</div></a>
