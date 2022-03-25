@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b1ba07c-c70f-4194-8e59-ecfb88d8f2ff" name="Changes" comment="Classificações">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/papJoao2022.iml" beforeDir="false" />
+    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="Index antigo">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/papJoao2022.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClassiCampeonato.html" beforeDir="false" afterPath="$PROJECT_DIR$/ClassiCampeonato.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jogadores.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jogadores.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Planteis.html" beforeDir="false" afterPath="$PROJECT_DIR$/Planteis.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -23,111 +21,45 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="25uzPZgoCR50lP95LJrWhwo53zC" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="26pXTY70sLkw82dpqQ2QnoEf4FT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\papJoao2022" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7b1ba07c-c70f-4194-8e59-ecfb88d8f2ff" name="Changes" comment="" />
-      <created>1646391735984</created>
+      <changelist id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="" />
+      <created>1648121509924</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1646391735984</updated>
-      <workItem from="1646391737249" duration="5745000" />
-      <workItem from="1646642826272" duration="47000" />
-      <workItem from="1646648614254" duration="4156000" />
-      <workItem from="1646737130348" duration="8686000" />
-      <workItem from="1646750834305" duration="446000" />
-      <workItem from="1646902878243" duration="2964000" />
-      <workItem from="1646905881999" duration="5304000" />
-      <workItem from="1646994183791" duration="4181000" />
-      <workItem from="1647247234334" duration="2785000" />
-      <workItem from="1647432441799" duration="4085000" />
-      <workItem from="1647508748821" duration="7885000" />
-      <workItem from="1647599685831" duration="6642000" />
-      <workItem from="1647853865423" duration="30000" />
-      <workItem from="1647853897863" duration="713000" />
-      <workItem from="1647855366090" duration="237000" />
-      <workItem from="1647855660655" duration="9516000" />
+      <updated>1648121509924</updated>
+      <workItem from="1648121511242" duration="1044000" />
+      <workItem from="1648203744855" duration="3592000" />
     </task>
-    <task id="LOCAL-00001" summary="primeira vez">
-      <created>1646391826394</created>
+    <task id="LOCAL-00001" summary="Index Novo">
+      <created>1648121546387</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1646391826394</updated>
+      <updated>1648121546387</updated>
     </task>
-    <task id="LOCAL-00002" summary="acento">
-      <created>1646392152064</created>
+    <task id="LOCAL-00002" summary="Index antigo">
+      <created>1648121674489</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1646392152064</updated>
+      <updated>1648121674489</updated>
     </task>
-    <task id="LOCAL-00003" summary="Read More">
-      <created>1646397872111</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1646397872111</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Noticias">
-      <created>1646750880902</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1646750880902</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Classificações">
-      <created>1647000244554</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1647000244554</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Classificações">
-      <created>1647432464407</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1647432464407</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Classificações">
-      <created>1647435560582</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1647435560582</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Classificações">
-      <created>1647607162423</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1647607162423</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,12 +78,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="primeira vez" />
-    <MESSAGE value="acento" />
-    <MESSAGE value="Read More" />
-    <MESSAGE value="Noticias" />
-    <MESSAGE value="Classificações" />
-    <option name="LAST_COMMIT_MESSAGE" value="Classificações" />
+    <MESSAGE value="Index Novo" />
+    <MESSAGE value="Index antigo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Index antigo" />
   </component>
 </project>
