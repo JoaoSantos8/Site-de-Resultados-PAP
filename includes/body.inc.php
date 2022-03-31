@@ -4,7 +4,6 @@ $con=mysqli_connect(HOST,USER,PASSWORD,DATABASE);
 
 function top(){
     ?>
-
 <?php
 }
 function bottom(){

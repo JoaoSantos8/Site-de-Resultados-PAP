@@ -2,8 +2,8 @@
 
 include_once ("includes/body.inc.php");
 global $con;
-drawTop(HOME);
-$sql="select * from imoveltipos";
+drawTop();
+$sql="select * from jogadores";
 $result=mysqli_query($con,$sql);
 
 ?>

@@ -1,7 +1,7 @@
 <?php
 include_once ("config.inc.php");
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
-
+echo mysqli_connect_error($con);
 
 function drawTop($menu=HOME){
     ?>
@@ -17,40 +17,31 @@ function drawTop($menu=HOME){
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <title>Imo-TROLLs</title>
+        <title>Site de Resultados</title>
     </head>
     <body>
     <div class="container w-100">
-        <h1>Site de resultados</h1>
-        <h2>Site de futebol</h2>
-        <ul class="nav nav-pills nav-justified">
-            <li class="nav-item">
-                <a class="nav-link <?php echo ($menu==HOME?" active ":"");?>" href="index.php">Página principal</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link <?php echo ($menu==CLUBES?" active ":"");?>" href="listaClubes.php">Lista de clubes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link <?php echo ($menu==JOGADORES?" active ":"");?>" href="listaJogadores.php">Lista jogadores</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link <?php echo ($menu==CONCELHOS?" active ":"");?>" href="listaConcelhos.php">Concelhos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link <?php echo ($menu==FREGUESIAS?" active ":"");?>" href="listaFreguesias.php">Freguesias</a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link <?php echo ($menu==IMOVEIS?" active ":"");?>" href="listaImoveis.php">Imóveis</a>
-            </li>
-        </ul>
+    <h1>Site de resultados</h1>
+    <h2>Site de futebol</h2>
+    <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+            <a class="nav-link <?php echo ($menu==HOME?" active ":"");?>" href="index.php">Pagina principal</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <?php echo ($menu==CLUBES?" active ":"");?>" href="listaClubes.php">Lista de clubes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <?php echo ($menu==JOGADORES?" active ":"");?>" href="listaJogadores.php">Lista jogadores</a>
+        </li>
+    </ul>
     <?php
 }
 function drawBottom(){
     ?>
-        </div> <!-- container principal -->
+    </div> <!-- container principal -->
     </body>
     </html>
-        <?php
+    <?php
 }
 
 ?>

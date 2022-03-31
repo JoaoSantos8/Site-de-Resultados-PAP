@@ -8,11 +8,11 @@
 
 ?>
     <div class="container w-100">
-        <h1>Lista de distritos</h1>
+        <h1>Lista de Clubes</h1>
         <table class="table table-striped table-hover ">
             <tr>
                 <td colspan="3" align="right">
-                    <a href="novoDistrito.php" class="btn-sm btn-success"><i class="bi bi-plus-circle"></i> Novo Clube</a>
+                    <a href="novoClube.php" class="btn-sm btn-success"><i class="bi bi-plus-circle"></i> Novo Clube</a>
                 </td>
             </tr>
             <tr>

@@ -6,6 +6,10 @@ drawTop(JOGADORES);
 $sql="select * from jogadores";
 $result=mysqli_query($con,$sql);
 
+
+// echo 'teste:'. mysqli_error($con);
+ echo '#:'. mysqli_affected_rows($con);
+
 ?>
     <div class="container w-100">
         <h1>Lista de Jogadores</h1>

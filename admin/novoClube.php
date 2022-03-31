@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,30 +13,12 @@
 </head>
 <body>
 <div class="container">
-    <h1>Novo Jogador</h1>
-    <form action="confirmaNovoJogador.php" method="post">
+    <h1>Novo Clube</h1>
+    <form action="confirmaNovoDistrito.php" method="post">
         <div class="mb-3">
-            <label for="nomeJogador" class="form-label">Novo Jogador</label>
-            <input type="text" class="form-control" id="nomeJogador" name="nomejogador">
+            <label for="distrito" class="form-label">Clube</label>
+            <input type="text" class="form-control" id="distrito" name="nomeDistrito">
         </div>
-        <!--<div class="mb-3">
-            <label for="genero" class="form-label">Posição</label>
-        </div>
-
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" checked type="radio" name="tipoGenero" id="inlineRadio1" value="apartamento">
-            <label class="form-check-label" for="inlineRadio1">Guarda-Redes</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="tipoGenero" id="inlineRadio2" value="moradia">
-            <label class="form-check-label" for="inlineRadio2">Moradia</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="tipoGenero" id="inlineRadio3" value="terreno" >
-            <label class="form-check-label" for="inlineRadio3">Terreno</label>
-        </div>
--->
-
         <div class="mb-3">
             <input type="submit" class="btn-sm btn-primary" value="Confirma">
         </div>
