@@ -23,10 +23,13 @@ $result=mysqli_query($con,$sql);
                 <th style="width: 10%" class="text-center">
                     Id
                 </th>
-                <th  class="text-center">
+                <th style="width: 50%"   class="text-center">
                     Nome
                 </th>
-                <th class="text-center">
+                <th style="width: 20%"   class="text-center">
+                    Fotografia
+                </th>
+                <th style="width: 20%"  class="text-center">
                     Opções
                 </th>
             </tr>
@@ -44,11 +47,11 @@ $result=mysqli_query($con,$sql);
                         <?php echo $dados['jogadorNome'];?>
                     </td>
                     <td  class="text-center">
-                        <?php echo $dados['jogadorFotoURl'];?>
+                        <img width="60" src="../<?php echo $dados['jogadorFotoURL'];?>">
                     </td>
                     <td class="text-center">
-                        <a href="editarTipoImoveis.php?id=<?php echo $dados['jogadorId'];?>" class="btn-sm btn-primary"><i class="bi bi-pencil"></i> Editar</a>
-                        <a href="eliminaTipos.php?id=<?php echo $dados['jogadorId'];?>"  class="btn-sm btn-danger"><i class="bi bi-trash"></i> Eliminar</span></a>
+                        <a href="editaJogador.php?id=<?php echo $dados['jogadorId'];?>" class="btn-sm btn-primary"><i class="bi bi-pencil"></i> Editar</a>
+                        <a href="eliminaJogador.php?id=<?php echo $dados['jogadorId'];?>"  class="btn-sm btn-danger"><i class="bi bi-trash"></i> Eliminar</span></a>
                     </td>
                 </tr>
                 <?php
