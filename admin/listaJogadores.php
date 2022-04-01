@@ -8,7 +8,7 @@ $result=mysqli_query($con,$sql);
 
 
 // echo 'teste:'. mysqli_error($con);
- echo '#:'. mysqli_affected_rows($con);
+// echo '#:'. mysqli_affected_rows($con);
 
 ?>
     <div class="container w-100">
