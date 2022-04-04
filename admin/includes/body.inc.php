@@ -33,6 +33,9 @@ function drawTop($menu=HOME){
         <li class="nav-item">
             <a class="nav-link <?php echo ($menu==JOGADORES?" active ":"");?>" href="listaJogadores.php">Lista jogadores</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link <?php echo ($menu==JOGOS?" active ":"");?>" href="listaJogos.php">Lista jogos</a>
+        </li>
     </ul>
     <?php
 }

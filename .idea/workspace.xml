@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="BackOffice">
-      <change afterPath="$PROJECT_DIR$/admin/confirmaEliminaClube.php" afterDir="false" />
+    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="BackOffice4">
+      <change afterPath="$PROJECT_DIR$/admin/confirmaNovoJogo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/listaJogos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/novoJogo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baseDados/pap2022Joao.0.5.mwb.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Email.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/eliminaClube.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/eliminaClube.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/body.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/config.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/config.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseDados/pap2022Joao.0.5.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/pap2022Joao.0.5.mwb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,16 +39,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\PAP\admin" />
+      <recent name="C:\wamp64\www\papJoao2022\admin" />
       <recent name="C:\wamp64\www\papJoao2022\admin\includes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\papJoao2022\admin" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -64,6 +64,7 @@
       <workItem from="1648545557054" duration="5066000" />
       <workItem from="1648637768681" duration="623000" />
       <workItem from="1648715230549" duration="6433000" />
+      <workItem from="1649067815707" duration="3760000" />
     </task>
     <task id="LOCAL-00001" summary="Index Novo">
       <created>1648121546387</created>
