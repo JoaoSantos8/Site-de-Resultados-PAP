@@ -13,10 +13,12 @@ $result=mysqli_query($con,$sql);
             <div class="mb-3">
                 <label for="clubeCasa" class="form-label">Clube Visitado</label>
                 <input type="text" class="form-control" id="clubeCasa" name="clubeCasa">
+                <input type="file" class="form-control" name="fotoVisitado">
             </div>
             <div class="mb-3">
                 <label for="clubeFora" class="form-label">Clube Visitante</label>
                 <input type="text" class="form-control" id="clubeFora" name="clubeFora">
+                    <input type="file" class="form-control" name="fotoVisitante">
             </div>
             <div class="mb-3">
                 <label for="Data" class="form-label">Data</label>

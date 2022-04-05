@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="BackOffice4">
-      <change afterPath="$PROJECT_DIR$/admin/confirmaNovoJogo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/listaJogos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/novoJogo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/baseDados/pap2022Joao.0.5.mwb.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="Jogos">
+      <change afterPath="$PROJECT_DIR$/admin/editaJogo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/body.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/config.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/config.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/confirmaNovoJogo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaNovoJogo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/listaJogos.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/listaJogos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/novoJogo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/novoJogo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/baseDados/pap2022Joao.0.5.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/pap2022Joao.0.5.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseDados/pap2022Joao.0.5.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/pap2022Joao.0.5.mwb.bak" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +62,8 @@
       <workItem from="1648545557054" duration="5066000" />
       <workItem from="1648637768681" duration="623000" />
       <workItem from="1648715230549" duration="6433000" />
-      <workItem from="1649067815707" duration="3760000" />
+      <workItem from="1649067815707" duration="3778000" />
+      <workItem from="1649150499044" duration="5861000" />
     </task>
     <task id="LOCAL-00001" summary="Index Novo">
       <created>1648121546387</created>
@@ -101,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648637783018</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Jogos">
+      <created>1649072620808</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649072620808</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +131,7 @@
     <MESSAGE value="Index antigo" />
     <MESSAGE value="Notificaçoes2" />
     <MESSAGE value="BackOffice" />
-    <option name="LAST_COMMIT_MESSAGE" value="BackOffice" />
+    <MESSAGE value="Jogos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jogos" />
   </component>
 </project>

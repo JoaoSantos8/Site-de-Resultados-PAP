@@ -20,7 +20,7 @@
                 <th  style="width: 10%" class="text-center">
                     Id
                 </th>
-                <th class="text-center">
+                <th class="text-center" colspan="2">
                     Clubes
                 </th>
                 <th class="text-center">
@@ -39,10 +39,14 @@
 
             ?>
             <tr>
-                <td  style="width: 10%" class="text-center">
+                <td style="width: 10%" class="text-center">
                     <?php echo $dados['jogoId'];?>
                 </td>
-                <td class="text-center">
+                <td width="30" style="padding-bottom: 12px; padding-top: 4px">
+                    <img width="20" src="../<?php echo $dados['jogoClubeCasaFotoURL'];?>"><br>
+                    <img width="20" src="../<?php echo $dados['jogoClubeCasaFotoURL'];?>">
+                </td>
+                <td class="text-left">
                     <?php echo $dados['jogoClubeCasa'];?><br>
                     <?php echo $dados['jogoClubeFora'];?>
                 </td>
