@@ -20,16 +20,16 @@ $result=mysqli_query($con,$sql);
                 </td>
             </tr>
             <tr>
-                <th style="width: 10%" class="text-center">
+                <th style="width: 5%" class="text-center">
                     Id
                 </th>
-                <th style="width: 50%"   class="text-center">
+                <th style="width: 40%"   class="text-center">
                     Nome
                 </th>
-                <th style="width: 20%"   class="text-center">
+                <th style="width: 10%"   class="text-center">
                     LogoTipo
                 </th>
-                <th style="width: 20%"  class="text-center">
+                <th style="width: 30%"  class="text-center">
                     Opções
                 </th>
             </tr>
@@ -50,6 +50,7 @@ $result=mysqli_query($con,$sql);
                         <img width="60" src="../<?php echo $dados['clubeLogoURL'];?>">
                     </td>
                     <td class="text-center">
+                        <a href="gerePlantel.php?id=<?php echo $dados['clubeId'];?>" class="btn-sm btn-warning"><i class="bi bi-person"></i> Plantel</a>
                         <a href="editaClube.php?id=<?php echo $dados['clubeId'];?>" class="btn-sm btn-primary"><i class="bi bi-pencil"></i> Editar</a>
                         <a href="eliminaClube.php?id=<?php echo $dados['clubeId'];?>"  class="btn-sm btn-danger"><i class="bi bi-trash"></i> Eliminar</span></a>
                     </td>

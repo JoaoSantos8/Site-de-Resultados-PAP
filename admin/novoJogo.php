@@ -2,39 +2,67 @@
 
 include_once ("includes/body.inc.php");
 global $con;
-drawTop(CLUBES);
-$sql="select * from clubes";
-$result=mysqli_query($con,$sql);
+drawTop(JOGOS );
+
 
 ?>
-    <div class="container w-100">
-        <h1>Novo Clube</h1>
-        <form action="confirmaNovoJogo.php" method="post" enctype="multipart/form-data">
+<div class="container form ">
+
+    <h1>Novo Jogo</h1>
+    <form action="confirmaNovoJogo.php" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="data" class="form-label">Data</label>
+            <input type="date" class="form-control" id="data" name="dataJogo">
+        </div>
             <div class="mb-3">
-                <label for="clubeCasa" class="form-label">Clube Visitado</label>
-                <input type="text" class="form-control" id="clubeCasa" name="clubeCasa">
-                <input type="file" class="form-control" name="fotoVisitado">
-            </div>
-            <div class="mb-3">
-                <label for="clubeFora" class="form-label">Clube Visitante</label>
-                <input type="text" class="form-control" id="clubeFora" name="clubeFora">
-                    <input type="file" class="form-control" name="fotoVisitante">
-            </div>
-            <div class="mb-3">
-                <label for="Data" class="form-label">Data</label>
-                <input type="text" class="form-control" id="Data" name="Data">
-            </div>
-            <div class="mb-3">
-                <label for="Hora" class="form-label">Hora</label>
-                <input type="text" class="form-control" id="Hora" name="Hora">
-            </div>
+            <label for="data" class="form-label">Hora</label>
+            <input type="time" class="form-control" id="hora" name="horaJogo">
+        </div>
+        <div class="mb-3">
+            <label for="clube" class="form-label">Nome do clube - Casa</label>
+            <select class="form-select" name="clubeCasaId">
+                <option selected>Escolha o clube...</option>
+                <?php
+                $sql="select * from clubes";
+                $res=mysqli_query($con,$sql);
+                while($dados=mysqli_fetch_array($res)){
+                ?>
+                    <option value="<?php echo $dados['clubeId'] ?>"><?php echo $dados['clubeNome'] ?></option>
+               <?php
+                }
+                ?>
 
 
-            <div class="mb-3">
-                <input type="submit" class="btn-sm btn-primary" value="Confirma">
-            </div>
-        </form>
-    </div>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="clube" class="form-label">Nome do clube - Fora</label>
+            <select class="form-select" name="clubeForaId">
+                <option selected>Escolha o clube...</option>
+                <?php
+                $sql="select * from clubes";
+                $res=mysqli_query($con,$sql);
+                while($dados=mysqli_fetch_array($res)){
+                ?>
+                    <option value="<?php echo $dados['clubeId'] ?>"><?php echo $dados['clubeNome'] ?></option>
+               <?php
+                }
+                ?>
+
+
+            </select>
+        </div>
+
+        <div class="mb-3 text-end">
+            <input type="submit" class="btn-sm btn-primary" value="Confirma">
+        </div>
+    </form>
+
+
+
+
+
+</div>
 <?php
 drawBottom();
 ?>

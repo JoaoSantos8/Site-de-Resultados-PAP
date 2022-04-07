@@ -2,9 +2,14 @@
 
     include_once("includes/body.inc.php");
     global $con;
-    $name=time();
     drawTop(JOGOS );
-    $sql="select * from jogos";
+    $sql="select jogos.* 
+            ,casa.clubeNome as casa
+            ,fora.clubeNome as fora
+            ,casa.clubeLogoURL as casaURL
+            ,fora.clubeLogoURL as foraURL
+            from jogos inner join clubes as casa on casa.clubeId=jogoCasaClubeId 
+            inner join clubes as fora on fora.clubeId=jogoForaClubeId ";
     $result=mysqli_query($con,$sql);
 
 ?>
@@ -20,7 +25,7 @@
                 <th  style="width: 10%" class="text-center">
                     Id
                 </th>
-                <th class="text-center" colspan="2">
+                <th style="width: 50%" class="text-center">
                     Clubes
                 </th>
                 <th class="text-center">
@@ -38,18 +43,16 @@
             while($dados=mysqli_fetch_array($result)){
 
             ?>
-            <tr>
+            <tr valign="middle">
                 <td style="width: 10%" class="text-center">
                     <?php echo $dados['jogoId'];?>
                 </td>
                 <td width="30" style="padding-bottom: 12px; padding-top: 4px">
-                    <img width="20" src="../<?php echo $dados['jogoClubeCasaFotoURL'];?>"><br>
-                    <img width="20" src="../<?php echo $dados['jogoClubeForaFotoURL'];?>">
+                    <img width="16" src="../<?php echo $dados['casaURL'];?>"> <span class="mt-5"> <?php echo $dados['casa']?></span>
+                    <span>&nbsp;- &nbsp;</span>
+                    <img width="16" src="../<?php echo $dados['foraURL'];?>"> <?php echo $dados['fora']?>
                 </td>
-                <td class="text-left">
-                    <?php echo $dados['jogoClubeCasa'];?><br>
-                    <?php echo $dados['jogoClubeFora'];?>
-                </td>
+
                 <td class="text-center">
                     <?php echo $dados['jogoData'];?>
                 </td>
