@@ -2,13 +2,13 @@
 include_once ("includes/body.inc.php");
 global $con;
 $id=intval($_POST['id']);
+$nome=addslashes($_POST['nomeClube']);
 $nomeCasa=addslashes($_POST['clubeVisitado']);
 $nomeFora=addslashes($_POST['clubeVisitante']);
 $Data=addslashes($_POST['Data']);
 $Hora=addslashes($_POST['Hora']);
 
 if($_FILES['fotoVisitado']['name']==''){
-    ;
 }else{
     $urlImagem='images/ClubesNovo/'.$_FILES['fotoVisitado']['name'];
     copy($_FILES['fotoVisitado']['tmp_name'],'../'.$urlImagem);
