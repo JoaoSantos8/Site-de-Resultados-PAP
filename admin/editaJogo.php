@@ -15,13 +15,16 @@ $dados=mysqli_fetch_array($result);
             <label for="clubeVisitado" class="form-label">Clube visitado</label>
             <input type="text" class="form-control" id="clubeVisitado" name="clubeVisitado" value="<?php echo $dados['jogoClubeCasa'] ?>">
             <div class="mb-3">
+                <input type="file" class="form-control" name="fotoVisitante">
                 <img width="60" src="../<?php echo $dados['jogoClubeCasaFotoURL'] ?>">
             </div>
         </div>
+
         <div class="mb-3">
             <label for="clubeVisitante" class="form-label">Clube visitante</label>
             <input type="text" class="form-control" id="clubeVisitante" name="clubeVisitante" value="<?php echo $dados['jogoClubeFora'] ?>">
         <div class="mb-3">
+            <input type="file" class="form-control" name="fotoVisitado">
             <img width="60" src="../<?php echo $dados['jogoClubeForaFotoURL'] ?>">
         </div>
         </div>
