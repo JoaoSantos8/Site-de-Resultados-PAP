@@ -32,7 +32,10 @@ $dados=mysqli_fetch_array($result);
             <label for="Data" class="form-label">Data</label>
             <input type="text" class="form-control" id="Data" name="Data" value="<?php echo $dados['jogoData'] ?>">
         </div>
-
+        <div class="mb-3">
+            <label for="Hora" class="form-label">Hora</label>
+            <input type="text" class="form-control" id="Hora" name="Hora" value="<?php echo $dados['jogoHora'] ?>">
+        </div>
         <div class="mb-3">
             <input type="submit" class="btn-sm btn-primary" value="Confirma">
         </div>

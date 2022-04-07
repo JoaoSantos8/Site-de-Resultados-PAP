@@ -44,7 +44,7 @@
                 </td>
                 <td width="30" style="padding-bottom: 12px; padding-top: 4px">
                     <img width="20" src="../<?php echo $dados['jogoClubeCasaFotoURL'];?>"><br>
-                    <img width="20" src="../<?php echo $dados['jogoClubeCasaFotoURL'];?>">
+                    <img width="20" src="../<?php echo $dados['jogoClubeForaFotoURL'];?>">
                 </td>
                 <td class="text-left">
                     <?php echo $dados['jogoClubeCasa'];?><br>
