@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="Jogos">
-      <change afterPath="$PROJECT_DIR$/admin/editaJogo.php" afterDir="false" />
+    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="AdicionarJogo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/confirmaNovoJogo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaNovoJogo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/listaJogos.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/listaJogos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/novoJogo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/novoJogo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseDados/pap2022Joao.0.5.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/pap2022Joao.0.5.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseDados/pap2022Joao.0.5.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/pap2022Joao.0.5.mwb.bak" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +58,8 @@
       <workItem from="1648715230549" duration="6433000" />
       <workItem from="1649067815707" duration="3778000" />
       <workItem from="1649150499044" duration="5861000" />
+      <workItem from="1649166308361" duration="594000" />
+      <workItem from="1649318583268" duration="457000" />
     </task>
     <task id="LOCAL-00001" summary="Index Novo">
       <created>1648121546387</created>
@@ -107,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649072620808</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="AdicionarJogo">
+      <created>1649166357759</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649166357759</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +135,7 @@
     <MESSAGE value="Notificaçoes2" />
     <MESSAGE value="BackOffice" />
     <MESSAGE value="Jogos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jogos" />
+    <MESSAGE value="AdicionarJogo" />
+    <option name="LAST_COMMIT_MESSAGE" value="AdicionarJogo" />
   </component>
 </project>
