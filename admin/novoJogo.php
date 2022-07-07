@@ -2,7 +2,7 @@
 
 include_once ("includes/body.inc.php");
 global $con;
-drawTop(JOGOS );
+drawTop(JOGOS,'nj' );
 
 
 ?>
@@ -20,35 +20,14 @@ drawTop(JOGOS );
         </div>
         <div class="mb-3">
             <label for="clube" class="form-label">Nome do clube - Casa</label>
-            <select class="form-select" name="clubeCasaId">
-                <option selected>Escolha o clube...</option>
-                <?php
-                $sql="select * from clubes";
-                $res=mysqli_query($con,$sql);
-                while($dados=mysqli_fetch_array($res)){
-                ?>
-                    <option value="<?php echo $dados['clubeId'] ?>"><?php echo $dados['clubeNome'] ?></option>
-               <?php
-                }
-                ?>
+            <select class="form-select" name="clubeCasaId" id="clubesCasa">
 
 
             </select>
         </div>
         <div class="mb-3">
             <label for="clube" class="form-label">Nome do clube - Fora</label>
-            <select class="form-select" name="clubeForaId">
-                <option selected>Escolha o clube...</option>
-                <?php
-                $sql="select * from clubes";
-                $res=mysqli_query($con,$sql);
-                while($dados=mysqli_fetch_array($res)){
-                ?>
-                    <option value="<?php echo $dados['clubeId'] ?>"><?php echo $dados['clubeNome'] ?></option>
-               <?php
-                }
-                ?>
-
+            <select disabled class="form-select" name="clubeForaId" id="clubesFora">
 
             </select>
         </div>

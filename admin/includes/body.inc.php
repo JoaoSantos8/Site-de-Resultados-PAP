@@ -3,7 +3,7 @@ include_once ("config.inc.php");
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
 echo mysqli_connect_error($con);
 
-function drawTop($menu=HOME){
+function drawTop($menu=HOME,$page=''){
     ?>
     <!doctype html>
     <html lang="en">
@@ -18,6 +18,26 @@ function drawTop($menu=HOME){
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <title>Site de Resultados</title>
+        <script src="js/common.js"></script>
+        <script>
+            $('document').ready(function (){
+            <?php
+                if($page=='nj' || $page=='ej'){
+                ?>
+                $('#clubesCasa').change(function (){
+                    fillClubs('clubesFora',this.value);
+                    $('#clubesFora').prop('disabled',false);
+                });
+                <?php
+                }
+                if($page!='ej')
+                    echo "fillClubs('clubesCasa',0);";
+                ?>
+            })
+
+        </script>
+
+
     </head>
     <body>
     <div class="container w-100">

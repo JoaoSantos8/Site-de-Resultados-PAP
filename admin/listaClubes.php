@@ -50,7 +50,7 @@ $result=mysqli_query($con,$sql);
                         <img width="60" src="../<?php echo $dados['clubeLogoURL'];?>">
                     </td>
                     <td class="text-center">
-                        <a href="gerePlantel.php?id=<?php echo $dados['clubeId'];?>" class="btn-sm btn-warning"><i class="bi bi-person"></i> Plantel</a>
+                        <a href="GerirPlantel.php?id=<?php echo $dados['clubeId'];?>" class="btn-sm btn-warning"><i class="bi bi-person"></i> Plantel</a>
                         <a href="editaClube.php?id=<?php echo $dados['clubeId'];?>" class="btn-sm btn-primary"><i class="bi bi-pencil"></i> Editar</a>
                         <a href="eliminaClube.php?id=<?php echo $dados['clubeId'];?>"  class="btn-sm btn-danger"><i class="bi bi-trash"></i> Eliminar</span></a>
                     </td>

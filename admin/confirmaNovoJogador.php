@@ -10,10 +10,10 @@ if($_FILES['fotoJogador']['name']==''){
     $urlImagem='images/jogadores/'.$_FILES['fotoJogador']['name'];
     copy($_FILES['fotoJogador']['tmp_name'],'../'.$urlImagem);
 }
+$idClube=intval($_POST['clubeId']);
 
 
-
-$sql="Insert into jogadores values(0,'$nome','$urlImagem')";
+$sql="Insert into jogadores values(0,'$nome','$urlImagem','$idClube')";
 mysqli_query($con,$sql);
-header("location:listaJogadores.php");
+header("location:gerirPlantel.php?id=$idClube");
 ?>

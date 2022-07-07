@@ -835,38 +835,38 @@
 }
 
 @media only screen and (max-width: 479px) {
-	
+
 	.main-header .header-upper .logo-box{
 		padding-top:12px;
 	}
-	
+
 	.accordion-style-one .block .acc-btn{
 		padding:22px 20px 22px 20px;
 	}
-	
+
 	.accordion-style-one .block .acc-btn .icon-outer{
 		opacity:0;
 	}
-	
+
 	.services-block .inner-box .content{
 		padding:0px;
 	}
-	
+
 	.services-block .inner-box .content .image{
 		position:relative;
 		width:100%;
 		display:block;
 		margin-bottom:20px;
 	}
-	
+
 	.services-block .inner-box .content{
 		min-height:auto;
 	}
-	
+
 	.main-header .search-box-outer .dropdown-menu{
-		top:44px;	
+		top:44px;
 	}
-	
+
 	.main-header .nav-toggler{
 		top:0px;
 	}
@@ -909,4 +909,5 @@
 }
 .auto-container {
     padding: 0px 30px;
+}
 }
