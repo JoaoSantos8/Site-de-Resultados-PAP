@@ -3,7 +3,7 @@
 include_once ("includes/body.inc.php");
 global $con;
 $id=intval($_GET['id']);
-drawTop(NOTICIAS);
+drawTop(Noticias);
 $sql="select * from noticias where noticiaId=$id";
 $result=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($result);
@@ -27,7 +27,7 @@ $dados=mysqli_fetch_array($result);
             <input type="file" class="form-control" name="fotoNoticia">
         </div>
         <div class="mb-3">
-            <label class="form-label">DescriÃ§Ã£o da Noticia</label>
+            <label class="form-label">Descrição da Noticia</label>
             <textarea class="form-control" id="descricaoNoticia" name="descricaoNoticia"><?php echo $dados['noticiaDescricao'] ?></textarea>
         </div>
         <div class="mb-3">

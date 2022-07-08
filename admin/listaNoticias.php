@@ -2,7 +2,7 @@
 
     include_once("includes/body.inc.php");
     global $con;
-    drawTop(NOTICIAS );
+    drawTop(Noticias );
     $sql="select * from Noticias";
     $result=mysqli_query($con,$sql);
 
@@ -40,7 +40,7 @@
             while($dados=mysqli_fetch_array($result)){
 
             ?>
-            <tr valign="middle">
+            <tr>
                 <td class="text-center">
                     <?php echo $dados['noticiaId'];?>
                 </td>
@@ -54,7 +54,7 @@
                     <img width="60" src="../<?php echo $dados['noticiaFotoURL'];?>">
                 </td>
                 <td class="text-center">
-                    <?php echo resumo($dados['noticiaDescricao'],220);?>
+                    <?php echo $dados['noticiaDescricao'];?>
                 </td>
                 <td class="text-center">
                     <a href="editaNoticia.php?id=<?php echo $dados['noticiaId'];?>" class="btn-sm btn-primary"><i class="bi bi-pencil"></i> Editar</a>

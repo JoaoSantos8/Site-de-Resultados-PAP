@@ -2,17 +2,17 @@
 
 include_once ("includes/body.inc.php");
 global $con;
-drawTop(NOTICIAS);
+drawTop(Noticias);
 ?>
 <div class="container w-100">
     <h1>Nova Noticia</h1>
     <form action="confirmaNovaNoticia.php" method="post" enctype="multipart/form-data">
         <div class="mb-3">
-            <label for="tituloNoticia" class="form-label">Título da Notícia</label>
+            <label for="tituloNoticia" class="form-label">Titulo da Noticia</label>
             <input type="text" class="form-control" id="tituloNoticia" name="tituloNoticia">
         </div>
         <div class="mb-3">
-            <label class="form-label">Data da Notícia</label>
+            <label class="form-label">Data da Noticia</label>
             <input type="date" class="form-control" name="dataNoticia">
         </div>
         <div class="mb-3">
@@ -20,7 +20,7 @@ drawTop(NOTICIAS);
             <input type="file" class="form-control" name="fotoNoticia">
         </div>
         <div class="mb-3">
-            <label class="form-label">Descrição da Notícia</label>
+            <label class="form-label">Descri��o da Noticia</label>
             <textarea class="form-control" id="descricaoNoticia" name="descricaoNoticia"></textarea>
         </div>
         <div class="mb-3">
