@@ -16,6 +16,10 @@ $dados=mysqli_fetch_array($result);
             <input type="text" class="form-control" id="nomeJogador" name="nomeJogador" value="<?php echo $dados['jogadorNome'] ?>">
         </div>
         <div class="mb-3">
+            <label class="form-label">Data de Nascimento</label>
+            <input type="date" class="form-control" name="dnJogador" value="<?php echo $dados['jogadorDataNascimento'] ?>">
+        </div>
+        <div class="mb-3">
             <img src="../<?php echo $dados['jogadorFotoURL'] ?>">
         </div>
         <div class="mb-3">

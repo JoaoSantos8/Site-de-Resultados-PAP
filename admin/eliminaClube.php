@@ -20,7 +20,7 @@ $dados=mysqli_fetch_array($result);
         </div>
         <div class="mb-3">
             <input type="submit" class="btn-sm btn-danger" value="Confirma">
-            <a href="listaClubes.php" ><button class="btn-sm btn-secondary">Voltar</button> </a>
+            <button onclick="history.back();" type="button" class="btn-sm btn-secondary"> Voltar </button>
 
         </div>
         <input type="hidden" name="id" value="<?php echo $id?>">

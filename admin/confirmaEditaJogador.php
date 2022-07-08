@@ -3,8 +3,9 @@ include_once ("includes/body.inc.php");
 global $con;
 $id=intval($_POST['id']);
 $nome=addslashes($_POST['nomeJogador']);
+$dn=addslashes($_POST['dnJogador']);
 
-$sql="update jogadores set jogadorNome='$nome'";
+$sql="update jogadores set jogadorNome='$nome', jogadorDataNascimento='$dn' ";
 if($_FILES['fotoJogador']['name']==''){
     ;
 }else{

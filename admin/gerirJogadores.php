@@ -2,29 +2,33 @@
 
 include_once ("includes/body.inc.php");
 global $con;
-$id=intval($_GET['id']);
-drawTop(CLUBES);
+drawTop(JOGADORES);
+$id=intval($_GET['clubeId']);
 $sql="select clubeId, clubeNome from clubes where clubeId=$id";
 $result=mysqli_query($con,$sql);
-$dados=mysqli_fetch_array($result);
+$dadosClube=mysqli_fetch_array($result);
+
+
+$sql="select * from jogadores where jogadorId not in (select jogadorClubeJogadorId from jogadorclubes)";
+$result=mysqli_query($con,$sql);
+
 
 // echo 'teste:'. mysqli_error($con);
 // echo '#:'. mysqli_affected_rows($con);
 
 ?>
     <div class="container w-100">
-
+        <h1>Lista de Jogadores</h1>
         <table class="table table-striped table-hover ">
-            <tr><td colspan="3">
-                    <h4>Plantel do <small><?php echo $dados['clubeNome']?></small></h4>
-                </td>
-                <td colspan="2" align="right">
-                    <a href="gerirJogadores.php?clubeId=<?php echo $id?>" class="btn-sm btn-success"><i class="bi bi-plus-circle"></i> Adicionar jogador</a>
+
+            <tr>
+                <td colspan="5" align="right">
+                    <a href="#" onclick="$('#listaForm').submit();" class="btn-sm btn-success"><i class="bi bi-plus-circle"></i> Confirma atribuição</a>
                 </td>
             </tr>
             <tr>
                 <th style="width: 5%" class="text-center">
-                    Número
+                    #
                 </th>
                 <th style="width: 10%"   class="text-center">
                     Idade
@@ -40,16 +44,15 @@ $dados=mysqli_fetch_array($result);
                     Opções
                 </th>
             </tr>
-
+            <form id="listaForm" action="inscreveJogador.php" method="post">
             <?php
-            $sql="select * from jogadores inner join jogadorclubes on jogadorId=jogadorClubeJogadorId where jogadorClubeClubeId='$id' order by jogadorClubeNumero";
-            $result=mysqli_query($con,$sql);
+            $i=0;
             while($dados=mysqli_fetch_array($result)){
-
+                $i++;
                 ?>
                 <tr>
                     <td class="text-center">
-                        <?php echo $dados['jogadorClubeNumero'];?>
+                        <?php echo $i;?>
                     </td>
                     <td class="text-center">
                         <?php echo idade($dados['jogadorDataNascimento']);?>
@@ -61,14 +64,16 @@ $dados=mysqli_fetch_array($result);
                         <img width="60" src="../<?php echo $dados['jogadorFotoURL'];?>">
                     </td>
                     <td class="text-center">
-                        <a href="editaJogador.php?id=<?php echo $dados['jogadorId'];?>" class="btn-sm btn-primary"><i class="bi bi-pencil"></i> Editar</a>
-                        <a href="confirmaGerirEliminarJogador.php?id=<?php echo $dados['jogadorId'];?>"  class="btn-sm btn-danger"><i class="bi bi-trash"></i> Eliminar</span></a>
+                        <input type="checkbox" name="jogador[]" value="<?php echo $dados['jogadorId']?>">
+
+                        <input size="5" type="text" name="numero[]" >
                     </td>
                 </tr>
                 <?php
             }
             ?>
-
+                <input type="hidden" name="clubeId" value="<?php echo $id?>">
+            </form>
         </table>
 
 

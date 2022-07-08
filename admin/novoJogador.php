@@ -3,9 +3,6 @@
 include_once ("includes/body.inc.php");
 global $con;
 drawTop(JOGADORES);
-$sql="select * from jogadores";
-$result=mysqli_query($con,$sql);
-
 ?>
 <div class="container w-100">
     <h1>Novo Jogador</h1>
@@ -17,6 +14,10 @@ $result=mysqli_query($con,$sql);
         <div class="mb-3">
             <label class="form-label">Foto</label>
             <input type="file" class="form-control" name="fotoJogador">
+        </div>
+       <div class="mb-3">
+            <label class="form-label">Data de Nascimento</label>
+            <input type="date" class="form-control" name="dnJogador">
         </div>
 
         <div class="mb-3">

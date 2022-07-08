@@ -1,7 +1,18 @@
 <?php
 include_once ("config.inc.php");
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
-echo mysqli_connect_error($con);
+
+function idade($data){
+    $timeStamp=strtotime($data);
+    $ano=intval(date("Y",$timeStamp));
+    $mes=date("m",$timeStamp);
+    $dia=date("d",$timeStamp);
+    $anoD=intval(date("Y"));
+    $mesD=intval(date("m"));
+    $diaD=intval(date("d"));
+    return (($mes==$mesD && $dia <= $diaD)||($mes<$mesD)?$anoD-$ano:$anoD-$ano-1);
+}
+
 
 function drawTop($menu=HOME,$page=''){
     ?>
@@ -42,7 +53,6 @@ function drawTop($menu=HOME,$page=''){
     <body>
     <div class="container w-100">
     <h1>Site de resultados</h1>
-    <h2>Site de futebol</h2>
     <ul class="nav nav-pills nav-justified">
         <li class="nav-item">
             <a class="nav-link <?php echo ($menu==HOME?" active ":"");?>" href="index.php">Pagina principal</a>
@@ -56,7 +66,13 @@ function drawTop($menu=HOME,$page=''){
         <li class="nav-item">
             <a class="nav-link <?php echo ($menu==JOGOS?" active ":"");?>" href="listaJogos.php">Lista jogos</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link <?php echo ($menu==Noticias?" active ":"");?>" href="listaNoticias.php">Lista Noticias</a>
+        </li>
     </ul>
+    <div class="mt-5">
+
+    </div>
     <?php
 }
 function drawBottom(){

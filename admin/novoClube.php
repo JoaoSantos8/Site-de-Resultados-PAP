@@ -3,8 +3,6 @@
 include_once ("includes/body.inc.php");
 global $con;
 drawTop(CLUBES);
-$sql="select * from clubes";
-$result=mysqli_query($con,$sql);
 
 ?>
     <div class="container w-100">
@@ -13,6 +11,18 @@ $result=mysqli_query($con,$sql);
             <div class="mb-3">
                 <label for="nomeCLube" class="form-label">Nome</label>
                 <input type="text" class="form-control" id="nomeCLube" name="nomeClube">
+            </div>
+            <div class="mb-3">
+                <label for="nomeCLube" class="form-label">Ano de fundação</label>
+                <input type="text" class="form-control" id="anoCLube" name="anoClube">
+            </div>
+            <div class="mb-3">
+                <label for="nomeCLube" class="form-label">Nome do estádio</label>
+                <input type="text" class="form-control" id="estadioCLube" name="estadioClube">
+            </div>
+            <div class="mb-3">
+                <label for="nomeCLube" class="form-label">Fundadores</label>
+                <textarea class="form-control" id="fundadoresCLube" name="fundadoresClube"></textarea>
             </div>
             <div class="mb-3">
                 <label class="form-label">Logotipo</label>

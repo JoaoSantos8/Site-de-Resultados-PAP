@@ -2,6 +2,7 @@
 include_once ("includes/body.inc.php");
 global $con;
 $nome=addslashes($_POST['nomeJogador']);
+$dn=addslashes($_POST['dnJogador']);
 
 
 if($_FILES['fotoJogador']['name']==''){
@@ -10,10 +11,10 @@ if($_FILES['fotoJogador']['name']==''){
     $urlImagem='images/jogadores/'.$_FILES['fotoJogador']['name'];
     copy($_FILES['fotoJogador']['tmp_name'],'../'.$urlImagem);
 }
-$idClube=intval($_POST['clubeId']);
 
 
-$sql="Insert into jogadores values(0,'$nome','$urlImagem','$idClube')";
+
+$sql="Insert into jogadores values(0,'$nome','$urlImagem','$dn')";
 mysqli_query($con,$sql);
-header("location:gerirPlantel.php?id=$idClube");
+header("location:listaJogadores.php");
 ?>

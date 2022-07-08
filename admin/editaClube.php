@@ -19,6 +19,18 @@ $dados=mysqli_fetch_array($result);
             <img width="60" src="../<?php echo $dados['clubeLogoURL'] ?>">
         </div>
         <div class="mb-3">
+            <label for="nomeCLube" class="form-label">Ano de fundação</label>
+            <input type="text" class="form-control" id="anoCLube" name="anoClube" value="<?php echo $dados['clubeAnoFundacao'] ?>">
+        </div>
+        <div class="mb-3">
+            <label for="nomeCLube" class="form-label">Nome do estádio</label>
+            <input type="text" class="form-control" id="estadioCLube" name="estadioClube" value="<?php echo $dados['clubeEstadio'] ?>">
+        </div>
+        <div class="mb-3">
+            <label for="nomeCLube" class="form-label">Fundadores</label>
+            <textarea class="form-control" id="fundadoresCLube" name="fundadoresClube"> <?php echo $dados['clubeFundadores'] ?></textarea>
+        </div>
+        <div class="mb-3">
             <label class="form-label">Logotipo</label>
             <input type="file" class="form-control" name="logoClube">
         </div>
