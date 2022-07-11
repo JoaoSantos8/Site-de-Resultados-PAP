@@ -2,16 +2,9 @@
 
 include_once ("includes/body.inc.php");
 global $con;
-<<<<<<< HEAD
-$cId=intval($_GET['cId']);
-$jId=intval($_GET['jId']);
-drawTop(JOGADORES);
-$sql="select * from jogadores where jogadorId=$jId";
-=======
 $id=intval($_GET['id']);
 drawTop(JOGADORES);
 $sql="select * from jogadores where jogadorId=$id";
->>>>>>> 1d99365... trabalho_casa_11
 $result=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($result);
 ?>
@@ -30,12 +23,7 @@ $dados=mysqli_fetch_array($result);
             <button onclick="history.back();" type="button" class="btn-sm btn-secondary"> Voltar </button>
 
         </div>
-<<<<<<< HEAD
-        <input type="hidden" name="cId" value="<?php echo $cId?>">
-        <input type="hidden" name="jId" value="<?php echo $jId?>">
-=======
         <input type="hidden" name="id" value="<?php echo $id?>">
->>>>>>> 1d99365... trabalho_casa_11
     </form>
 </div>
 <?php
