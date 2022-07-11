@@ -4,28 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="trabalho_casa_11">
-      <change afterPath="$PROJECT_DIR$/ClassiCampeonato.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/galeria.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Noticias/Matheus Nunes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jogos.php" afterDir="false" />
+    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="imagens">
+      <change afterPath="$PROJECT_DIR$/admin/css/estilos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/images/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ClubesNovo/braga.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ClubesNovo/porto.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JogadorDiogoCosta.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/background/10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/background/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/background/13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/background/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/background/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/background/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/background/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/background/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/background/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/background/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/background/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/body.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticias.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/planteis.php" beforeDir="false" afterPath="$PROJECT_DIR$/planteis.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +27,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -65,6 +52,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />

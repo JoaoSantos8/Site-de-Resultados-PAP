@@ -125,13 +125,16 @@ function drawTop($menu=HOME,$page=''){
             })
 
         </script>
+        <link rel="stylesheet" href="css/estilos.css">
 
 
     </head>
     <body>
-    <div class="container w-100">
-    <h1>Site de resultados</h1>
-    <ul class="nav nav-pills nav-justified">
+    <div class="container w-100  " style="border: solid 1px #888">
+    <div id="topo" class="p-2" >
+    <img style="float:left; margin-right: 20px" src="images/logo.jpg">
+    <h1 class="ml-5" style="color: #ff2d00">Site de resultados</h1>
+    <ul class="nav nav-pills nav-justified ">
         <li class="nav-item">
             <a class="nav-link <?php echo ($menu==HOME?" active ":"");?>" href="index.php">Pagina principal</a>
         </li>
@@ -148,9 +151,9 @@ function drawTop($menu=HOME,$page=''){
             <a class="nav-link <?php echo ($menu==NOTICIAS?" active ":"");?>" href="listaNoticias.php">Lista Noticias</a>
         </li>
     </ul>
-    <div class="mt-5">
 
     </div>
+
     <?php
 }
 function drawBottom(){

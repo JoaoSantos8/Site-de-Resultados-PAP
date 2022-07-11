@@ -36,8 +36,8 @@ drawTop(HOME);
                             <h3><font color="black"><?php echo alteraNome($dados['clubeNome'])?></font></h3>
                             <div >
                                 <?php
-                                   $sql="select pontosResultado from pontos inner join jogos on jogoId=pontosJogoId where pontosClubeId=".$dados['clubeId'];
-                                   $sql.=" order by jogoJornada desc limit 5";
+                                   $sql="select pontosResultado from pontos where pontosClubeId=".$dados['clubeId'];
+                                   $sql.=" order by pontosJogoId desc limit 5";
                                    $resV=mysqli_query($con,$sql);
                                    while($dadosV=mysqli_fetch_array($resV)){
                                        switch ($dadosV['pontosResultado']){
