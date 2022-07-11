@@ -56,7 +56,6 @@ function top(){
     <!--  46:37  -->
     <head>
         <meta charset="utf-8">
-        <title>Soccer Santos | Página Príncipal</title>
         <!-- Stylesheets -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
@@ -152,7 +151,8 @@ function top(){
                                 <ul class="navigation clearfix">
                                     <li><a href="planteis.php">Planteis</a></li>
                                     <li><a href="galeria.php">Galeria</a></li>
-                                    <li><a href="classificacao.php">Classificação do campeonato</a></li>
+                                    <li><a href="ClassiCampeonato.php">Classificação do campeonato</a></li>
+                                    <li><a href="jogos.php">Jogos</a></li>
                                     <li><a href="noticias.php">Noticias</a></li>
                                 </ul>
                             </div>
@@ -192,7 +192,8 @@ function top(){
                             <ul class="navigation clearfix">
                                 <li><a href="planteis.php">Planteis</a></li>
                                 <li><a href="galeria.php">Galeria</a></li>
-                                <li><a href="classificacao.php">Classificação do campeonato</a></li>
+                                <li><a href="ClassiCampeonato.php">Classificação do campeonato</a></li>
+                                <li><a href="jogos.php">Jogos</a></li>
                                 <li><a href="noticias.php">Noticias</a></li>
                             </ul>
                         </div>
@@ -249,7 +250,7 @@ function bottom(){
                             <div class="footer-column col-md-6 col-sm-6 col-xs-12">
                                 <div class="footer-widget logo-widget">
                                     <div class="logo">
-                                        <a href="index-2.html"><img src="images/footer-logo.png" alt="" /></a>
+                                        <a href="index.php"><img src="images/footer-logo.png" alt="" /></a>
                                     </div>
                                     <!--<div class="text">This is Photoshop's version  of Lorem]psukroin gravida nibh vel velit auctor aliquet.Aenean sollicitudin, lorem quis bibendum auctor</div>
                                     --><ul class="social-icon-one">
@@ -273,9 +274,10 @@ function bottom(){
                                 <div class="footer-widget footer-links">
                                     <h2>Links úteis</h2>
                                     <ul class="links">
-                                        <li><a href="ClassiCampeonato.html">CLassificações</a></li>
-                                        <li><a href="Planteis.html">Planteis</a></li>
-                                        <li><a href="Noticias.html">Noticias</a></li>
+                                        <li><a href="ClassiCampeonato.php">CLassificações</a></li>
+                                        <li><a href="planteis.php">Planteis</a></li>
+                                        <li><a href="jogos.php">Jogos</a></li>
+                                        <li><a href="noticias.php">Noticias</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -296,11 +298,12 @@ function bottom(){
                     <!--Nav Column-->
                     <div class="nav-column col-lg-6 col-md-12 col-sm-12">
                         <ul class="footer-nav">
-                            <li><a href="index._oldhtml">Home</a></li>
-                            <li><a href="Planteis.html">Planteis</a></li>
-                            <li><a href="galeria.html">Galeria</a></li>
-                            <li><a href="ClassiCampeonato.html">Classificações</a></li>
-                            <li><a href="Noticias.html">Noticias</a></li>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="planteis.php">Planteis</a></li>
+                            <li><a href="galeria.php">Galeria</a></li>
+                            <li><a href="ClassiCampeonato.php">Classificações</a></li>
+                            <li><a href="jogos.php">Jogos</a></li>
+                            <li><a href="noticias.php">Noticias</a></li>
                         </ul>
                     </div>
 
