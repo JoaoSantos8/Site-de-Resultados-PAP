@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="NovoResultado">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_07_2022_14_54__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_07_2022_14_54__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noticia1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noticia2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noticia3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noticia4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noticia5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noticia6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noticias.html" beforeDir="false" afterPath="$PROJECT_DIR$/Noticias.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="trabalho_casa_06">
+      <change afterPath="$PROJECT_DIR$/Perfis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,17 +16,17 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
   </component>
   <component name="ProjectId" id="26pXTY70sLkw82dpqQ2QnoEf4FT" />
   <component name="ProjectLevelVcsManager">
@@ -46,11 +39,12 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -59,9 +53,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\PAP" />
-      <recent name="C:\wamp64\www\PAP\admin" />
       <recent name="C:\wamp64\www\.....PAPs2022\papJoao\admin" />
+      <recent name="C:\wamp64\www\papJoao2022\admin" />
+      <recent name="C:\wamp64\www\PAP" />
       <recent name="C:\wamp64\www\papJoao2022\admin\includes" />
     </key>
   </component>
@@ -79,15 +73,29 @@
       <workItem from="1648545557054" duration="5066000" />
       <workItem from="1648637768681" duration="623000" />
       <workItem from="1648715230549" duration="6433000" />
-      <workItem from="1657140619998" duration="13602000" />
-      <workItem from="1657212835504" duration="18306000" />
-      <workItem from="1657565015520" duration="4058000" />
-      <workItem from="1657630472964" duration="353000" />
-      <workItem from="1657630879035" duration="897000" />
-      <workItem from="1657638674115" duration="3425000" />
-      <workItem from="1657715313937" duration="4637000" />
-      <workItem from="1657728390478" duration="10059000" />
-      <workItem from="1657792317511" duration="742000" />
+      <workItem from="1649615683730" duration="2551000" />
+      <workItem from="1650403986286" duration="858000" />
+      <workItem from="1650492833437" duration="3018000" />
+      <workItem from="1650577278566" duration="3551000" />
+      <workItem from="1650659830914" duration="4197000" />
+      <workItem from="1650755488487" duration="1330000" />
+      <workItem from="1650799000177" duration="5534000" />
+      <workItem from="1650903697486" duration="6315000" />
+      <workItem from="1651272137033" duration="3000" />
+      <workItem from="1651608742114" duration="2133000" />
+      <workItem from="1652212739734" duration="1869000" />
+      <workItem from="1654029468235" duration="2200000" />
+      <workItem from="1655418724700" duration="4418000" />
+      <workItem from="1655548150755" duration="6005000" />
+      <workItem from="1656003403467" duration="5729000" />
+      <workItem from="1656017963557" duration="219000" />
+      <workItem from="1656860290172" duration="595000" />
+      <workItem from="1656879232524" duration="3238000" />
+      <workItem from="1656882589606" duration="716000" />
+      <workItem from="1656895638894" duration="130000" />
+      <workItem from="1656945556915" duration="5379000" />
+      <workItem from="1657041899168" duration="17941000" />
+      <workItem from="1657114211863" duration="3374000" />
     </task>
     <task id="LOCAL-00001" summary="Index Novo">
       <created>1648121546387</created>
@@ -124,35 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648637783018</updated>
     </task>
-    <task id="LOCAL-00006" summary="FrontOffice j">
-      <created>1657158605343</created>
+    <task id="LOCAL-00006" summary="leandro Backoffice base de dados">
+      <created>1657201854644</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1657158605344</updated>
+      <updated>1657201854644</updated>
     </task>
-    <task id="LOCAL-00007" summary="Joaofs casa terça">
-      <created>1657662367531</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1657662367531</updated>
-    </task>
-    <task id="LOCAL-00008" summary="PerfilClube">
-      <created>1657792486547</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1657792486547</updated>
-    </task>
-    <task id="LOCAL-00009" summary="PerfilClube">
-      <created>1657793023075</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1657793023075</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,24 +163,7 @@
     <MESSAGE value="Index antigo" />
     <MESSAGE value="Notificaçoes2" />
     <MESSAGE value="BackOffice" />
-    <MESSAGE value="FrontOffice j" />
-    <MESSAGE value="Joaofs casa terça" />
-    <MESSAGE value="PerfilClube" />
-    <option name="LAST_COMMIT_MESSAGE" value="PerfilClube" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php-line-method">
-          <url>file://$PROJECT_DIR$/admin/includes/body.inc.php</url>
-          <line>3</line>
-          <properties>
-            <option name="className" value="" />
-            <option name="methodName" value="\isStop" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="leandro Backoffice base de dados" />
+    <option name="LAST_COMMIT_MESSAGE" value="leandro Backoffice base de dados" />
   </component>
 </project>
