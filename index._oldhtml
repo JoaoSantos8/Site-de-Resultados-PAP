@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html>
+
+<!--  46:37  -->
+<head>
+	<meta charset="utf-8">
+	<title>Soccer Santos | Página Príncipal</title>
+	<!-- Stylesheets -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+	<!-- Responsive -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+<script>
+	function myFunction() {
+
+		var dots = document.getElementById("dots");
+		var moreText = document.getElementById("more");
+		var btnText = document.getElementById("myBtn");
+
+		if (dots.style.display === "none") {
+			dots.style.display = "inline";
+			btnText.innerHTML = "Read more";
+			moreText.style.display = "none";
+		} else {
+			dots.style.display = "none";
+			btnText.innerHTML = "Read less";
+			moreText.style.display = "flex";
+		}
+	}
+</script>
+<body>
+
+<div class="page-wrapper">
+
+	<!-- Preloader -->
+	<div class="preloader"></div>
+
+	<!-- Main Header-->
+	<header class="main-header">
+
+		<!-- Header Top -->
+		<div class="header-top">
+			<div class="auto-container">
+				<div class="top-outer clearfix">
+
+					<!--Top Left-->
+					<div class="top-left">
+						<ul class="links clearfix">
+							<li><a href="tel:+351930583219"><span class="icon fa fa-phone"></span> 321654987  </a></li>
+							<li><a href="mailto:SoccerSantos@gmail.com"><span class="icon fa fa-envelope-o"></span>SoccerSantos@gmail.com</a></li>
+						</ul>
+					</div>
+
+					<!--Top Right-->
+					<div class="top-right clearfix">
+						<ul class="social-icon-one">
+							<li><a href="https://twitter.com/" class="fa fa-twitter"></a></li>
+							<li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
+							<li><a href="https://www.google.pt/?hl=pt-PT" class="fa fa-google-plus"></a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- Header Top End -->
+
+		<!--Header-Upper-->
+		<div class="header-upper">
+			<div class="auto-container">
+				<div class="header-upper-inner clearfix">
+
+					<div class="pull-left logo-box">
+						<div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+					</div>
+
+					<div class="nav-outer clearfix">
+
+						<!-- Main Menu -->
+						<nav class="main-menu navbar-expand-md">
+							<div class="navbar-header">
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+
+							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+								<ul class="navigation clearfix">
+										<!-- <ul>
+											<li><a href="index-3.html">Homepage Two</a></li>
+										</ul>-->
+									</li>
+									<li><a href="Planteis.html">Planteis</a></li>
+									<li><a href="galeria.html">Galeria</a></li>
+									<li><a href="ClassiCampeonato.html">Classificação do campeonato</a></li>
+									<li><a href="Noticias.html">Noticias</a></li>
+									<!--<li class="dropdown"><a href="#">Notificações</a>
+									<ul>
+										<div>
+											<input type="checkbox" id="Porto" name="Porto"
+												   checked>
+											<label for="Porto"><a>Porto</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Sporting" name="Sporting">
+											<label for="Sporting"><a>Sporting</a></label>
+		  								</div>
+										<div>
+											<input type="checkbox" id="Benfica" name="Benfica">
+											<label for="Benfica"><a>Benfica</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Braga" name="Braga">
+											<label for="Braga"><a>Braga</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Gil" name="Gil">
+											<label for="Gil"><a>Gil Vicente</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Vitoria" name="Vitoria">
+											<label for="Vitoria"><a>Vitória de guimarães</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Estoril" name="Estoril">
+											<label for="Estoril"><a>Estoril de praia</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Maritimo" name="Maritimo">
+											<label for="Maritimo"><a>Maritimo</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Pacos" name="Pacos">
+											<label for="Pacos"><a>Pacos</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Santa" name="Santa">
+											<label for="Santa"><a>Santa Clara</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Portimonense" name="Portimonense">
+											<label for="Portimonense"><a>Portimonense</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Famalicao" name="Famalicao">
+											<label for="Famalicao"><a>Famalicao</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Boavista" name="Boavista">
+											<label for="Boavista"><a>Boavista</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Vizela" name="Vizela">
+											<label for="Vizela"><a>Vizela</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Arouca" name="Arouca">
+											<label for="Arouca"><a>Arouca</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Tondela" name="Tondela">
+											<label for="Tondela"><a>Braga</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Moreirense" name="Moreirense">
+											<label for="Moreirense"><a>Moreirense</a></label>
+										</div>
+										<div>
+											<input type="checkbox" id="Belenenses" name="Belenenses">
+											<label for="Belenenses"><a>Belenenses</a></label>
+										</div>
+										<div align="center" style="padding-bottom: 7px"><button class="favorite styled"
+													  type="submit"
+														>
+										Selecionar Clubes
+									</button></div>
+									</ul>
+								</li>-->
+								</ul>
+							</div>
+						</nav>
+
+					</div>
+					<!--Option Box
+                     <div class="btn-box">
+                         <a href="#" class="theme-btn btn-style-one">Ativar notificações</a>
+                     </div>-->
+				</div>
+			</div>
+		</div>
+		<!--End Header Upper-->
+
+		<!--Sticky Header-->
+		<div class="sticky-header">
+			<div class="auto-container clearfix">
+				<!--Logo-->
+				<div class="logo pull-left">
+					<a href="index.html" class="img-responsive"><img src="images/logo-small.png" alt="" title=""></a>
+				</div>
+
+				<!--Right Col-->
+				<div class="right-col pull-right">
+					<!-- Main Menu -->
+					<nav class="main-menu navbar-expand-md">
+						<div class="navbar-header">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+
+						<div class="navbar-collapse collapse clearfix">
+							<ul class="navigation clearfix">
+									<!-- <ul>
+                                        <li><a href="index-3.html">Homepage Two</a></li>
+                                    </ul>-->
+								</li>
+								<li><a href="Planteis.html">Planteis</a></li>
+								<li><a href="galeria.html">Galeria</a></li>
+								<li><a href="ClassiCampeonato.html">Classificação do campeonato</a></li>
+								<li><a href="Noticias.html">Noticias</a></li>
+							</ul>
+						</div>
+
+					</nav>
+					<!-- Main Menu End-->
+				</div>
+
+			</div>
+		</div>
+		<!--End Sticky Header-->
+
+	</header>
+	<!--End Main Header -->
+
+	<!--Main Slider-->
+	<section class="main-slider">
+
+		<div class="main-slider-carousel owl-carousel owl-theme">
+
+			<div class="slide" style="background-image:url(images/main-slider/image-1.jpg); background-repeat: no-repeat">
+				<div class="auto-container">
+					<div class="content">
+						<div class="rating">
+							<span class="fa fa-soccer-ball-o"></span>
+							<span class="fa fa-soccer-ball-o"></span>
+							<span class="fa fa-soccer-ball-o"></span>
+							<span class="fa fa-soccer-ball-o"></span>
+							<span class="fa fa-soccer-ball-o"></span>
+						</div>
+						<h2>Os Teus Resultados <span>Desde 2022</span></h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide" style="background-image:url(images/main-slider/image-2.jpg); background-repeat: no-repeat">
+				<div class="auto-container">
+					<div class="content">
+						<div class="rating">
+							<span class="fa fa-soccer-ball-o"></span>
+							<span class="fa fa-soccer-ball-o"></span>
+							<span class="fa fa-soccer-ball-o"></span>
+							<span class="fa fa-soccer-ball-o"></span>
+							<span class="fa fa-soccer-ball-o"></span>
+						</div>
+						<h2>Os Teus Resultados <span>Desde 2022</span></h2>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!--End Main Slider-->
+
+	<!--Services Section-->
+	<section class="services-section">
+		<div class="auto-container">
+
+			<!--Upper Section-->
+			<div class="upper-section">
+				<div class="row clearfix">
+
+					<!--Campeonato de portugal-->
+					<div class="services-block col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<h3><a href="ClassiCampeonato.html"><font color="#FF3300"><b>Campeonato de Portugal</b></font> </a></h3>
+							<table class="table">
+								<thead>
+								<tr>
+									<th scope="col"><font color="black"><b> Posição</b></font></th>
+									<th scope="col"><font color="black"><b>Clube</b></font></th>
+									<th scope="col"><font color="black"><b>Jogos</b></font></th>
+									<th scope="col"><font color="black"><b>Vitórias</b></font></th>
+									<th scope="col"><font color="black"><b>Pts</b></font></th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<th scope="row"><font color="black"><b>1</b></font></th>
+									<td class="1Pos"><img src="images/Clubes/Porto"></td>
+									<td>22</td>
+									<td>19</td>
+									<td>60</td>
+								</tr>
+								<tr>
+									<th scope="row"><font color="black"><b>2</b></font></th>
+									<td class="2Pos"><img src="images/Clubes/Sporting"></td>
+									<td>23</td>
+									<td>17</td>
+									<td>57</td>
+								</tr>
+								<tr>
+									<th scope="row"><font color="black"><b>3</b></font></th>
+									<td class="3Pos"><img src="images/Clubes/Benfica"></td>
+									<td>23</td>
+									<td>16</td>
+									<td>51</td>
+								</tr>
+								<tr>
+									<th scope="row"><font color="black"><b>4</b></font></th>
+									<td class="4Pos"><img src="images/Clubes/Braga"></td>
+									<td>22</td>
+									<td>12</td>
+									<td>41</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<!--Taça da liga-->
+					<div class="services-block col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+							<h3 align="Center"><a href="Tacaliga.html" title="Clique para ir para os jogos!"><font color="#FF3300"><b>Jogos Campeonato</b></font></a></h3>
+							<div class="text"><table class="table">
+								<thead>
+								<tr>
+									<th colspan="5"><font color="black"; style="font-size: 15px"><b> Rodada 28 de 34 </b></font></th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td align="right" width="50px" style="
+										padding-left: 0px;
+										padding-right: 0px;
+										padding-bottom: 0px;
+										padding-top: 12px;">
+										<img src="images/Clubes/Braga.png"><p><img src="images/Clubes/Benfica.png"></td>
+									<td><font color="black"; style="font-size: 16px"> Braga <p> Benfica </font></td>
+									<td align="right" style="padding-right: 0px"><font COLOR="black">     <br>         </font></td>
+									<td  align="center"><font color="black"><div class="Hora"><b>Sexta, 1 de abril<br>20:15</b></div></font></td>
+								</tr>
+								<tr>
+									<td align="right" width="50px" style="
+										padding-left: 35px;
+										padding-right: 0px;
+										padding-bottom: 0px;
+										padding-top: 12px;">
+										<img src="images/Clubes/aroucaClube.png"><p><img src="images/Clubes/gilvicenteClube.png"></td>
+									<td><font color="black"; style="font-size: 16px"> Arouca <p> Gil Vicente </font></td>
+									<td align="right" style="padding-right: 0px"><font COLOR="black"> 2    <br>    1     </font></td>
+									<td  align="center"><font color="black"><div class="Hora"><b>Sábado, 2 de Abril<br>18:00</b></div></font></td>
+								</tr>
+								</tbody>
+							</table></div>
+						</div>
+					</div>
+					<!--------------------------------- Noticias ----------------------------------------------->
+					<div style="padding-top: 60px; padding-bottom: 30px"><font size="20px" color="#FF3300"><b style="margin-left: 525px"> Notícias </b></font></div>
+					<div class="lower-section" style="padding-top: 10px;">
+						<div class="row clearfix" style=" width: 1500px;" align="center">
+							<a href="Noticia1.html"><figure class="figure" style="border: 4px solid white; background-color: white; border-top-left-radius:10px; border-top-right-radius:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px;" >
+								<figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-bottom: 4px solid #FF3300"><font color="black"><b>DAVID CARMO TROUXE ROBUSTEZ</b></font></figcaption>
+								<img src="images/Noticias/Piazon.png" class="figure-img img-fluid rounded" style="padding-top: 5px;">
+								<figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-top: 4px solid #FF3300"><font color="black"><b>DAVID CARMO TROUXE ROBUSTEZ</b></font></figcaption>
+							</figure></a>
+							<div class="row clearfix" style="margin-left: 30px">
+								<a href="Noticia2.html"><figure class="figure" style="border: 4px solid white; background-color: white; border-top-left-radius:10px; border-top-right-radius:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px;" >
+									<figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-bottom: 4px solid #FF3300"><font color="black"><b>DAVID CARMO TROUXE ROBUSTEZ</b></font></figcaption>
+									<img src="images/Noticias/Piazon.png" class="figure-img img-fluid rounded" style="padding-top: 5px;">
+									<figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-top: 4px solid #FF3300"><font color="black"><b>DAVID CARMO TROUXE ROBUSTEZ</b></font></figcaption>
+								</figure></a>
+							</div>
+							<div class="row clearfix" style="margin-left: 50px">
+								<a href="Noticia3.html"><figure class="figure" style="border: 4px solid white; background-color: white; border-top-left-radius:10px; border-top-right-radius:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px;">
+									<figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-bottom: 4px solid #FF3300; border-top-left-radius:10px; border-top-right-radius:10px;"><font color="black"><b>NÃO DESISTIMOS DE NADA</b></font></figcaption>
+									<img src="images/Noticias/PepaGuim.png" class="figure-img img-fluid rounded" style="padding-top: 5px;">
+									<figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-top: 4px solid #FF3300"><font color="black"><b>DAVID CARMO TROUXE ROBUSTEZ</b></font></figcaption>
+								</figure></a></div>
+
+							<!------------------------------------------------ Começa a linha de baixo ---------------------------------->
+							<div class="row clearfix" style="padding-left: 15px; width: 1500px; padding-top: 10px" >
+								<a href="Noticia4.html"><figure class="figure" style="border: 4px solid white; background-color: white; border-top-left-radius:10px; border-top-right-radius:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px;" >
+									<figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-bottom: 4px solid #FF3300"><font color="black"><b>DAVID CARMO TROUXE ROBUSTEZ</b></font></figcaption>
+									<img src="images/Noticias/Piazon.png" class="figure-img img-fluid rounded" style="padding-top: 5px;">
+									<figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-top: 4px solid #FF3300"><font color="black"><b>DAVID CARMO TROUXE ROBUSTEZ</b></font></figcaption>
+								</figure></a>
+								<div class="row clearfix" style="margin-left: 30px">
+									<a href="Noticia5.html"><figure class="figure" style="border: 4px solid white; background-color: white; border-top-left-radius:10px; border-top-right-radius:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px;" >
+										<figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-bottom: 4px solid #FF3300"><font color="black"><b>DAVID CARMO TROUXE ROBUSTEZ</b></font></figcaption>
+										<img src="images/Noticias/Piazon.png" class="figure-img img-fluid rounded" style="padding-top: 5px;">
+										<figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-top: 4px solid #FF3300"><font color="black"><b>DAVID CARMO TROUXE ROBUSTEZ</b></font></figcaption>
+									</figure></a>
+								</div>
+								<div class="row clearfix" style="margin-left: 50px">
+									<a href="Noticia6.html"><figure class="figure" style="border: 4px solid white; background-color: white; border-top-left-radius:10px; border-top-right-radius:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px;">
+										<figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-bottom: 4px solid #FF3300; border-top-left-radius:10px; border-top-right-radius:10px;"><font color="black"><b>NÃO DESISTIMOS DE NADA</b></font></figcaption>
+										<img src="images/Noticias/PepaGuim.png" class="figure-img img-fluid rounded" style="padding-top: 5px;">
+										<figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-top: 4px solid #FF3300"><font color="black"><b>NÃO DESISTIMOS DE NADA</b></font></figcaption>
+									</figure></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div></section>
+</div>
+<!--End Services Section-->
+
+<!--Services Section Two-->
+<section class="services-section-two">
+	<div class="auto-container">
+		<div class="row clearfix">
+
+			<!-- Services Block Two -->
+			<p><div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+			<a href="Planteis.html" ><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+				<div class="icon-box">
+					<img src="images/Clubes/portoClube.png">
+				</div>
+				<h3><font color="black">Futebol Clube<br> do Porto</font></h3>
+				<div >
+					<span class="resultado bg-success">V</span>
+					<span class="resultado bg-success">V</span>
+					<span class="resultado bg-warning">E</span>
+					<span class="resultado bg-success">V</span>
+					<span class="resultado bg-warning">E</span>
+				</div>
+				<div class="text">1º Classificado no campeonato português</div>
+			</div></a>
+		</div>
+			<!-- Services Block Two -->
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+						<img src="images/Clubes/sportingClube.png">
+					</div>
+					<h3><font color="black">Sporting Clube<br> de Portugal</font></h3>
+					<div >
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+					</div>
+					<div class="text">2º Classificado no campeonato português</div>
+				</div></a>
+			</div>
+
+			<!-- Services Block Two -->
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+						<img src="images/Clubes/benficaClube.png">
+					</div>
+					<h3><font color="black">Sport Lisboa<br> e Benfica</font></h3>
+					<div >
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+
+					</div>
+					<div class="text">3º Classificado no campeonato português</div>
+				</div></a>
+			</div>
+
+			<!-- Services Block Two -->
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<a href="Planteis.html"><div class="inner-box wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+						<img src="images/Clubes/bragaClube.png">
+					</div>
+					<h3><font color="black">Sporting Clube<br> de Braga</font></h3>
+					<div >
+						<span class="resultado bg-danger">D</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-success">V</span>
+
+					</div>
+					<div class="text">4º Classificado no campeonato português</div>
+				</div></a>
+			</div>
+			<span id="dots"></span>
+		</div>
+		<div id="more" class="row clearfix">
+			<!-- Services Block Two -->
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+						<img src="images/Clubes/gilvicenteClube.png">
+					</div>
+					<h3><font color="black">Gil Vicente<br> Futebol Clube</font></h3>
+					<div >
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+					</div>
+					<div class="text">5º Classificado no campeonato português</div>
+				</div></a>
+			</div>
+			<!-- Services Block Two -->
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+						<img src="images/Clubes/vitóriaClube.png">
+					</div>
+					<h3><font color="black">Vitória Sport Clube <br>de Guimarães</font></h3>
+					<div >
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+					</div>
+					<div class="text">6º Classificado no campeonato português</div>
+				</div></a>
+			</div>
+
+			<!-- Services Block Two -->
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+						<img src="images/Clubes/estorilClube.png">
+					</div>
+					<h3><font color="black">Grupo Desportivo<br> Estoril de Praia</font></h3>
+					<div >
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+					</div>
+					<div class="text">7º Classificado no campeonato português</div>
+				</div></a>
+			</div>
+
+			<!-- Services Block Two -->
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+						<img src="images/Clubes/maritimoClube.png">
+					</div>
+					<h3><font color="black">Club Sport Marítimo <br>Funchal</font></h3>
+					<div >
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+					</div>
+					<div class="text">8º Classificado no campeonato português</div>
+				</div></a>
+			</div>
+
+			<!-- Services Block Two -->
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+						<img src="images/Clubes/portimonenseClube.png">
+					</div>
+					<h3><font color="black">Portimonense Sporting <br>Clube</font></h3>
+					<div >
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+					</div>
+					<div class="text">9º Classificado no campeonato português</div>
+				</div></a>
+			</div>
+
+			<!-- Services Block Two -->
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+						<img src="images/Clubes/pacoFerrCLube.png">
+					</div>
+					<h3><font color="black">Futebol Clube Paços<br> de Ferreira</font></h3>
+					<div >
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+					</div>
+					<div class="text">10º Classificado no campeonato português</div>
+				</div></a>
+			</div>
+			<!-- Services Block Two -->
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+						<img src="images/Clubes/famalicaClube.png">
+					</div>
+					<h3><font color="black">Futebol Clube<br> Famalicão</font></h3>
+					<div >
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+					</div>
+					<div class="text">11º Classificado no campeonato português</div>
+				</div></a>
+			</div>
+			<!-- Services Block Two -->
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+						<img src="images/Clubes/boavistaClube.png">
+					</div>
+					<h3><font color="black">Boavista Futebol<br> Clube </font></h3>
+					<div >
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+					</div>
+					<div class="text">12º Classificado no campeonato português</div>
+				</div></a>
+			</div>
+			<!-- Services Block Two -->
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+						<img src="images/Clubes/santaclaraClube.png">
+					</div>
+					<h3><font color="black">Santa Clara<br> Açores</font></h3>
+					<div >
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+					</div>
+					<div class="text">13º Classificado no campeonato português</div>
+				</div></a>
+			</div>
+			<!-- Services Block Two -->
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+						<img src="images/Clubes/vizelaClube.png">
+					</div>
+					<h3><font color="black">Futebol Clube <br>Vizela </font></h3>
+					<div >
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+					</div>
+					<div class="text">14º Classificado no campeonato português</div>
+				</div></a>
+			</div>
+			<!-- Services Block Two -->
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+						<img src="images/Clubes/aroucaClube.png">
+					</div>
+					<h3><font color="black">Futebol Clube <br>Arouca </font></h3>
+					<div >
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+					</div>
+					<div class="text">15º Classificado no campeonato português</div>
+				</div></a>
+			</div>
+
+			<!-- Services Block Two -->
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+						<img src="images/Clubes/tondelaClube.png">
+					</div>
+					<h3><font color="black">Clube Desportivo<br> de Tondela </font></h3>
+					<div >
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+					</div>
+					<div class="text">16º Classificado no campeonato português</div>
+				</div></a>
+			</div>
+
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+					</div>
+					<div class="text"></div>
+				</div>
+			</div>
+			<!-- Services Block Two -->
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+						<img src="images/Clubes/moreirenseClube.png">
+					</div>
+					<h3><font color="black">Moreirense Futebol <br> Clube </font></h3>
+					<div >
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+					</div>
+					<div class="text">17º Classificado no campeonato português</div>
+				</div></a>
+			</div>
+
+			<!-- Services Block Two -->
+			<div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+				<a href="Services.html"><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+					<div class="icon-box">
+						<img src="images/Clubes/belenensesClube.png">
+					</div>
+					<h3><font color="black">Belenenses<br> SAD </font></h3>
+					<div >
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+						<span class="resultado bg-success">V</span>
+						<span class="resultado bg-warning">E</span>
+					</div>
+					<div class="text">18º Classificado no campeonato português</div>
+				</div></a>
+			</div>
+
+			</p>
+			<!-------------------------------------------------------------------------------------------------------------------------- -->
+		</div>
+	</div>
+	<button onclick="myFunction()" id="myBtn" style="background-color: #FF3300; position: absolute; left: 47.5%; width: 100px; height: 30px; color: white;" ><b>Ver Mais</b></button>
+</section>
+<!--End Services Section Two-->
+<!--Clients Section-->
+<section class="clients-section" style="background-image:url(images/background/1.jpg); margin-top: 10px; background-repeat: no-repeat; width: 100%">
+	<div class="auto-container">
+
+		<div class="sponsors-outer">
+			<!--Sponsors Carousel-->
+			<ul class="sponsors-carousel owl-carousel owl-theme">
+				<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
+				<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
+				<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
+				<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
+				<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></figure></li>
+				<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
+				<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
+				<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
+				<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
+			</ul>
+		</div>
+
+	</div>
+</section>
+<!--End Clients Section-->
+
+<!--Main Footer-->
+<footer class="main-footer">
+	<!--Widgets Section-->
+	<div class="widgets-section">
+		<div class="auto-container">
+			<div class="row clearfix">
+
+				<!--Big Column-->
+				<div class="big-column col-lg-6 col-md-12 col-sm-12">
+					<div class="row clearfix">
+
+						<!--Footer Column-->
+						<div class="footer-column col-md-6 col-sm-6 col-xs-12">
+							<div class="footer-widget logo-widget">
+								<div class="logo">
+									<a href="index-2.html"><img src="images/footer-logo.png" alt="" /></a>
+								</div>
+								<!--<div class="text">This is Photoshop's version  of Lorem]psukroin gravida nibh vel velit auctor aliquet.Aenean sollicitudin, lorem quis bibendum auctor</div>
+                                --><ul class="social-icon-one">
+								<li><a href="https://twitter.com/" class="fa fa-twitter"></a></li>
+								<li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
+								<li><a href="https://www.google.pt/?hl=pt-PT" class="fa fa-google-plus"></a></li>
+							</ul>
+							</div>
+						</div>
+
+						<!--Footer Column-->
+					</div>
+				</div>
+
+				<!--Big Column-->
+				<div class="big-column col-lg-6 col-md-12 col-sm-12">
+					<div class="row clearfix">
+
+						<!--Footer Column-->
+						<div class="footer-column col-md-6 col-sm-6 col-xs-12">
+							<div class="footer-widget footer-links">
+								<h2>Useful Links</h2>
+								<ul class="links">
+									<li><a href="ClassiCampeonato.html">CLassificações</a></li>
+									<li><a href="Planteis.html">Planteis</a></li>
+									<li><a href="Noticias.html">Noticias</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<!--Footer Column-->
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--Footer Bottom-->
+	<div class="footer-bottom">
+		<div class="auto-container">
+			<div class="bottom-inner">
+				<div class="row clearfix">
+
+					<!--Nav Column-->
+					<div class="nav-column col-lg-6 col-md-12 col-sm-12">
+						<ul class="footer-nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Planteis.html">Planteis</a></li>
+							<li><a href="galeria.html">Galeria</a></li>
+							<li><a href="ClassiCampeonato.html">Classificações</a></li>
+							<li><a href="Noticias.html">Noticias</a></li>
+						</ul>
+					</div>
+
+					<!--Copyright Column
+                    <div class="copyright-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="copyright"><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></div>
+                    </div>
+                    -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+</div>
+<!--End pagewrapper-->
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/jquery-ui.js"></script>
+<!--Google Map APi Key-->
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyBg0VrLjLvDLSQdS7hw6OfZJmvHhtEV_sE"></script>
+<script src="js/map-script.js"></script>
+<!--End Google Map APi-->
+<script src="js/script.js"></script>
+
+</body>
+
+<!--  51:42  -->
+</html>

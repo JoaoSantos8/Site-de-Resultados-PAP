@@ -1,0 +1,28 @@
+.nav-item .active{
+  background-color: red !important;
+}
+
+.nav-justified .nav-item, .nav-justified > .nav-link{
+  margin-left: 5px !important;
+}
+
+.nav-item a{
+  color: #000 !important;
+  border-top: solid 1px #e01919 !important;
+  border-left: solid 1px #ef8686 !important;
+  background-color: rgba(239, 134, 134, 0.2) !important;
+
+}
+.nav-item a.active{
+  color: #FFF !important;
+  font-weight: bold;
+  background-color: #ff2d00 !important;
+  border-top: solid 1px #ddd;
+  border-left: solid 1px #ddd;
+  /*   border-right: solid 1px #666;
+         border-bottom: solid 1px #666;*/
+
+}
+#topo{
+  background-color: rgba(169, 169, 169, 0.11);
+}
