@@ -23,12 +23,8 @@ $dados=mysqli_fetch_array($result);
             <img src="../<?php echo $dados['noticiaFotoURL'] ?>">
         </div>
         <div class="mb-3">
-            <label class="form-label">Foto da noticia</label>
-            <input readonly type="file" class="form-control" name="fotoNoticia">
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Descrição da Noticia</label>
-            <textarea readonly class="form-control" id="descricaoNoticia" name="descricaoNoticia"><?php echo $dados['noticiaDescricao'] ?></textarea>
+            <label class="form-label">DescriÃ§Ã£o da Noticia</label>
+            <label class="form-control" id="descricaoNoticia" name="descricaoNoticia"><?php echo $dados['noticiaDescricao'] ?></label>
         </div>
         <div class="mb-3">
             <input type="submit" class="btn-sm btn-danger" value="Confirma">

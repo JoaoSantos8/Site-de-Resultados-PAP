@@ -61,8 +61,8 @@ $dados=mysqli_fetch_array($result);
                         <img width="60" src="../<?php echo $dados['jogadorFotoURL'];?>">
                     </td>
                     <td class="text-center">
-                        <a href="editaJogador.php?id=<?php echo $dados['jogadorId'];?>" class="btn-sm btn-primary"><i class="bi bi-pencil"></i> Editar</a>
-                        <a href="confirmaGerirEliminarJogador.php?id=<?php echo $dados['jogadorId'];?>"  class="btn-sm btn-danger"><i class="bi bi-trash"></i> Eliminar</span></a>
+                        <a href="editaJogador.php?cId=<?php echo $id?>&jId=<?php echo $dados['jogadorId'];?>" class="btn-sm btn-primary"><i class="bi bi-pencil"></i> Editar</a>
+                        <a href="GerirEliminarJogador.php?cId=<?php echo $id?>&jId=<?php echo $dados['jogadorId'];?>"  class="btn-sm btn-danger"><i class="bi bi-trash"></i> Eliminar</span></a>
                     </td>
                 </tr>
                 <?php
