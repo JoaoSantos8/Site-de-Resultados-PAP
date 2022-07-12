@@ -75,11 +75,11 @@ function drawTop(){
 
             if (dots.style.display === "none") {
                 dots.style.display = "inline";
-                btnText.innerHTML = "Ler Menos";
+                btnText.innerHTML = "Read more";
                 moreText.style.display = "none";
             } else {
                 dots.style.display = "none";
-                btnText.innerHTML = "Ler Menos";
+                btnText.innerHTML = "Read less";
                 moreText.style.display = "flex";
             }
         }

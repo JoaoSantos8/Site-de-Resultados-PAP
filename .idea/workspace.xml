@@ -4,31 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="">
+    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="Joaofs casa tent 2">
+      <change afterPath="$PROJECT_DIR$/baseDados/pap2022joao.2.9.clubes.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ClubesNovo/arouca.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ClubesNovo/belenenses.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ClubesNovo/boaVISTA.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClassiCampeonato.html" beforeDir="false" afterPath="$PROJECT_DIR$/ClassiCampeonato.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jogadores.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jogadores.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Perfis.html" beforeDir="false" afterPath="$PROJECT_DIR$/Perfis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PerfisClubeBenfica.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PerfisClubeBraga.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PerfisClubeSporting.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planteis.html" beforeDir="false" afterPath="$PROJECT_DIR$/Planteis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GerirPlantel.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GerirPlantel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/confirmaGerirEliminarJogador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaGerirEliminarJogador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/confirmaNovaNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaNovaNoticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/editaNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaNoticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/eliminaNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/eliminaNoticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/body.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/config.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/config.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/listaNoticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/listaNoticias.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/novaNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/novaNoticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseDados/pap2022Joao.2.8.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/pap2022Joao.2.8.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Clubes/Mafra.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/estoril.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ClubesNovo/estoril.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/listaJogos.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/listaJogos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/novoResultado.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/novoResultado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/207165374.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/Benfica.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/Biblioteca.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/Braga.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/Matheus Nunes.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index_old.html" beforeDir="false" afterPath="$PROJECT_DIR$/index_old.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planteis.php" beforeDir="false" afterPath="$PROJECT_DIR$/planteis.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +31,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -97,6 +87,9 @@
       <workItem from="1657140619998" duration="13602000" />
       <workItem from="1657212835504" duration="18306000" />
       <workItem from="1657565015520" duration="4058000" />
+      <workItem from="1657630472964" duration="353000" />
+      <workItem from="1657630879035" duration="897000" />
+      <workItem from="1657638674115" duration="3325000" />
     </task>
     <task id="LOCAL-00001" summary="Index Novo">
       <created>1648121546387</created>

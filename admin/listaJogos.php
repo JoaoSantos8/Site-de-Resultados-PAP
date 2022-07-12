@@ -3,13 +3,24 @@
     include_once("includes/body.inc.php");
     global $con;
     drawTop(JOGOS );
+    $sql="select max(jogoJornada) as mx from jogos";
+    $res=mysqli_query($con,$sql);
+    $dados=mysqli_fetch_array($res);
+    $max=$dados['mx'];
+    if(isset($_POST['jornada'])) {
+        $jornada=$_POST['jornada'];
+    }else{
+
+        $jornada=$max;
+    }
+
     $sql="select jogos.* 
             ,casa.clubeNome as casa
             ,fora.clubeNome as fora
             ,casa.clubeLogoURL as casaURL
             ,fora.clubeLogoURL as foraURL
             from jogos inner join clubes as casa on casa.clubeId=jogoCasaClubeId 
-            inner join clubes as fora on fora.clubeId=jogoForaClubeId ";
+            inner join clubes as fora on fora.clubeId=jogoForaClubeId where jogoJornada=$jornada";
     $result=mysqli_query($con,$sql);
 
 ?>
@@ -17,7 +28,21 @@
         <h1>Lista de Jogos</h1>
         <table class="table table-striped table-hover ">
             <tr>
-                <td colspan="7" align="right">
+                <td colspan="3">
+                    <form id="filtro" action="" method="post">
+                    <strong>Filtro: </strong>
+                    <select name="jornada" onchange="$('#filtro').submit();">
+                        <?php
+                            for($i=1;$i<=$max;$i++){
+                        ?>
+                        <option <?php if($i==$jornada) echo "selected "?>value="<?php echo $i?>">Jornada <?php echo $i?></option>
+                        <?php
+                            }
+                        ?>
+                    </select>
+                    </form>
+                </td>
+                <td colspan="5" align="right">
                     <a href="novoJogo.php" class="btn-sm btn-success"><i class="bi bi-plus-circle"></i> Novo Jogo</a>
                 </td>
             </tr>
@@ -25,7 +50,10 @@
                 <th style="width: 5%" class="text-center">
                     Id
                 </th>
-                <th style="width: 40%" class="text-center">
+                <th style="width: 5%" class="text-center">
+                    Jornada
+                </th>
+                <th style="width: 35%" class="text-center">
                     Clubes
                 </th>
                 <th style="width: 10%" class="text-center">
@@ -50,7 +78,10 @@
                 <td style="width: 5%" class="text-center">
                     <?php echo $dados['jogoId'];?>
                 </td>
-                <td width="30" class="text-center" style="padding-bottom: 12px; padding-top: 4px">
+                <td style="width: 5%" class="text-center">
+                    <?php echo $dados['jogoJornada'];?>ª jorn.
+                </td>
+                <td  class="text-center" style="padding-bottom: 12px; padding-top: 4px">
                     <img width="16" src="../<?php echo $dados['casaURL'];?>"> <span class="mt-5">
                         <?php echo $dados['casa']; ?></span>
                     <span>&nbsp;- &nbsp;</span>

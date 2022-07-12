@@ -141,27 +141,24 @@
 					</div>
 					<!--------------------------------- Noticias ----------------------------------------------->
 					<div style="padding-top: 60px; padding-bottom: 30px"><font size="20px" color="#FF3300"><b style="margin-left: 525px"> Notícias </b></font></div>
-                    <div class="row clearfix" style=" width: 1500px;" align="center">
-                        <?php
-                        $sql="select * from noticias order by noticiaData DESC ";
-                        $res=mysqli_query($con,$sql);
-                        while($dados=mysqli_fetch_array($res)){
-                            ?>
-                            <a href="noticia.php?id=<?php echo $dados['noticiaId']?>" style="padding-right: 20px;">
-                                <figure class="figure" style="width: 400px; border: 4px solid white; background-color: white; border-top-left-radius:10px; border-top-right-radius:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px;" >
-                                    <figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-bottom: 4px solid #FF3300"><font color="black"><b class="text-uppercase"><?php echo $dados['noticiaTitulo']?></b></font></figcaption>
-                                    <img src="<?php echo $dados['noticiaFotoURL']?>" class="figure-img img-fluid rounded" style="padding-top: 5px;">
-                                    <figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-top: 4px solid #FF3300"><font color="black"><?php echo resumo($dados['noticiaDescricao'],100)?></font></figcaption>
-                                </figure>
-                            </a>
+					<div class="lower-section" style="padding-top: 10px;">
+                        <div class="row clearfix" style=" width: 1500px;" align="center">
                             <?php
-                        }
-                        ?>
-
-
-                    </div>
-					</div>
-				</div>
+                            $sql="select * from noticias order by noticiaData desc LIMIT 6";
+                            $res=mysqli_query($con,$sql);
+                            while($dados=mysqli_fetch_array($res)){
+                                ?>
+                                <a href="noticia.php?id=<?php echo $dados['noticiaId']?>" style="padding-right: 20px">
+                                    <figure class="figure" style="width: 400px; border: 4px solid white; background-color: white; border-top-left-radius:10px; border-top-right-radius:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px;" >
+                                        <figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-bottom: 4px solid #FF3300"><font color="black"><b class="text-uppercase"><?php echo $dados['noticiaTitulo']?></b></font></figcaption>
+                                        <img src="<?php echo $dados['noticiaFotoURL']?>" class="figure-img img-fluid rounded" style="padding-top: 5px;">
+                                        <figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-top: 4px solid #FF3300"><font color="black"><?php echo resumo($dados['noticiaDescricao'],100)?></font></figcaption>
+                                    </figure>
+                                </a>
+                                <?php
+                            }
+                            ?>
+                            </div>
 			</div>
 		</div></section>
 </div>
@@ -170,55 +167,52 @@
 <!--Services Section Two-->
 <section class="services-section-two">
 	<div class="auto-container">
-		<div class="row clearfix">
-            <div class="row clearfix">
+        <div class="row clearfix">
 
-                <!-- Services Block Two -->
-                <p>
-                    <?php
-                    $sql="select clubeId, clubeNome, clubeLogoURL, ifnull(sum(pontosValor),0) as pts
+            <!-- Services Block Two -->
+            <p>
+                <?php
+                $sql="select clubeId, clubeNome, clubeLogoURL, ifnull(sum(pontosValor),0) as pts
                             from clubes left join pontos on clubeId=pontosClubeId
                             group by 1
                             order by pts desc, clubeNome asc;";
-                    $res=mysqli_query($con,$sql);
-                    $class=1;
-                    while($dados=mysqli_fetch_array($res)){
-                    ?>
-                <div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-                    <a href="perfil.php?id=<?php echo $dados['clubeId']?>" ><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                            <div class="icon-box">
-                                <img src="<?php echo $dados['clubeLogoURL']?>">
-                            </div>
-                            <h3><font color="black"><?php echo alteraNome($dados['clubeNome'])?></font></h3>
-                            <div >
-                                <?php
-                                $sql="select pontosResultado from pontos where pontosClubeId=".$dados['clubeId'];
-                                $sql.=" order by pontosJogoId desc limit 5";
-                                $resV=mysqli_query($con,$sql);
-                                while($dadosV=mysqli_fetch_array($resV)){
-                                    switch ($dadosV['pontosResultado']){
-                                        case 'V':$cor='success'; break;
-                                        case 'D':$cor='danger'; break;
-                                        case 'E':$cor='warning'; break;
-                                    }
-                                ?>
-                                    <span class="resultado bg-<?php echo $cor?>"><?php echo $dadosV['pontosResultado']?></span>
-                                    <?php
+                $res=mysqli_query($con,$sql);
+                $class=1;
+                while($dados=mysqli_fetch_array($res)){
+                ?>
+            <div class="services-block-two col-lg-3 col-md-6 col-sm-12">
+                <a href="perfil.php?id=<?php echo $dados['clubeId']?>" ><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="icon-box">
+                            <img src="<?php echo $dados['clubeLogoURL']?>">
+                        </div>
+                        <h3><font color="black"><?php echo alteraNome($dados['clubeNome'])?></font></h3>
+                        <div >
+                            <?php
+                            $sql="select pontosResultado from pontos inner join jogos on jogoId=pontosJogoId where pontosClubeId=".$dados['clubeId'];
+                            $sql.=" order by jogoJornada desc limit 5";
+                            $resV=mysqli_query($con,$sql);
+                            while($dadosV=mysqli_fetch_array($resV)){
+                                switch ($dadosV['pontosResultado']){
+                                    case 'V':$cor='success'; break;
+                                    case 'D':$cor='danger'; break;
+                                    case 'E':$cor='warning'; break;
                                 }
                                 ?>
-                            </div>
-                            <div class="text"><?php echo $class++?>º Classificado no campeonato português</div>
-                        </div></a>
-                </div>
-                <?php
-                }
-                ?>
-
-                </p>
-                <!-------------------------------------------------------------------------------------------------------------------------- -->
+                                <span class="resultado bg-<?php echo $cor?>"><?php echo $dadosV['pontosResultado']?></span>
+                                <?php
+                            }
+                            ?>
+                        </div>
+                        <div class="text"><?php echo $class++?>º Classificado no campeonato português</div>
+                    </div></a>
             </div>
-			<!-------------------------------------------------------------------------------------------------------------------------- -->
-		</div>
+            <?php
+            }
+            ?>
+
+            </p>
+            <!-------------------------------------------------------------------------------------------------------------------------- -->
+        </div>
 	</div>
 	<button onclick="myFunction()" id="myBtn" style="background-color: #FF3300; position: absolute; left: 47.5%; width: 100px; height: 30px; color: white;" ><b>Ver Mais</b></button>
 </section>
