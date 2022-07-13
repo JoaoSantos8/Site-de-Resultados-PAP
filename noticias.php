@@ -9,7 +9,7 @@ drawTop(HOME);
 	<!--Page Title-->
     <section class="page-title" style="background-image:url(images/background/NoticiasBack.png)">
     	<div class="auto-container">
-        	<h1>Notícias</h1>
+        	<h1></h1>
         </div>
     </section>
     <!--End Page Title-->

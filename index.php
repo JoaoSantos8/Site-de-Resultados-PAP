@@ -69,34 +69,25 @@
 								</tr>
 								</thead>
 								<tbody>
-								<tr>
-									<th scope="row"><font color="black"><b>1</b></font></th>
-									<td class="1Pos"><img src="images/Clubes/Porto"></td>
-									<td>22</td>
-									<td>19</td>
-									<td>60</td>
-								</tr>
-								<tr>
-									<th scope="row"><font color="black"><b>2</b></font></th>
-									<td class="2Pos"><img src="images/Clubes/Sporting"></td>
-									<td>23</td>
-									<td>17</td>
-									<td>57</td>
-								</tr>
-								<tr>
-									<th scope="row"><font color="black"><b>3</b></font></th>
-									<td class="3Pos"><img src="images/Clubes/Benfica"></td>
-									<td>23</td>
-									<td>16</td>
-									<td>51</td>
-								</tr>
-								<tr>
-									<th scope="row"><font color="black"><b>4</b></font></th>
-									<td class="4Pos"><img src="images/Clubes/Braga"></td>
-									<td>22</td>
-									<td>12</td>
-									<td>41</td>
-								</tr>
+                                <?php
+
+                                $sql="select * from pontos inner join clubes where clubeId=pontosClubeId order by pontosValor desc limit 4";
+                                $sql.="select max(jogoJornada) as mx from jogos";
+                                $res=mysqli_query($con,$sql);
+                                $i=1;
+                                while($dados=mysqli_fetch_array($res)){
+                                    ?>
+                                    <tr>
+                                        <th scope="row"><font color="black"><b><?php echo $i ?></b></font></th>
+                                        <td class="1Pos"><img src="<?php echo $dados['clubeLogoURL'] ?>"></td>
+                                        <td><?php echo $mx ?></td>
+                                        <td>19</td>
+                                        <td><?php echo $dados['pontosValor'] ?></td>
+                                    </tr>
+                                    <?php
+                                    $i++;
+                                }
+                                ?>
 								</tbody>
 							</table>
 						</div>
