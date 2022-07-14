@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="PerfilClube">
-      <change beforePath="$PROJECT_DIR$/Perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/Perfil.php" afterDir="false" />
+    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="NovoResultado">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_07_2022_14_54__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_07_2022_14_54__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noticia1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noticia2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noticia3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noticia4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noticia5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noticia6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noticias.html" beforeDir="false" afterPath="$PROJECT_DIR$/Noticias.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +25,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
