@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="pequenas coisas">
-      <change afterPath="$PROJECT_DIR$/images/ClubesNovo/Guima.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Jogadores/sarabia.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_07_2022_14_54__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_07_2022_14_54__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_07_2022_20_35__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_07_2022_20_35__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_07_2022_14_54_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_07_2022_14_54__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2022_19_33__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2022_19_33__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_07_2022_09_31__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_07_2022_09_31__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/Perfil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/inscreveJogador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/inscreveJogador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classificacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/classificacao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/GilVicente.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ClubesNovo/GilVicente.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/Guimarães.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/Maritimo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ClubesNovo/Maritimo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/SantaClara.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ClubesNovo/SantaClara.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/Tondela.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ClubesNovo/Tondela.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/Vizela.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ClubesNovo/Vizela.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/boaVISTA.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ClubesNovo/boaVISTA.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/estoril.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ClubesNovo/estoril.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/moreirense.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ClubesNovo/moreirense.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/pacoferreira.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ClubesNovo/pacoferreira.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/portimonense.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ClubesNovo/portimonense.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planteis.php" beforeDir="false" afterPath="$PROJECT_DIR$/planteis.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +104,7 @@
       <workItem from="1657114211863" duration="3374000" />
       <workItem from="1657270521489" duration="6026000" />
       <workItem from="1657531322633" duration="7097000" />
+      <workItem from="1657818019796" duration="611000" />
     </task>
     <task id="LOCAL-00001" summary="Index Novo">
       <created>1648121546387</created>
