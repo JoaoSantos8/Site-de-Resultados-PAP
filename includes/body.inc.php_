@@ -22,27 +22,17 @@ function alteraNome($str){
 }
 
 
-function isStop($char){
-    switch ($char){
+function isStop($char)
+{
+    switch ($char) {
         case ' ':
         case ',':
         case '!':
         case '?':
         case ':':
-
-        case '.':return(1);
     }
-    return(0);
 }
-function resumo($str, $num){
-    if($num>strlen($str))
-        return($str);
-    while(!isStop($str[$num])){
-        $num++;
-    }
-    return(substr($str,0,$num)." (...)");
-}
-function drawTop(){
+function drawtop(){
     ?>
 
     <!DOCTYPE html>
@@ -338,3 +328,4 @@ function drawBottom(){
     </html>
 <?php
 }
+?>
