@@ -45,7 +45,6 @@ $dados=mysqli_fetch_array($result);
             $sql="select * from jogadores inner join jogadorclubes on jogadorId=jogadorClubeJogadorId where jogadorClubeClubeId='$id' order by jogadorClubeNumero";
             $result=mysqli_query($con,$sql);
             while($dados=mysqli_fetch_array($result)){
-
                 ?>
                 <tr>
                     <td class="text-center">

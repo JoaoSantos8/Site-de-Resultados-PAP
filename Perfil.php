@@ -3,7 +3,7 @@ include_once("includes/body.inc.php");
 global $con;
 drawTop(HOME);
 ?>
-<section class="page-title" style="background-image:url(images/background/NoticiasBack.png)">
+<section class="page-title" style="background-image:url(images/background/.png)">
     <div class="auto-container">
         <h1></h1>
     </div>
@@ -42,7 +42,7 @@ drawTop(HOME);
 				</thead>
 				<tbody>
                 <?php
-                $sql="select jogadorId, jogadorNome, jogadorFotoURL, jogadorDataNascimento from jogadores inner join jogadorclubes where jogadorId=jogadorClubeJogadorId";
+                $sql="select * from jogadores inner join jogadorclubes where jogadorId=jogadorClubeJogadorId";
                 $res=mysqli_query($con,$sql);
                 while($dados=mysqli_fetch_array($res)){
                     ?>
@@ -50,7 +50,8 @@ drawTop(HOME);
 					<th align="center"><font color="black" size="4px"> 99 </font></th>
 					<td align="center"><img src="<?php echo $dados['jogadorFotoURL'] ?>""></td>
 					<td align="center"><font color="black" size="4px"><?php echo $dados['jogadorNome'] ?></font></td>
-					<td align="center"><font color="black" size="4px"> 22 </font></td>
+                    <td></td>
+					<td align="center"><font color="black" size="4px"><?php echo idade($dados['jogadorDataNascimento']);?></font></td>
 				</tr>
                     <?php
                 }

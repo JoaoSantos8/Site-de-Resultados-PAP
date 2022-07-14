@@ -20,7 +20,16 @@ function alteraNome($str){
     $parte2=lastWord($str);
     return($parte1."<p>".$parte2);
 }
-
+function idade($data){
+    $timeStamp=strtotime($data);
+    $ano=intval(date("Y",$timeStamp));
+    $mes=date("m",$timeStamp);
+    $dia=date("d",$timeStamp);
+    $anoD=intval(date("Y"));
+    $mesD=intval(date("m"));
+    $diaD=intval(date("d"));
+    return (($mes==$mesD && $dia <= $diaD)||($mes<$mesD)?$anoD-$ano:$anoD-$ano-1);
+}
 
 function isStop($char){
     switch ($char){
