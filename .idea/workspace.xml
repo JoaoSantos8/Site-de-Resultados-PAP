@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/confirmaEditaFoto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/confirmaEliminaFoto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/confirmaNovaFoto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/editaGaleria.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/eliminaGaleria.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/novaFoto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/galeria/andre.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/galeria/sarabia.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/confirmaNovoResultado.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaNovoResultado.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/body.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/inscreveJogador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/inscreveJogador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/listaGaleria.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/listaGaleria.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/galeria.php" beforeDir="false" afterPath="$PROJECT_DIR$/galeria.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +99,7 @@
       <workItem from="1657114211863" duration="3374000" />
       <workItem from="1657270521489" duration="6026000" />
       <workItem from="1657531322633" duration="7097000" />
-      <workItem from="1657818019796" duration="12975000" />
+      <workItem from="1657818019796" duration="13334000" />
     </task>
     <task id="LOCAL-00001" summary="Index Novo">
       <created>1648121546387</created>
@@ -198,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657834200781</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Novo Resultado">
+      <created>1657838791458</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1657838791458</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +222,7 @@
     <MESSAGE value="pequenas coisas" />
     <MESSAGE value="BDD clubescompleto" />
     <MESSAGE value="Jogos Feitos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jogos Feitos" />
+    <MESSAGE value="Novo Resultado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Novo Resultado" />
   </component>
 </project>
