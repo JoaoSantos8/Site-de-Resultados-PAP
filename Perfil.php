@@ -36,7 +36,6 @@ drawTop(HOME);
 					<th scope="col" style="border-top-left-radius:10px; border: 0px; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; vertical-align: middle"><font color="white" ><div style="width: 100%;">Número de jogador</div></font></th>
 					<th scope="col" text-align="center" style="padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border: 0px;  vertical-align: middle;"><font color="white"><div style="width: 100%;">Foto</div></font></th>
 					<th scope="col" text-align="center" style="border: 0px; vertical-align: middle;"><font color="white"><div style="width: 100%;">Nome do jogador</div></font></th>
-					<th scope="col" text-align="center" style="border: 0px; vertical-align: middle;"><font color="white"><div style="width: 100%;">Posição do jogador</div></font></th>
 					<th scope="col" text-align="center" style="border-top-right-radius:10px; border: 0px; vertical-align: middle;"><font color="white"><div style="width: 100%;">Idade</div></font></th>
 				</tr>
 				</thead>
@@ -50,7 +49,6 @@ drawTop(HOME);
 					<th align="center"><font color="black" size="4px"> 99 </font></th>
 					<td align="center"><img src="<?php echo $dados['jogadorFotoURL'] ?>""></td>
 					<td align="center"><font color="black" size="4px"><?php echo $dados['jogadorNome'] ?></font></td>
-                    <td></td>
 					<td align="center"><font color="black" size="4px"><?php echo idade($dados['jogadorDataNascimento']);?></font></td>
 				</tr>
                     <?php
