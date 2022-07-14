@@ -3,9 +3,6 @@ include_once("includes/body.inc.php");
 global $con;
 drawTop(HOME);
 ?>
-    <head>
-        <title>Soccer Santos | Planteis</title>
-    </head>
 	<!--Page Title-->
     <section class="page-title" style="background-image:url(images/background/12.jpg)">
     	<div class="auto-container">

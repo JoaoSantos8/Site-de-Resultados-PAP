@@ -52,9 +52,8 @@ $result=mysqli_query($con,$sql);
     </section>
 	<!--Services page Section-->
 	<section class="services-page-section" style="padding-top: 40px; padding-bottom: 20px;padding-left: 80px;padding-right: 80px;">
-			<div style="padding-bottom: 40px"><marquee direction="right" behavior="alternate" style="background: rgb(254,254,254);
-background: linear-gradient(90deg, rgba(254,254,254,1) 0%, rgba(255,66,25,1) 10%, rgba(255,45,0,1) 87%, rgba(254,254,254,1) 100%);"><div style="padding-bottom: 40px"><h1><font color="black" style="padding-left: 250px; padding-right: 310px;">Campeonato de Portugal</font></h1>
-				<h1><font color="white"  style=" border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px">&nbsp;&nbsp; Veja aqui! Os Resultados do campeonato de Portugal&nbsp &nbsp;</font></h1></div></marquee></div>
+			<div style="padding-bottom: 40px"><div style="padding-bottom: 40px"><h1><font color="black" style="padding-left: 250px; padding-right: 310px;">Campeonato de Portugal</font></h1></div>
+				<h1><font color="white"  style=" border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px">&nbsp;&nbsp; Veja aqui! Os Resultados do campeonato de Portugal &nbsp&nbsp;</font></h1></div>
 		<table class="table" style=" border-top-left-radius:10px; border-top-right-radius:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px; ">
 			<thead class="table-dark">
 			<tr>
@@ -77,7 +76,7 @@ background: linear-gradient(90deg, rgba(254,254,254,1) 0%, rgba(255,66,25,1) 10%
 			<tr>
 				<th scope="row" ><font color="black"><b><?php echo $i++?></b></font></th>
 				<td width="30px" align="right" style="padding-right: 0px; padding-left: 0px"><a href="#"><img src="<?php echo $dados['clubeLogoURL']?>" width="25px"; height="25px"></a></td>
-				<td width="160px" align="left" style="padding-left: 8px; padding-top: 14px; padding-bottom: 10px"><a href="clube.php?id=<?php echo $dados['clubeId']?>"><font color="black" size="4px"><b><?php echo $dados['clubeNome']?></b></font></a></td>
+				<td width="160px" align="left" style="padding-left: 8px; padding-top: 14px; padding-bottom: 10px"><a href="Perfil.php?id=<?php echo $dados['clubeId']?>"><font color="black" size="4px"><b><?php echo $dados['clubeNome']?></b></font></a></td>
 				<td align="center"><font color="black" size="4px"><b><?php echo $dados['pontos']?></b></font></td>
 				<td align="center"><font color="black" size="4px"><b><?php echo $dados['nJogos']?></b></font></td>
 				<td align="center"><font color="black" size="4px"><b><?php echo $dados['nVit']?></b></font></td>

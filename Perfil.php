@@ -16,9 +16,6 @@ drawTop(HOME);
         $res=mysqli_query($con,$sql);
         $dados=mysqli_fetch_array($res)
         ?>
-        <head>
-            <title>Soccer Santos | Perfil do  <?php echo $dados['clubeNome'] ?> </title>
-        </head>
 		<div style="margin-bottom: 40px; padding-left: 35%"><img src="<?php echo $dados['clubeLogoURL'] ?>"></div><p><p>
 		<div style="padding-left: 35%">
 			<font size="18px" color="black">Detalhes do clube</font><p><p>
@@ -27,7 +24,7 @@ drawTop(HOME);
 			<font color="black"><b>Fundador do Clube:</b></font><font class="texto">&nbsp&nbsp;&nbsp;<?php echo $dados['clubeFundadores'] ?></font><p>
 			<font color="black"><b>Estádio:</b></font><font class="texto">&nbsp&nbsp;&nbsp;<?php echo $dados['clubeEstadio'] ?></font><p>
 		</div></div>
-<font size="5px" color="black" style="width: 100%"><b><marquee direction="right" behavior="alternate" style="height: 50px" ><div style="position: absolute; top: 20px; height: 50px; vertical-align: middle;">Jogadores do <?php echo $dados['clubeNome']?></div></marquee></b></font>
+<font size="5px" color="black" style="width: 100%"><b><div style="position: absolute; top: 20px; height: 50px; vertical-align: middle;">Jogadores do <?php echo $dados['clubeNome']?></div></b></font>
 	<div style="padding-top: 30px">
 	<div class="TabelaJogadores">
 			<table class="table" style="border-top-left-radius:10px; border-top-right-radius:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px;">
