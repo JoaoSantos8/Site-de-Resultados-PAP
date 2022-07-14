@@ -5,26 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/listaGaleria.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ClubesNovo/Guimarães.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Noticias/noticia3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/background/Background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/background/PerfilDoClube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/confirmaEditaFoto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/confirmaEliminaFoto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/confirmaNovaFoto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/editaGaleria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/eliminaGaleria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/novaFoto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/galeria/andre.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/galeria/sarabia.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/Perfil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/confirmaNovoResultado.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaNovoResultado.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/body.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/config.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/config.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classificacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/classificacao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/inscreveJogador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/inscreveJogador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/listaGaleria.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/listaGaleria.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/galeria.php" beforeDir="false" afterPath="$PROJECT_DIR$/galeria.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/Guima.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/famalicao.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ClubesNovo/famalicao.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jogos.php" beforeDir="false" afterPath="$PROJECT_DIR$/jogos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticias.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planteis.php" beforeDir="false" afterPath="$PROJECT_DIR$/planteis.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,10 +66,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\papJoao2022\admin" />
       <recent name="C:\wamp64\www\.....PAPs2022\papJoao" />
       <recent name="C:\wamp64\www\papJoao2022_07" />
       <recent name="C:\wamp64\www\.....PAPs2022\papJoao\admin" />
-      <recent name="C:\wamp64\www\papJoao2022\admin" />
       <recent name="C:\wamp64\www\PAP" />
     </key>
   </component>
@@ -118,7 +112,7 @@
       <workItem from="1657114211863" duration="3374000" />
       <workItem from="1657270521489" duration="6026000" />
       <workItem from="1657531322633" duration="7097000" />
-      <workItem from="1657818019796" duration="8438000" />
+      <workItem from="1657818019796" duration="12975000" />
     </task>
     <task id="LOCAL-00001" summary="Index Novo">
       <created>1648121546387</created>
@@ -197,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657820634888</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Jogos Feitos">
+      <created>1657834200780</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1657834200781</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +227,7 @@
     <MESSAGE value="trabalho_casa_11" />
     <MESSAGE value="pequenas coisas" />
     <MESSAGE value="BDD clubescompleto" />
-    <option name="LAST_COMMIT_MESSAGE" value="BDD clubescompleto" />
+    <MESSAGE value="Jogos Feitos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jogos Feitos" />
   </component>
 </project>

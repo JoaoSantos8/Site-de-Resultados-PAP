@@ -154,7 +154,6 @@ function drawTop($menu=HOME,$page=''){
             <a class="nav-link <?php echo ($menu==GALERIA?" active ":"");?>" href="listaGaleria.php">Lista Galeria</a>
         </li>
     </ul>
-
     </div>
 
     <?php

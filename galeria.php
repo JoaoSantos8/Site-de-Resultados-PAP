@@ -1,5 +1,6 @@
 <?php
 include_once("includes/body.inc.php");
+global $con;
 drawTop(HOME);
 ?>
     <section class="page-title" style="background-image:url(images/background/background.png);">
@@ -13,216 +14,28 @@ drawTop(HOME);
 	<section class="gallery-page-section">
 		<div class="auto-container" style="padding-top: 30px">
 			<div class="row clearfix">
-				
+                <?php
+                $sql="select * from galeria order by galeriaData desc ";
+                $res=mysqli_query($con,$sql);
+                while($dados=mysqli_fetch_array($res)){
+                    ?>
 				<!--Poject Block Two-->
 				<div class="gallery-block col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box">
 						<figure class="image-box">
-							<img src="images/gallery/benfica.jpg" alt="">
+							<img src="<?php echo $dados['galeriaFotoURL']?>" alt="">
 							<!--Overlay Box-->
 							<div class="overlay-box">
 								<div class="overlay-inner">
 									<div class="content">
-										<a href="images/gallery/benfica.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon flaticon-plus-symbol"></span></a>
+										<a href="<?php echo $dados['galeriaFotoURL']?>" data-fancybox="gallery" data-caption="Data da Foto:&nbsp;&nbsp;<?php echo $dados['galeriaData']?>" class="link"><span class="icon flaticon-plus-symbol"></span></a>
 									</div>
 								</div>
 							</div>
 						</figure>
 					</div>
 				</div>
-				
-				<!--Poject Block Two-->
-				<div class="gallery-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<figure class="image-box">
-							<img src="images/jogadores/DiogoCostaGaleria.jpg" alt="">
-							<!--Overlay Box-->
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<a href="images/jogadores/DiogoCostaGaleria.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon flaticon-plus-symbol"></span></a>
-									</div>
-								</div>
-							</div>
-						</figure>
-					</div>
-				</div>
-				
-				<!--Poject Block Two-->
-				<div class="gallery-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<figure class="image-box">
-							<img src="images/jogadores/PepeGaleria.jpg" alt="">
-							<!--Overlay Box-->
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<a href="images/jogadores/PepeGaleria.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon flaticon-plus-symbol"></span></a>
-									</div>
-								</div>
-							</div>
-						</figure>
-					</div>
-				</div>
-				
-				<!--Poject Block Two-->
-				<div class="gallery-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<figure class="image-box">
-							<img src="images/gallery/sporting.jpg" alt="">
-							<!--Overlay Box-->
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<a href="images/gallery/sporting.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon flaticon-plus-symbol"></span></a>
-									</div>
-								</div>
-							</div>
-						</figure>
-					</div>
-				</div>
-				
-				<!--Poject Block Two-->
-				<div class="gallery-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<figure class="image-box">
-							<img src="images/gallery/porro.jpg" alt="">
-							<!--Overlay Box-->
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<a href="images/gallery/porro.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon flaticon-plus-symbol"></span></a>
-									</div>
-								</div>
-							</div>
-						</figure>
-					</div>
-				</div>
-				
-				<!--Poject Block Two-->
-				<div class="gallery-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<figure class="image-box">
-							<img src="images/gallery/porto.jpg" alt="">
-							<!--Overlay Box-->
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<a href="images/gallery/porto.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon flaticon-plus-symbol"></span></a>
-									</div>
-								</div>
-							</div>
-						</figure>
-					</div>
-				</div>
-				<span id="dots"></span>
-		</div>
-			<div id="more" class="row clearfix">
-				<!--Poject Block Two-->
-				<div class="gallery-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<figure class="image-box">
-							<img src="images/gallery/braga.jpg" alt="">
-							<!--Overlay Box-->
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<a href="images/gallery/braga.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon flaticon-plus-symbol"></span></a>
-									</div>
-								</div>
-							</div>
-						</figure>
-					</div>
-				</div>
-
-				<!--Poject Block Two-->
-				<div class="gallery-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<figure class="image-box">
-							<img src="images/gallery/darwin.jpg" alt="">
-							<!--Overlay Box-->
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<a href="images/gallery/darwin.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon flaticon-plus-symbol"></span></a>
-									</div>
-								</div>
-							</div>
-						</figure>
-					</div>
-				</div>
-
-				<!--Poject Block Two-->
-				<div class="gallery-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<figure class="image-box">
-							<img src="images/gallery/taremi.jpg" alt="">
-							<!--Overlay Box-->
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<a href="images/gallery/taremi.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon flaticon-plus-symbol"></span></a>
-									</div>
-								</div>
-							</div>
-						</figure>
-					</div>
-				</div>
-
-				<!--Poject Block Two-->
-				<div class="gallery-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<figure class="image-box">
-							<img src="images/gallery/andre.jpg" alt="">
-							<!--Overlay Box-->
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<a href="images/gallery/andre.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon flaticon-plus-symbol"></span></a>
-									</div>
-								</div>
-							</div>
-						</figure>
-					</div>
-				</div>
-
-				<!--Poject Block Two-->
-				<div class="gallery-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<figure class="image-box">
-							<img src="images/gallery/matheus.jpg" alt="">
-							<!--Overlay Box-->
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<a href="images/gallery/matheus.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon flaticon-plus-symbol"></span></a>
-									</div>
-								</div>
-							</div>
-						</figure>
-					</div>
-				</div>
-
-				<!--Poject Block Two-->
-				<div class="gallery-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<figure class="image-box">
-							<img src="images/gallery/sarabia.jpg" alt="">
-							<!--Overlay Box-->
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<a href="images/gallery/sarabia.jpg" data-fancybox="gallery" data-caption="" class="link"><span class="icon flaticon-plus-symbol"></span></a>
-									</div>
-								</div>
-							</div>
-						</figure>
-					</div>
-				</div>
-			</p>
-			</div>
-		</div>
-<button onclick="myFunction()" id="myBtn" style="background-color: #FF3300; position: absolute; left: 47.5%; width: 100px; height: 30px; color: white;" ><b>Ver Mais</b></button>
+				<?php } ?>
 	</section>
 	<!--End Gallery Page Section-->
 <?php
