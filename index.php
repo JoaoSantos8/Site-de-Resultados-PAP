@@ -80,7 +80,7 @@
                                     <tr>
                                         <th scope="row"><font color="black"><b><?php echo $i ?></b></font></th>
                                         <td class="1Pos"><img src="<?php echo $dados['clubeLogoURL'] ?>"></td>
-                                        <td><?php echo $mx ?></td>
+                                        <td>jogos</td>
                                         <td>19</td>
                                         <td><?php echo $dados['pontosValor'] ?></td>
                                     </tr>
