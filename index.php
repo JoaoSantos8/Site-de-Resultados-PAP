@@ -3,9 +3,7 @@
     global $con;
     drawTop(HOME);
 ?>
-    <head>
-        <title>Soccer Santos | Página Príncipal</title>
-    </head>
+
 
 	<!--Main Slider-->
 	<section class="main-slider">
@@ -58,31 +56,32 @@
 					<div class="services-block col-lg-4 col-md-6 col-sm-12">
 						<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 							<h3><a href="ClassiCampeonato.html"><font color="#FF3300"><b>Campeonato de Portugal</b></font> </a></h3>
-							<table class="table">
+							<table id="tabelaReduzida" class="table">
 								<thead>
 								<tr>
-									<th scope="col"><font color="black"><b> Posição</b></font></th>
-									<th scope="col"><font color="black"><b>Clube</b></font></th>
-									<th scope="col"><font color="black"><b>Jogos</b></font></th>
-									<th scope="col"><font color="black"><b>Vitórias</b></font></th>
-									<th scope="col"><font color="black"><b>Pts</b></font></th>
+									<th style="width: 25%" scope="col"><font color="black"><b> Posição</b></font></th>
+									<th style="width: 25%" scope="col"><font color="black"><b>Clube</b></font></th>
+									<th style="width: 25%" scope="col"><font color="black"><b>Jogos</b></font></th>
+									<th style="width: 25%" scope="col"><font color="black"><b>Pts</b></font></th>
 								</tr>
 								</thead>
 								<tbody>
                                 <?php
 
-                                $sql="select * from pontos inner join clubes where clubeId=pontosClubeId order by pontosValor desc limit 4";
-                                $sql.="select max(jogoJornada) as mx from jogos";
+                                    $sql="select clubeLogoURL, count(*) as nJogos, sum(pontosValor) as total
+                                        from pontos inner join clubes on clubeId=pontosClubeId
+                                        group by 1
+                                        order by total desc
+                                        limit 5";
                                 $res=mysqli_query($con,$sql);
                                 $i=1;
                                 while($dados=mysqli_fetch_array($res)){
                                     ?>
                                     <tr>
-                                        <th scope="row"><font color="black"><b><?php echo $i ?></b></font></th>
-                                        <td class="1Pos"><img src="<?php echo $dados['clubeLogoURL'] ?>"></td>
-                                        <td>jogos</td>
-                                        <td>19</td>
-                                        <td><?php echo $dados['pontosValor'] ?></td>
+                                        <td class="text-center" ><b><?php echo $i ?></b></td>
+                                        <td class="text-center" class="1Pos"><img style="height: 35px" src="<?php echo $dados['clubeLogoURL'] ?>"></td>
+                                        <td class="text-center"><?php echo $dados['nJogos'] ?></td>
+                                        <td class="text-center"><?php echo $dados['total'] ?></td>
                                     </tr>
                                     <?php
                                     $i++;
@@ -94,40 +93,69 @@
 					</div>
 
 					<!--Taça da liga-->
-					<div class="services-block col-lg-4 col-md-6 col-sm-12">
+					<div class="services-block col-lg-8 col-md-6 col-sm-12">
 						<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-							<h3 align="Center"><a href="jogos.php" title="Clique para ir para os jogos!"><font color="#FF3300"><b>Jogos Campeonato</b></font></a></h3>
-							<div class="text"><table class="table">
-								<thead>
-								<tr>
-									<th colspan="5"><font color="black"; style="font-size: 15px"><b> Rodada 28 de 34 </b></font></th>
-								</tr>
-								</thead>
-								<tbody>
-								<tr>
-									<td align="right" width="50px" style="
-										padding-left: 0px;
-										padding-right: 0px;
-										padding-bottom: 0px;
-										padding-top: 12px;">
-										<img src="images/Clubes/Braga.png"><p><img src="images/Clubes/Benfica.png"></td>
-									<td><font color="black"; style="font-size: 16px"> Braga <p> Benfica </font></td>
-									<td align="right" style="padding-right: 0px"><font COLOR="black">     <br>         </font></td>
-									<td  align="center"><font color="black"><div class="Hora"><b>Sexta, 1 de abril<br>20:15</b></div></font></td>
-								</tr>
-								<tr>
-									<td align="right" width="50px" style="
-										padding-left: 35px;
-										padding-right: 0px;
-										padding-bottom: 0px;
-										padding-top: 12px;">
-										<img src="images/Clubes/aroucaClube.png"><p><img src="images/Clubes/gilvicenteClube.png"></td>
-									<td><font color="black"; style="font-size: 16px"> Arouca <p> Gil Vicente </font></td>
-									<td align="right" style="padding-right: 0px"><font COLOR="black"> 2    <br>    1     </font></td>
-									<td  align="center"><font color="black"><div class="Hora"><b>Sábado, 2 de Abril<br>18:00</b></div></font></td>
-								</tr>
-								</tbody>
-							</table></div>
+							<h3 align="Center"><a href="jogos.php" title="Clique para ir para os jogos!"><font color="#FF3300"><b>Última jornada</b></font></a></h3>
+							<div class="text"><table id="tabelaReduzida" class="table">
+                                    <?php
+                                    $sql="select max(jogoJornada) from jogos";
+                                    $res=mysqli_query($con,$sql);
+                                    $dados=mysqli_fetch_array($res);
+                                    $jornada=$dados[0];
+                                    ?>
+                                    <thead>
+                                    <tr>
+                                        <th colspan="4"><font color="black"><?php echo $jornada."ª jornada"?></font></th>
+                                    </tr>
+                                    <tr>
+                                        <th style="width: 20%" scope="col"><font color="black"><b> Data</b></font></th>
+                                        <th colspan="3" style="width: 75%" scope="col"><font color="black"><b>Jogo</b></font></th>
+                                    </tr>
+
+                                    </thead>
+                                    <tbody>
+                                    <?php
+
+                                    $sql="select jogos.* 
+                                        ,resultadoGolosCasa
+                                        ,resultadoGolosFora
+                                        ,casa.clubeNome as casa
+                                        ,fora.clubeNome as fora
+                                        ,casa.clubeLogoURL as casaURL
+                                        ,fora.clubeLogoURL as foraURL
+                                        from jogos inner join clubes as casa on casa.clubeId=jogoCasaClubeId 
+                                        inner join clubes as fora on fora.clubeId=jogoForaClubeId
+                                        inner join resultados on jogoId=resultadoJogoId
+                                        where jogoJornada=$jornada";
+                                    $res=mysqli_query($con,$sql);
+                                    $i=1;
+                                    while($dados=mysqli_fetch_array($res)){
+                                        $boldCasaIni="";
+                                        $boldCasaFim="";
+                                        $boldForaIni="";
+                                        $boldForaFim="";
+                                        if($dados['resultadoGolosCasa']>$dados['resultadoGolosFora']){
+                                            $boldCasaIni="<strong>";
+                                            $boldCasaFim="</strong>";
+                                        }
+                                        if($dados['resultadoGolosCasa']<$dados['resultadoGolosFora']){
+                                            $boldForaIni="<strong>";
+                                            $boldForaFim="</strong>";
+                                        }
+
+                                        ?>
+                                        <tr>
+                                            <td class="text-center" ><?php echo $dados['jogoData']?></td>
+                                            <td class="text-right" ><?php echo $boldCasaIni.$dados['casa'].$boldCasaFim ?> <img style="height: 20px" src="<?php echo $dados['casaURL']?>"> </td>
+                                            <td style="width: 5%" class="text-center"><?php echo $dados['resultadoGolosCasa']."-".$dados['resultadoGolosFora']?></td>
+                                            <td class="text-left" ><img style="height: 20px" src="<?php echo $dados['foraURL']?>"> <?php echo $boldForaIni.$dados['fora'].$boldForaFim ?></td>
+                                        </tr>
+                                        <?php
+                                        $i++;
+                                    }
+                                    ?>
+                                    </tbody>
+                                </table></div>
 						</div>
 					</div>
 					<!--------------------------------- Noticias ----------------------------------------------->

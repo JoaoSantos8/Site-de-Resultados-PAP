@@ -65,7 +65,8 @@ function drawTop(){
 
         <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
         <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-    </head>
+        <title>Soccer Santos | Resultados de 2021/22</title>
+
     <script>
         function myFunction() {
 
@@ -84,6 +85,12 @@ function drawTop(){
             }
         }
     </script>
+    <style>
+        #tabelaReduzida td, th{
+            padding: 3px !important;
+        }
+    </style>
+    </head>
     <body>
 
     <div class="page-wrapper">
@@ -146,7 +153,7 @@ function drawTop(){
                                 <ul class="navigation clearfix">
                                     <li><a href="planteis.php">Planteis</a></li>
                                     <li><a href="galeria.php">Galeria</a></li>
-                                    <li><a href="ClassiCampeonato.php">Classificação do campeonato</a></li>
+                                    <li><a href="classificacao.php">Classificação do campeonato</a></li>
                                     <li><a href="jogos.php">Jogos</a></li>
                                     <li><a href="noticias.php">Noticias</a></li>
                                 </ul>

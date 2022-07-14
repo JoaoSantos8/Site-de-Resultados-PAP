@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="trabalho_casa_11">
+    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="pequenas coisas">
+      <change afterPath="$PROJECT_DIR$/classificacao.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +56,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\.....PAPs2022\papJoao" />
       <recent name="C:\wamp64\www\papJoao2022_07" />
       <recent name="C:\wamp64\www\.....PAPs2022\papJoao\admin" />
       <recent name="C:\wamp64\www\papJoao2022\admin" />
       <recent name="C:\wamp64\www\PAP" />
-      <recent name="C:\wamp64\www\papJoao2022\admin\includes" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -164,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657531741068</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="pequenas coisas">
+      <created>1657796258768</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1657796258768</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +200,7 @@
     <MESSAGE value="leandro Backoffice base de dados" />
     <MESSAGE value="trabalho_casa_08" />
     <MESSAGE value="trabalho_casa_11" />
-    <option name="LAST_COMMIT_MESSAGE" value="trabalho_casa_11" />
+    <MESSAGE value="pequenas coisas" />
+    <option name="LAST_COMMIT_MESSAGE" value="pequenas coisas" />
   </component>
 </project>
