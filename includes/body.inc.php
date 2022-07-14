@@ -76,11 +76,11 @@ function drawTop(){
 
             if (dots.style.display === "none") {
                 dots.style.display = "inline";
-                btnText.innerHTML = "Read more";
+                btnText.innerHTML = "Ler Mais";
                 moreText.style.display = "none";
             } else {
                 dots.style.display = "none";
-                btnText.innerHTML = "Read less";
+                btnText.innerHTML = "Ler Menos";
                 moreText.style.display = "flex";
             }
         }
@@ -88,6 +88,10 @@ function drawTop(){
     <style>
         #tabelaReduzida td, th{
             padding: 3px !important;
+        }
+        #tabelaJogos td, th{
+            padding: 10px !important;
+            font-size: 18px; !important;
         }
     </style>
     </head>

@@ -5,15 +5,15 @@ drawTop(HOME);
 ?>
 
     <!--Page Title-->
-    <section class="page-title" style="background-image:url(images/background/NoticiasBack.png)">
+    <section class="page-title" style="background-image:url(images/background/background.png);">
         <div class="auto-container">
-            <h1></h1>
+            <h1>Detalhes da Noticia</h1>
         </div>
     </section>
     <!--End Page Title-->
     <section class="services-section-two">
         <div class="auto-container">
-            <!--------------------------------- Noticias ----------------------------------------------->
+            <!--------------------------------- Noticia ----------------------------------------------->
             <div class="lower-section" style="padding-top: 10px;">
                 <div class="row clearfix" style=" width: 1500px;" align="center">
                     <?php

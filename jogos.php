@@ -3,41 +3,75 @@ include_once("includes/body.inc.php");
 global $con;
 drawTop(HOME);
 ?>
-    <head>
-        <title>Soccer Santos | Noticias</title>
-    </head>
-	<!--Page Title-->
-    <section class="page-title" style="background-image:url(images/background/NoticiasBack.png)">
-    	<div class="auto-container">
-        	<h1></h1>
+    <section class="page-title" style="background-image:url(images/background/background.png);">
+        <div class="auto-container">
+            <h1>Jogos do Campeonato</h1>
         </div>
     </section>
     <!--End Page Title-->
 	<section class="services-section-two">
 		<div class="auto-container">
-            <!--------------------------------- Noticias ----------------------------------------------->
-            <font size="20px" color="#FF3300" style="width: 100%"><b><marquee direction="right" behavior="alternate" style="height: 70px"><div style="position: absolute; top: 20px;">J<font color="black">o</font>g<font color="black">o</font>s</div></marquee></b></font>
-            <div class="lower-section" style="padding-top: 10px;">
-                <div class="row clearfix" style=" width: 1500px;" align="center">
-                    <?php
-                    $sql="select * from jogos";
-                    $sql="select * from resultados";
-                    $res=mysqli_query($con,$sql);
-                    while($dados=mysqli_fetch_array($res)){
-                    ?>
-                        <a href="jogos.php?id=<?php echo $dados['jogoId']?>">
-                            <figure class="figure" style="width: 400px; border: 4px solid white; background-color: white; border-top-left-radius:10px; border-top-right-radius:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px;" >
-                                <figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-bottom: 4px solid #FF3300"><font color="black"><b class="text-uppercase"><?php echo $dados['jogoCasaClubeId']?></b></font>-<font color="black"><b class="text-uppercase"><?php echo $dados['jogoForaClubeId']?></b></font></figcaption>
-                                <img src="<?php echo $dados['noticiaFotoURL']?>" class="figure-img img-fluid rounded" style="padding-top: 5px;">
-                                <figcaption class="figure-caption" style=" padding-left: 5px; padding-right: 5px; padding-bottom: 7px; padding-top: 9px; border-top: 4px solid #FF3300"><font color="black"><?php echo resumo($dados['noticiaDescricao'],100)?></font></figcaption>
-                            </figure>
-                        </a>
-                    <?php
-                    }
-                    ?>
+            <div class="lower-section"  style="padding-top: 10px;">
+                <div class="text" ><table id="tabelaJogos" class="table">
+                        <?php
+                        $sql="select max(jogoJornada) from jogos";
+                        $res=mysqli_query($con,$sql);
+                        $dados=mysqli_fetch_array($res);
+                        $jornada=$dados[0];
+                        ?>
+                        <thead>
+                        <tr>
+                            <th colspan="4"><font color="black"><?php echo $jornada."ª jornada"?></font></th>
+                        </tr>
+                        <tr>
+                            <th style="width: 20%" scope="col"><font color="black"><b> Data</b></font></th>
+                            <th colspan="3" style="width: 75%" scope="col"><font color="black"><b>Jogo</b></font></th>
+                        </tr>
 
+                        </thead>
+                        <tbody>
+                        <?php
 
-                </div>
+                        $sql="select jogos.* 
+                                        ,resultadoGolosCasa
+                                        ,resultadoGolosFora
+                                        ,casa.clubeNome as casa
+                                        ,fora.clubeNome as fora
+                                        ,casa.clubeLogoURL as casaURL
+                                        ,fora.clubeLogoURL as foraURL
+                                        from jogos inner join clubes as casa on casa.clubeId=jogoCasaClubeId 
+                                        inner join clubes as fora on fora.clubeId=jogoForaClubeId
+                                        inner join resultados on jogoId=resultadoJogoId
+                                        where jogoJornada=$jornada";
+                        $res=mysqli_query($con,$sql);
+                        $i=1;
+                        while($dados=mysqli_fetch_array($res)){
+                            $boldCasaIni="";
+                            $boldCasaFim="";
+                            $boldForaIni="";
+                            $boldForaFim="";
+                            if($dados['resultadoGolosCasa']>$dados['resultadoGolosFora']){
+                                $boldCasaIni="<font color='black'><strong>";
+                                $boldCasaFim="</strong></font>";
+                            }
+                            if($dados['resultadoGolosCasa']<$dados['resultadoGolosFora']){
+                                $boldForaIni="<font color='black'><strong>";
+                                $boldCasaFim="</strong></font>";
+                            }
+
+                            ?>
+                            <tr>
+                                <td class="text-center" ><?php echo $dados['jogoData']?></td>
+                                <td class="text-right" ><?php echo $boldCasaIni.$dados['casa'].$boldCasaFim ?> <img style="height: 40px" src="<?php echo $dados['casaURL']?>"> </td>
+                                <td style="width: 5%" class="text-center"><?php echo $dados['resultadoGolosCasa']."-".$dados['resultadoGolosFora']?></td>
+                                <td class="text-left" ><img style="height: 40px" src="<?php echo $dados['foraURL']?>"> <?php echo $boldForaIni.$dados['fora'].$boldForaFim ?></td>
+                            </tr>
+                            <?php
+                            $i++;
+                        }
+                        ?>
+                        </tbody>
+                    </table></div>
 
 
             </div>

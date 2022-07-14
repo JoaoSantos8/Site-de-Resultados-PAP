@@ -133,7 +133,7 @@ function drawTop($menu=HOME,$page=''){
     <div class="container w-100  " style="border: solid 1px #888">
     <div id="topo" class="p-2" >
     <img style="float:left; margin-right: 20px" src="images/logo.jpg">
-    <h1 class="ml-5" style="color: #ff2d00">Site de resultados</h1>
+    <h1 class="ml-6" style="color: #ff2d00">Site de resultados</h1>
     <ul class="nav nav-pills nav-justified ">
         <li class="nav-item">
             <a class="nav-link <?php echo ($menu==HOME?" active ":"");?>" href="index.php">Pagina principal</a>
@@ -149,6 +149,9 @@ function drawTop($menu=HOME,$page=''){
         </li>
         <li class="nav-item">
             <a class="nav-link <?php echo ($menu==NOTICIAS?" active ":"");?>" href="listaNoticias.php">Lista Noticias</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <?php echo ($menu==GALERIA?" active ":"");?>" href="listaGaleria.php">Lista Galeria</a>
         </li>
     </ul>
 

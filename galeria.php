@@ -2,21 +2,15 @@
 include_once("includes/body.inc.php");
 drawTop(HOME);
 ?>
-    <head>
-        <title>Soccer Santos | Galeria</title>
-    </head>
-	<!--Page Title-->
-    <section class="page-title" style="background-image:url(images/background/GaleriaBkg.png)">
-    	<div class="auto-container">
-			<h1><font color="white"></font></h1>
-			<div class="text" style="height: 80px"></div>
+    <section class="page-title" style="background-image:url(images/background/background.png);">
+        <div class="auto-container">
+            <h1>Fotos do campeonato</h1>
         </div>
     </section>
     <!--End Page Title-->
 	
 	<!--Gallery Page Section-->
 	<section class="gallery-page-section">
-		<font size="20px" color="#FF3300" style="width: 100%"><b><marquee direction="right" behavior="alternate" style="height: 70px"><div style="position: absolute; top: 20px;"> G<font color="black">a</font>l<font color="black">e</font>r<font color="black">i</font>a</div></marquee></b></font>
 		<div class="auto-container" style="padding-top: 30px">
 			<div class="row clearfix">
 				

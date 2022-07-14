@@ -4,9 +4,9 @@ global $con;
 drawTop(HOME);
 ?>
 	<!--Page Title-->
-    <section class="page-title" style="background-image:url(images/background/12.jpg)">
-    	<div class="auto-container">
-        	<h1>Plantéis</h1>
+    <section class="page-title" style="background-image:url(images/background/background.png);">
+        <div class="auto-container">
+            <h1>Plateis do campeonato</h1>
         </div>
     </section>
     <!--End Page Title-->
@@ -59,7 +59,6 @@ drawTop(HOME);
 				<!-------------------------------------------------------------------------------------------------------------------------- -->
 			</div>
 		</div>
-		<button onclick="myFunction()" id="myBtn" style="background-color: #FF3300; position: absolute; left: 47.5%; width: 100px; height: 30px; color: white;">Ver Mais</button>
 	</section>
 	<!--End Services Section Two-->
 

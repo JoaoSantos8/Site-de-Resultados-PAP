@@ -8,4 +8,5 @@ define("CLUBES",2);
 define("JOGADORES",3);
 define("JOGOS",4);
 define("NOTICIAS",5);
+define("GALERIA",6);
 ?>

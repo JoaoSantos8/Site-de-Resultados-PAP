@@ -3,20 +3,16 @@ include_once("includes/body.inc.php");
 global $con;
 drawTop(HOME);
 ?>
-    <head>
-        <title>Soccer Santos | Noticias</title>
-    </head>
-	<!--Page Title-->
-    <section class="page-title" style="background-image:url(images/background/NoticiasBack.png)">
-    	<div class="auto-container">
-        	<h1></h1>
+    	<!--Page Title-->
+    <section class="page-title" style="background-image:url(images/background/background.png);">
+        <div class="auto-container">
+            <h1>Noticias do Campeonato</h1>
         </div>
     </section>
     <!--End Page Title-->
 	<section class="services-section-two">
 		<div class="auto-container">
             <!--------------------------------- Noticias ----------------------------------------------->
-            <font size="20px" color="#FF3300" style="width: 100%"><b><marquee direction="right" behavior="alternate" style="height: 70px"><div style="position: absolute; top: 20px;"><font color="black">N</font>o<font color="black">t</font>i<font color="black">c</font>i<font color="black">a</font>s</div></marquee></b></font>
             <div class="lower-section" style="padding-top: 10px;">
                 <div class="row clearfix" style=" width: 1500px;" align="center">
                     <?php

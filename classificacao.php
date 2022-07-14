@@ -45,15 +45,14 @@ order by pontos desc
 $result=mysqli_query($con,$sql);
 ?>
 
-    <section class="page-title" style="background-image:url(images/background/CampBack.jpg)">
+    <section class="page-title" style="background-image:url(images/background/background.png);">
         <div class="auto-container">
-            <h1></h1>
+            <h1>Classificação do Campeonato</h1>
         </div>
     </section>
 	<!--Services page Section-->
 	<section class="services-page-section" style="padding-top: 40px; padding-bottom: 20px;padding-left: 80px;padding-right: 80px;">
-			<div style="padding-bottom: 40px"><div style="padding-bottom: 40px"><h1><font color="black" style="padding-left: 250px; padding-right: 310px;">Campeonato de Portugal</font></h1></div>
-				<h1><font color="white"  style=" border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px">&nbsp;&nbsp; Veja aqui! Os Resultados do campeonato de Portugal &nbsp&nbsp;</font></h1></div>
+			<h1><font color="white"  style=" border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px">&nbsp;&nbsp; Veja aqui! Os Resultados do campeonato de Portugal &nbsp&nbsp;</font></h1></div>
 		<table class="table" style=" border-top-left-radius:10px; border-top-right-radius:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px; ">
 			<thead class="table-dark">
 			<tr>
