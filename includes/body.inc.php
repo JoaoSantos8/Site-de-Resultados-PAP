@@ -38,20 +38,16 @@ function isStop($char){
         case '!':
         case '?':
         case ':':
+$con=mysqli_connect(HOST,USER,PWD,DATABASE);
+function isStop($char){
+    switch ($char){
+        case ' ':
+        case ',':
+        case '!':
+        case '?':
+        case ':':
 
-        case '.':return(1);
-    }
-    return(0);
-}
-function resumo($str, $num){
-    if($num>strlen($str))
-        return($str);
-    while(!isStop($str[$num])){
-        $num++;
-    }
-    return(substr($str,0,$num)." (...)");
-}
-function drawTop(){
+function top(){
     ?>
 
     <!DOCTYPE html>
@@ -60,6 +56,7 @@ function drawTop(){
     <!--  46:37  -->
     <head>
         <meta charset="utf-8">
+        <title>Soccer Santos | Página Príncipal</title>
         <!-- Stylesheets -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
@@ -155,8 +152,7 @@ function drawTop(){
                                 <ul class="navigation clearfix">
                                     <li><a href="planteis.php">Planteis</a></li>
                                     <li><a href="galeria.php">Galeria</a></li>
-                                    <li><a href="ClassiCampeonato.php">Classificação do campeonato</a></li>
-                                    <li><a href="jogos.php">Jogos</a></li>
+                                    <li><a href="classificacao.php">Classificação do campeonato</a></li>
                                     <li><a href="noticias.php">Noticias</a></li>
                                 </ul>
                             </div>
@@ -196,8 +192,7 @@ function drawTop(){
                             <ul class="navigation clearfix">
                                 <li><a href="planteis.php">Planteis</a></li>
                                 <li><a href="galeria.php">Galeria</a></li>
-                                <li><a href="ClassiCampeonato.php">Classificação do campeonato</a></li>
-                                <li><a href="jogos.php">Jogos</a></li>
+                                <li><a href="classificacao.php">Classificação do campeonato</a></li>
                                 <li><a href="noticias.php">Noticias</a></li>
                             </ul>
                         </div>
@@ -214,7 +209,7 @@ function drawTop(){
     <!--End Main Header -->
 <?php
 }
-function drawBottom(){
+function bottom(){
     ?>
     <!--Clients Section-->
     <section class="clients-section" style="background-image:url(images/background/1.jpg)">
@@ -254,7 +249,7 @@ function drawBottom(){
                             <div class="footer-column col-md-6 col-sm-6 col-xs-12">
                                 <div class="footer-widget logo-widget">
                                     <div class="logo">
-                                        <a href="index.php"><img src="images/footer-logo.png" alt="" /></a>
+                                        <a href="index-2.html"><img src="images/footer-logo.png" alt="" /></a>
                                     </div>
                                     <!--<div class="text">This is Photoshop's version  of Lorem]psukroin gravida nibh vel velit auctor aliquet.Aenean sollicitudin, lorem quis bibendum auctor</div>
                                     --><ul class="social-icon-one">
@@ -278,10 +273,9 @@ function drawBottom(){
                                 <div class="footer-widget footer-links">
                                     <h2>Links úteis</h2>
                                     <ul class="links">
-                                        <li><a href="ClassiCampeonato.php">CLassificações</a></li>
-                                        <li><a href="planteis.php">Planteis</a></li>
-                                        <li><a href="jogos.php">Jogos</a></li>
-                                        <li><a href="noticias.php">Noticias</a></li>
+                                        <li><a href="ClassiCampeonato.html">CLassificações</a></li>
+                                        <li><a href="Planteis.html">Planteis</a></li>
+                                        <li><a href="Noticias.html">Noticias</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -302,12 +296,11 @@ function drawBottom(){
                     <!--Nav Column-->
                     <div class="nav-column col-lg-6 col-md-12 col-sm-12">
                         <ul class="footer-nav">
-                            <li><a href="index.php">Home</a></li>
-                            <li><a href="planteis.php">Planteis</a></li>
-                            <li><a href="galeria.php">Galeria</a></li>
-                            <li><a href="ClassiCampeonato.php">Classificações</a></li>
-                            <li><a href="jogos.php">Jogos</a></li>
-                            <li><a href="noticias.php">Noticias</a></li>
+                            <li><a href="index._oldhtml">Home</a></li>
+                            <li><a href="Planteis.html">Planteis</a></li>
+                            <li><a href="galeria.html">Galeria</a></li>
+                            <li><a href="ClassiCampeonato.html">Classificações</a></li>
+                            <li><a href="Noticias.html">Noticias</a></li>
                         </ul>
                     </div>
 

@@ -2,7 +2,7 @@
 
     include_once("includes/body.inc.php");
     global $con;
-    drawTop(Noticias );
+    drawTop(NOTICIAS );
     $sql="select * from Noticias";
     $result=mysqli_query($con,$sql);
 

@@ -2,7 +2,7 @@
 
 include_once ("includes/body.inc.php");
 global $con;
-drawTop(Noticias);
+drawTop(NOTICIAS);
 ?>
 <div class="container w-100">
     <h1>Nova Noticia</h1>

@@ -3,7 +3,7 @@
 include_once ("includes/body.inc.php");
 global $con;
 $id=intval($_GET['id']);
-drawTop(Noticias);
+drawTop(NOTICIAS);
 $sql="select * from noticias where noticiaId=$id";
 $result=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($result);

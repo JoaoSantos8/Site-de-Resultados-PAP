@@ -16,7 +16,7 @@ drawTop(HOME);
 	<section class="services-section-two">
 		<div class="auto-container">
             <!--------------------------------- Noticias ----------------------------------------------->
-            <font size="20px" color="#FF3300" style="width: 100%"><b><marquee direction="right" behavior="alternate" style="height: 70px"><div style="position: absolute; top: 20px;"><font color="black">N</font>o<font color="black">t</font>i<font color="black">c</font>i<font color="black">a</font>s</div></marquee></b></font>
+            <div style="padding-top: 60px; padding-bottom: 30px"><font size="20px" color="#FF3300"><b style="margin-left: 525px"> Notícias </b></font></div>
             <div class="lower-section" style="padding-top: 10px;">
                 <div class="row clearfix" style=" width: 1500px;" align="center">
                     <?php
