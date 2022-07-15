@@ -6,7 +6,7 @@ drawTop(HOME);
 	<!--Page Title-->
     <section class="page-title" style="background-image:url(images/background/background.png);">
         <div class="auto-container">
-            <h1>Plateis do campeonato</h1>
+            <h1>Planteis do campeonato</h1>
         </div>
     </section>
     <!--End Page Title-->

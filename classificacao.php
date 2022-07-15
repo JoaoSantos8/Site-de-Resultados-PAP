@@ -45,15 +45,13 @@ order by pontos desc
 $result=mysqli_query($con,$sql);
 ?>
 
-    <section class="page-title" style="background-image:url(images/background/background.png);">
+    <section class="page-title" style="background-image:url(images/background/background.png); padding-bottom: 30px">
         <div class="auto-container">
             <h1>Classificação do Campeonato</h1>
         </div>
     </section>
-	<!--Services page Section-->
-	<section class="services-page-section" style="padding-top: 40px; padding-bottom: 20px;padding-left: 80px;padding-right: 80px;">
-			<h1><font color="white"  style=" border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px">&nbsp;&nbsp; Veja aqui! Os Resultados do campeonato de Portugal &nbsp&nbsp;</font></h1></div>
-		<table class="table" style=" border-top-left-radius:10px; border-top-right-radius:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px; ">
+
+		<table class="table" style=" border-top-left-radius:10px; border-top-right-radius:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px;margin-top: 60px;">
 			<thead class="table-dark">
 			<tr>
 				<th scope="col" style=" border-top-left-radius:10px; border-top: 0px">Posição</th>

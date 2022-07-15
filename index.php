@@ -200,7 +200,7 @@
                 while($dados=mysqli_fetch_array($res)){
                 ?>
             <div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-                <a href="perfil.php?id=<?php echo $dados['clubeId']?>" ><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <a href="Perfil.php?id=<?php echo $dados['clubeId']?>" ><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="icon-box">
                             <img src="<?php echo $dados['clubeLogoURL']?>">
                         </div>
@@ -233,6 +233,7 @@
             <!-------------------------------------------------------------------------------------------------------------------------- -->
         </div>
 	</div>
+    <button onclick="myFunction()" id="myBtn" style="background-color: #FF3300; position: absolute; left: 47.5%; width: 100px; height: 30px; color: white;" ><b>Ver Mais</b></button>
 </section>
 <!--End Services Section Two-->
 

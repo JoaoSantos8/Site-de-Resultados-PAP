@@ -4,12 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/galeria2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Jogadores/img04.jpg" afterDir="false" />
+    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="classificacao">
+      <change afterPath="$PROJECT_DIR$/images/ClubesNovo/Guima.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/gerirJogadores.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/gerirJogadores.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/inscreveJogador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/inscreveJogador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jogadores.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jogadores.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/Perfil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classificacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/classificacao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/galeria.php" beforeDir="false" afterPath="$PROJECT_DIR$/galeria.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ClubesNovo/Guimarães.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Noticias/Matheus Nunes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/galeria/andre.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/galeria/sarabia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gallery/andre.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gallery/benfica.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gallery/braga.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gallery/darwin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gallery/matheus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gallery/porro.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gallery/porto.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gallery/sarabia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gallery/sporting.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gallery/taremi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index._oldhtml" beforeDir="false" afterPath="$PROJECT_DIR$/index_old.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planteis.php" beforeDir="false" afterPath="$PROJECT_DIR$/planteis.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

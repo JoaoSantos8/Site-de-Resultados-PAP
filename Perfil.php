@@ -38,7 +38,7 @@ drawTop(HOME);
 				</thead>
 				<tbody>
                 <?php
-                $sql="select * from jogadores inner join jogadorclubes where jogadorId=jogadorClubeJogadorId";
+                $sql="select * from jogadores //inner join jogadorclubes where jogadorId=jogadorClubeJogadorId";
                 $res=mysqli_query($con,$sql);
                 while($dados=mysqli_fetch_array($res)){
                     ?>
