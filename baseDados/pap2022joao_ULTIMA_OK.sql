@@ -11,7 +11,7 @@
  Target Server Version : 50721
  File Encoding         : 65001
 
- Date: 15/07/2022 15:43:13
+ Date: 15/07/2022 15:49:25
 */
 
 SET NAMES utf8mb4;
@@ -125,47 +125,47 @@ CREATE TABLE `jogadorclubes`  (
 -- ----------------------------
 -- Records of jogadorclubes
 -- ----------------------------
-INSERT INTO `jogadorclubes` VALUES (12, 107, 1, 77);
-INSERT INTO `jogadorclubes` VALUES (12, 108, 1, 99);
-INSERT INTO `jogadorclubes` VALUES (12, 109, 1, 1);
-INSERT INTO `jogadorclubes` VALUES (12, 110, 1, 45);
-INSERT INTO `jogadorclubes` VALUES (12, 111, 1, 2);
-INSERT INTO `jogadorclubes` VALUES (12, 112, 1, 34);
-INSERT INTO `jogadorclubes` VALUES (12, 113, 1, 4);
-INSERT INTO `jogadorclubes` VALUES (12, 114, 1, 72);
-INSERT INTO `jogadorclubes` VALUES (12, 115, 1, 5);
-INSERT INTO `jogadorclubes` VALUES (12, 116, 1, 30);
-INSERT INTO `jogadorclubes` VALUES (12, 117, 1, 89);
-INSERT INTO `jogadorclubes` VALUES (12, 118, 1, 91);
-INSERT INTO `jogadorclubes` VALUES (12, 119, 1, 97);
-INSERT INTO `jogadorclubes` VALUES (12, 120, 1, 57);
-INSERT INTO `jogadorclubes` VALUES (12, 121, 1, 3);
-INSERT INTO `jogadorclubes` VALUES (12, 122, 1, 22);
-INSERT INTO `jogadorclubes` VALUES (12, 123, 1, 76);
-INSERT INTO `jogadorclubes` VALUES (12, 124, 1, 28);
-INSERT INTO `jogadorclubes` VALUES (12, 125, 1, 61);
-INSERT INTO `jogadorclubes` VALUES (12, 126, 1, 68);
-INSERT INTO `jogadorclubes` VALUES (12, 127, 1, 21);
-INSERT INTO `jogadorclubes` VALUES (12, 128, 1, 11);
-INSERT INTO `jogadorclubes` VALUES (12, 129, 1, 55);
-INSERT INTO `jogadorclubes` VALUES (12, 130, 1, 20);
-INSERT INTO `jogadorclubes` VALUES (12, 131, 1, 49);
-INSERT INTO `jogadorclubes` VALUES (12, 132, 1, 83);
-INSERT INTO `jogadorclubes` VALUES (12, 133, 1, 17);
-INSERT INTO `jogadorclubes` VALUES (12, 134, 1, 47);
-INSERT INTO `jogadorclubes` VALUES (12, 135, 1, 10);
-INSERT INTO `jogadorclubes` VALUES (12, 136, 1, 23);
-INSERT INTO `jogadorclubes` VALUES (12, 137, 1, 39);
-INSERT INTO `jogadorclubes` VALUES (12, 138, 1, 9);
-INSERT INTO `jogadorclubes` VALUES (12, 139, 1, 14);
-INSERT INTO `jogadorclubes` VALUES (12, 140, 1, 15);
-INSERT INTO `jogadorclubes` VALUES (12, 141, 1, 18);
-INSERT INTO `jogadorclubes` VALUES (12, 142, 1, 88);
-INSERT INTO `jogadorclubes` VALUES (12, 143, 1, 95);
-INSERT INTO `jogadorclubes` VALUES (12, 144, 1, 7);
-INSERT INTO `jogadorclubes` VALUES (12, 145, 1, 31);
-INSERT INTO `jogadorclubes` VALUES (12, 146, 1, 96);
-INSERT INTO `jogadorclubes` VALUES (12, 147, 1, 27);
+INSERT INTO `jogadorclubes` VALUES (12, 148, 1, 77);
+INSERT INTO `jogadorclubes` VALUES (12, 149, 1, 99);
+INSERT INTO `jogadorclubes` VALUES (12, 150, 1, 1);
+INSERT INTO `jogadorclubes` VALUES (12, 151, 1, 45);
+INSERT INTO `jogadorclubes` VALUES (12, 152, 1, 2);
+INSERT INTO `jogadorclubes` VALUES (12, 153, 1, 34);
+INSERT INTO `jogadorclubes` VALUES (12, 154, 1, 4);
+INSERT INTO `jogadorclubes` VALUES (12, 155, 1, 72);
+INSERT INTO `jogadorclubes` VALUES (12, 156, 1, 5);
+INSERT INTO `jogadorclubes` VALUES (12, 157, 1, 30);
+INSERT INTO `jogadorclubes` VALUES (12, 158, 1, 89);
+INSERT INTO `jogadorclubes` VALUES (12, 159, 1, 91);
+INSERT INTO `jogadorclubes` VALUES (12, 160, 1, 97);
+INSERT INTO `jogadorclubes` VALUES (12, 161, 1, 57);
+INSERT INTO `jogadorclubes` VALUES (12, 162, 1, 3);
+INSERT INTO `jogadorclubes` VALUES (12, 163, 1, 22);
+INSERT INTO `jogadorclubes` VALUES (12, 164, 1, 76);
+INSERT INTO `jogadorclubes` VALUES (12, 165, 1, 28);
+INSERT INTO `jogadorclubes` VALUES (12, 166, 1, 61);
+INSERT INTO `jogadorclubes` VALUES (12, 167, 1, 68);
+INSERT INTO `jogadorclubes` VALUES (12, 168, 1, 21);
+INSERT INTO `jogadorclubes` VALUES (12, 169, 1, 11);
+INSERT INTO `jogadorclubes` VALUES (12, 170, 1, 55);
+INSERT INTO `jogadorclubes` VALUES (12, 171, 1, 20);
+INSERT INTO `jogadorclubes` VALUES (12, 172, 1, 49);
+INSERT INTO `jogadorclubes` VALUES (12, 173, 1, 83);
+INSERT INTO `jogadorclubes` VALUES (12, 174, 1, 17);
+INSERT INTO `jogadorclubes` VALUES (12, 175, 1, 47);
+INSERT INTO `jogadorclubes` VALUES (12, 176, 1, 10);
+INSERT INTO `jogadorclubes` VALUES (12, 177, 1, 23);
+INSERT INTO `jogadorclubes` VALUES (12, 178, 1, 39);
+INSERT INTO `jogadorclubes` VALUES (12, 179, 1, 9);
+INSERT INTO `jogadorclubes` VALUES (12, 180, 1, 14);
+INSERT INTO `jogadorclubes` VALUES (12, 181, 1, 15);
+INSERT INTO `jogadorclubes` VALUES (12, 182, 1, 18);
+INSERT INTO `jogadorclubes` VALUES (12, 183, 1, 88);
+INSERT INTO `jogadorclubes` VALUES (12, 184, 1, 95);
+INSERT INTO `jogadorclubes` VALUES (12, 185, 1, 7);
+INSERT INTO `jogadorclubes` VALUES (12, 186, 1, 31);
+INSERT INTO `jogadorclubes` VALUES (12, 187, 1, 96);
+INSERT INTO `jogadorclubes` VALUES (12, 188, 1, 27);
 
 -- ----------------------------
 -- Table structure for jogadores
@@ -177,52 +177,52 @@ CREATE TABLE `jogadores`  (
   `jogadorFotoURL` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `jogadorDataNascimento` date NOT NULL,
   PRIMARY KEY (`jogadorId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 148 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 189 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of jogadores
 -- ----------------------------
-INSERT INTO `jogadores` VALUES (107, 'Helton Leite', 'images/168622_20210901182311_helton_leite.png', '1991-06-13');
-INSERT INTO `jogadores` VALUES (108, 'Odysseas Vlachodimos', 'images/197106_20210901182629_odysseas_vlachodimos.png', '1994-03-19');
-INSERT INTO `jogadores` VALUES (109, 'Mile Svilar', 'images/423229_20210905103238_mile_svilar.png', '2000-05-09');
-INSERT INTO `jogadores` VALUES (110, 'LÃ©o Kokubo', 'images/696613_20201001181257_leo_kokubo.png', '2001-04-15');
-INSERT INTO `jogadores` VALUES (111, 'Gilberto', 'images/134600_20210905115853_gilberto.png', '1993-03-04');
-INSERT INTO `jogadores` VALUES (112, 'AndrÃ© Almeida', 'images/74377_20210905120428_andre_almeida.png', '1991-01-18');
-INSERT INTO `jogadores` VALUES (113, 'Lucas VerÃ­ssimo', 'images/491981_20210905113913_lucas_verissimo.png', '1996-07-15');
-INSERT INTO `jogadores` VALUES (114, 'TomÃ¡s AraÃºjo', 'images/520353_20210905120712_tomas_araujo.png', '2002-02-25');
-INSERT INTO `jogadores` VALUES (115, 'Jan Vertonghen', 'images/32809_20210905113512_jan_vertonghen.png', '1987-02-06');
-INSERT INTO `jogadores` VALUES (116, 'Nicolï¿½s Otamendi', 'images/67588_20210905114704_nicolas_otamendi.png', '1988-03-06');
-INSERT INTO `jogadores` VALUES (117, 'Pedro ï¿½lvaro', 'images/372435_20220706141246_pedro_alvaro.jpg', '2000-07-20');
-INSERT INTO `jogadores` VALUES (118, 'Morato', 'images/681311_20210905114928_morato.png', '2001-01-10');
-INSERT INTO `jogadores` VALUES (119, 'Ferro', 'images/214368_20220217120748_ferro.jpg', '1997-01-03');
-INSERT INTO `jogadores` VALUES (120, 'Sandro Cruz', 'images/423979_20220127152520_sandro_cruz.jpg', '2001-05-21');
-INSERT INTO `jogadores` VALUES (121, 'Alex Grimaldo', 'images/214579_20210901225257_alex_grimaldo.png', '1996-06-14');
-INSERT INTO `jogadores` VALUES (122, 'Valentino Lï¿½zaro', 'images/287013_20210905114403_valentino_lazaro.png', '1996-02-26');
-INSERT INTO `jogadores` VALUES (123, 'Martim Neto', 'images/586713_20201002190141_martim_neto.png', '2003-02-17');
-INSERT INTO `jogadores` VALUES (124, 'Julian Weigl', 'images/395624_20210901185757_julian_weigl.png', '1996-07-02');
-INSERT INTO `jogadores` VALUES (125, 'Florentino Luï¿½s', 'images/166229_20220525095239_florentino_luis.jpg', '2000-06-22');
-INSERT INTO `jogadores` VALUES (126, 'Rafael Brito', 'images/503779_20220629105259_rafael_brito.jpg', '2002-01-20');
-INSERT INTO `jogadores` VALUES (127, 'Pizzi', 'images/51004_20220208143951_pizzi.jpg', '1990-06-27');
-INSERT INTO `jogadores` VALUES (128, 'Soualiho Meitï¿½', 'images/197672_20210901184214_soualiho_meite.png', '1994-06-25');
-INSERT INTO `jogadores` VALUES (129, 'Paulo Bernardo', 'images/489055_20210901185147_paulo_bernardo.png', '2002-04-14');
-INSERT INTO `jogadores` VALUES (130, 'Joï¿½o Mï¿½rio', 'images/56560_20210901183812_joao_mario.png', '1993-04-02');
-INSERT INTO `jogadores` VALUES (131, 'Adel Taarabt', 'images/29772_20210905104018_adel_taarabt.png', '1989-04-04');
-INSERT INTO `jogadores` VALUES (132, 'Gedson Fernandes', 'images/372419_20220703021214_gedson_fernandes.jpg', '1999-05-26');
-INSERT INTO `jogadores` VALUES (133, 'Diogo Gonï¿½alves', 'images/155278_20210905115505_diogo_goncalves.png', '1997-07-21');
-INSERT INTO `jogadores` VALUES (134, 'Tiago Gouveia', 'images/155479_20200919143634_tiago_gouveia.png', '2001-02-09');
-INSERT INTO `jogadores` VALUES (135, 'Luca Waldschmidt', 'images/330694_20210830190738_luca_waldschmidt.png', '1996-04-28');
-INSERT INTO `jogadores` VALUES (136, 'Nemanja Radonjic', 'images/421026_20220707103141_nemanja_radonjic.jpg', '1996-06-09');
-INSERT INTO `jogadores` VALUES (137, 'Henrique Araï¿½jo', 'images/238031_20210901225532_henrique_araujo.png', '2002-03-06');
-INSERT INTO `jogadores` VALUES (138, 'Darwin Nï¿½ï¿½ez', 'images/606157_20220614191628_darwin_nunez.png', '1999-05-14');
-INSERT INTO `jogadores` VALUES (139, 'Haris Seferovic', 'images/102379_20210901225015_haris_seferovic.png', '1992-04-14');
-INSERT INTO `jogadores` VALUES (140, 'Roman Yaremchuk', 'images/414421_20210905103720_roman_yaremchuk.png', '1996-04-17');
-INSERT INTO `jogadores` VALUES (141, 'Rodrigo Pinho', 'images/392306_20210905103457_rodrigo_pinho.png', '1991-02-07');
-INSERT INTO `jogadores` VALUES (142, 'Gonï¿½alo Ramos', 'images/428376_20210901185536_goncalo_ramos.png', '2001-07-21');
-INSERT INTO `jogadores` VALUES (143, 'Carlos Vinï¿½cius', 'images/520581_20211224202305_carlos_vinicius.jpg', '1995-05-21');
-INSERT INTO `jogadores` VALUES (144, 'Everton', 'images/392484_20220620191344_everton.png', '1996-01-22');
-INSERT INTO `jogadores` VALUES (145, 'Gil Dias', 'images/368221_20210901183344_gil_dias.png', '1997-03-11');
-INSERT INTO `jogadores` VALUES (146, 'Diego Moreira', 'images/722999_20220512115736_diego_moreira.jpg', '2005-05-08');
-INSERT INTO `jogadores` VALUES (147, 'Rafa Silva', 'images/261061_20210901224828_rafa_silva.png', '1993-03-01');
+INSERT INTO `jogadores` VALUES (148, 'Helton Leite', 'images/jogadores/168622_20210901182311_helton_leite.png', '1991-07-09');
+INSERT INTO `jogadores` VALUES (149, 'Odysseas Vlachodimos', 'images/jogadores/197106_20210901182629_odysseas_vlachodimos.png', '1994-06-04');
+INSERT INTO `jogadores` VALUES (150, 'Mile Svilar', 'images/jogadores/423229_20210905103238_mile_svilar.png', '2000-01-27');
+INSERT INTO `jogadores` VALUES (151, 'Lï¿½o Kokubo', 'images/jogadores/696613_20201001181257_leo_kokubo.png', '2001-06-10');
+INSERT INTO `jogadores` VALUES (152, 'Gilberto', 'images/jogadores/134600_20210905115853_gilberto.png', '1993-07-22');
+INSERT INTO `jogadores` VALUES (153, 'Andrï¿½ Almeida', 'images/jogadores/74377_20210905120428_andre_almeida.png', '1991-03-07');
+INSERT INTO `jogadores` VALUES (154, 'Lucas Verï¿½ssimo', 'images/jogadores/491981_20210905113913_lucas_verissimo.png', '1996-07-25');
+INSERT INTO `jogadores` VALUES (155, 'Tomï¿½s Araï¿½jo', 'images/jogadores/520353_20210905120712_tomas_araujo.png', '2002-07-23');
+INSERT INTO `jogadores` VALUES (156, 'Jan Vertonghen', 'images/jogadores/32809_20210905113512_jan_vertonghen.png', '1987-03-24');
+INSERT INTO `jogadores` VALUES (157, 'Nicolï¿½s Otamendi', 'images/jogadores/67588_20210905114704_nicolas_otamendi.png', '1988-05-04');
+INSERT INTO `jogadores` VALUES (158, 'Pedro ï¿½lvaro', 'images/jogadores/372435_20220706141246_pedro_alvaro.jpg', '2000-06-24');
+INSERT INTO `jogadores` VALUES (159, 'Morato', 'images/jogadores/681311_20210905114928_morato.png', '2001-01-24');
+INSERT INTO `jogadores` VALUES (160, 'Ferro', 'images/jogadores/214368_20220217120748_ferro.jpg', '1997-07-28');
+INSERT INTO `jogadores` VALUES (161, 'Sandro Cruz', 'images/jogadores/423979_20220127152520_sandro_cruz.jpg', '2001-05-03');
+INSERT INTO `jogadores` VALUES (162, 'ï¿½lex Grimaldo', 'images/jogadores/214579_20210901225257_alex_grimaldo.png', '1996-04-16');
+INSERT INTO `jogadores` VALUES (163, 'Valentino Lï¿½zaro', 'images/jogadores/287013_20210905114403_valentino_lazaro.png', '1996-03-06');
+INSERT INTO `jogadores` VALUES (164, 'Martim Neto', 'images/jogadores/586713_20201002190141_martim_neto.png', '2003-03-12');
+INSERT INTO `jogadores` VALUES (165, 'Julian Weigl', 'images/jogadores/395624_20210901185757_julian_weigl.png', '1996-05-03');
+INSERT INTO `jogadores` VALUES (166, 'Florentino Luï¿½s', 'images/jogadores/166229_20220525095239_florentino_luis.jpg', '2000-03-04');
+INSERT INTO `jogadores` VALUES (167, 'Rafael Brito', 'images/jogadores/503779_20220629105259_rafael_brito.jpg', '2002-01-08');
+INSERT INTO `jogadores` VALUES (168, 'Pizzi', 'images/jogadores/51004_20220208143951_pizzi.jpg', '1990-04-11');
+INSERT INTO `jogadores` VALUES (169, 'Soualiho Meitï¿½', 'images/jogadores/197672_20210901184214_soualiho_meite.png', '1994-01-21');
+INSERT INTO `jogadores` VALUES (170, 'Paulo Bernardo', 'images/jogadores/489055_20210901185147_paulo_bernardo.png', '2002-07-27');
+INSERT INTO `jogadores` VALUES (171, 'Joï¿½o Mï¿½rio', 'images/jogadores/56560_20210901183812_joao_mario.png', '1993-07-02');
+INSERT INTO `jogadores` VALUES (172, 'Adel Taarabt', 'images/jogadores/29772_20210905104018_adel_taarabt.png', '1989-01-17');
+INSERT INTO `jogadores` VALUES (173, 'Gedson Fernandes', 'images/jogadores/372419_20220703021214_gedson_fernandes.jpg', '1999-03-06');
+INSERT INTO `jogadores` VALUES (174, 'Diogo Gonï¿½alves', 'images/jogadores/155278_20210905115505_diogo_goncalves.png', '1997-04-21');
+INSERT INTO `jogadores` VALUES (175, 'Tiago Gouveia', 'images/jogadores/155479_20200919143634_tiago_gouveia.png', '2001-04-10');
+INSERT INTO `jogadores` VALUES (176, 'Luca Waldschmidt', 'images/jogadores/330694_20210830190738_luca_waldschmidt.png', '1996-04-19');
+INSERT INTO `jogadores` VALUES (177, 'Nemanja Radonjic', 'images/jogadores/421026_20220707103141_nemanja_radonjic.jpg', '1996-05-17');
+INSERT INTO `jogadores` VALUES (178, 'Henrique Araï¿½jo', 'images/jogadores/238031_20210901225532_henrique_araujo.png', '2002-02-05');
+INSERT INTO `jogadores` VALUES (179, 'Darwin Nï¿½ï¿½ez', 'images/jogadores/606157_20220614191628_darwin_nunez.png', '1999-06-13');
+INSERT INTO `jogadores` VALUES (180, 'Haris Seferovic', 'images/jogadores/102379_20210901225015_haris_seferovic.png', '1992-05-18');
+INSERT INTO `jogadores` VALUES (181, 'Roman Yaremchuk', 'images/jogadores/414421_20210905103720_roman_yaremchuk.png', '1996-02-09');
+INSERT INTO `jogadores` VALUES (182, 'Rodrigo Pinho', 'images/jogadores/392306_20210905103457_rodrigo_pinho.png', '1991-02-09');
+INSERT INTO `jogadores` VALUES (183, 'Gonï¿½alo Ramos', 'images/jogadores/428376_20210901185536_goncalo_ramos.png', '2001-07-23');
+INSERT INTO `jogadores` VALUES (184, 'Carlos Vinï¿½cius', 'images/jogadores/520581_20211224202305_carlos_vinicius.jpg', '1995-07-23');
+INSERT INTO `jogadores` VALUES (185, 'Everton', 'images/jogadores/392484_20220620191344_everton.png', '1996-01-21');
+INSERT INTO `jogadores` VALUES (186, 'Gil Dias', 'images/jogadores/368221_20210901183344_gil_dias.png', '1997-01-08');
+INSERT INTO `jogadores` VALUES (187, 'Diego Moreira', 'images/jogadores/722999_20220512115736_diego_moreira.jpg', '2005-06-10');
+INSERT INTO `jogadores` VALUES (188, 'Rafa Silva', 'images/jogadores/261061_20210901224828_rafa_silva.png', '1993-05-10');
 
 -- ----------------------------
 -- Table structure for jogos
