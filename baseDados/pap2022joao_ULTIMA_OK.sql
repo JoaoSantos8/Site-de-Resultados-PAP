@@ -11,7 +11,7 @@
  Target Server Version : 50721
  File Encoding         : 65001
 
- Date: 15/07/2022 15:49:25
+ Date: 15/07/2022 15:52:12
 */
 
 SET NAMES utf8mb4;
@@ -52,42 +52,6 @@ INSERT INTO `clubes` VALUES (15, 'Portimonense Sporting Clube', 'images/ClubesNo
 INSERT INTO `clubes` VALUES (16, 'Clube de Futebol \"Os Belenenses\"', 'images/ClubesNovo/belenenses.jpg', 1919, 'Artur José Pereira', 'Estádio do Restelo');
 INSERT INTO `clubes` VALUES (17, 'Futebol Clube de FamalicÃ£o', 'images/ClubesNovo/famalicao.jpg', 1931, 'José Alves Marinho, Floriano Portela, Hildebrando Portela, Luis Pinto, Joaquim Mesquita Jr. e Vergálio Pinto de Azevedo', 'Estádio Municipal de Famalicão');
 INSERT INTO `clubes` VALUES (18, 'Boavista Futebol Clube', 'images/ClubesNovo/boavista.jpg', 1903, ' Major Valentim Loureiro', 'EstÃ¡dio do Bessa SÃ©culo XXI');
-
--- ----------------------------
--- Table structure for clubes1
--- ----------------------------
-DROP TABLE IF EXISTS `clubes1`;
-CREATE TABLE `clubes1`  (
-  `clubeId` int(11) NOT NULL AUTO_INCREMENT,
-  `clubeNome` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `clubeLogoURL` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `clubeAnoFundacao` int(11) NOT NULL,
-  `clubeFundadores` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `clubeEstadio` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  PRIMARY KEY (`clubeId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 19 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
-
--- ----------------------------
--- Records of clubes1
--- ----------------------------
-INSERT INTO `clubes1` VALUES (1, 'Sporting Clube de Portugal', 'images/ClubesNovo/sporting.jpg', 1906, 'uns cromos quaisquer', 'Alvalade XXI');
-INSERT INTO `clubes1` VALUES (2, 'Futebol Clube de Arouca', 'images/ClubesNovo/arouca.jpg', 1952, 'Fernando Pinto CalÃ§ada', 'EstÃ¡dio Municipal de Arouca');
-INSERT INTO `clubes1` VALUES (3, 'Moreirense Futebol Clube', 'images/ClubesNovo/moreirense.jpg', 1938, 'Eu e tu ', 'EstÃ¡dio Comendador Joaquim de Almeida Freitas');
-INSERT INTO `clubes1` VALUES (4, 'Club Sport MarÃ­timo', 'images/ClubesNovo/Maritimo.jpg', 1910, 'CÃ¢ndido Gouveia', 'EstÃ¡dio do MarÃ­timo');
-INSERT INTO `clubes1` VALUES (5, 'Clube Desportivo de Tondela', 'images/ClubesNovo/Tondela.jpg', 1933, 'JoÃ£o Cardoso', 'EstÃ¡dio JoÃ£o Cardoso');
-INSERT INTO `clubes1` VALUES (6, 'VitÃ³ria Sport Clube', 'images/ClubesNovo/GuimarÃ£es.jpg', 1922, 'Ele e eu ', ' EstÃ¡dio D. Afonso Henriques');
-INSERT INTO `clubes1` VALUES (7, 'Futebol Clube do Porto', 'images/ClubesNovo/porto.jpg', 2000, 'sei lÃ¡ eu', 'EstÃ¡dio do DragÃ£o');
-INSERT INTO `clubes1` VALUES (8, 'Futebol Clube PaÃ§os de Ferreira', 'images/ClubesNovo/pacoferreira.jpg', 1950, 'Paulo Meneses', 'Capital do MÃ³vel');
-INSERT INTO `clubes1` VALUES (9, 'Gil Vicente Futebol Clube', 'images/ClubesNovo/GilVicente.jpg', 1924, 'Largo do Teatro', 'EstÃ¡dio Cidade de Barcelos');
-INSERT INTO `clubes1` VALUES (10, 'Futebol Clube de Vizela', 'images/ClubesNovo/Vizela.jpg', 1939, 'Armando Camelo, JoÃ£o Sousa e Costa Madureira', 'EstÃ¡dio do Futebol Clube de Vizela');
-INSERT INTO `clubes1` VALUES (11, 'Grupo Desportivo Estoril Praia', 'images/ClubesNovo/estoril.jpg', 1939, 'Fausto Cardoso de Figueiredo', 'AntÃ³nio Coimbra da Mota');
-INSERT INTO `clubes1` VALUES (12, 'Sport Lisboa e Benfica', 'images/ClubesNovo/benfica.jpg', 1904, ' ', 'EstÃ¡dio da Luz');
-INSERT INTO `clubes1` VALUES (13, 'Sporting Clube de Braga', 'images/ClubesNovo/braga.jpg', 1925, 'sfd', 'EstÃ¡dio da pedreira');
-INSERT INTO `clubes1` VALUES (14, 'Clube Desportivo Santa Clara', 'images/ClubesNovo/SantaClara.jpg', 1927, 'VocÃª e Eu', 'EstÃ¡dio de SÃ£o Miguel');
-INSERT INTO `clubes1` VALUES (15, 'Portimonense Sporting Clube', 'images/ClubesNovo/portimonense.jpg', 1914, 'Sr. Amadeu Andrade', 'EstÃ¡dio Municipal de PortimÃ£o');
-INSERT INTO `clubes1` VALUES (16, 'Clube de Futebol \"Os Belenenses\"', 'images/ClubesNovo/belenenses.jpg', 1919, '    Artur JosÃ© Pereira', 'EstÃ¡dio do Restelo');
-INSERT INTO `clubes1` VALUES (17, 'Futebol Clube de FamalicÃ£o', 'images/ClubesNovo/famalicao.jpg', 1931, 'JosÃ© Alves Marinho, Floriano Portela, Hildebrando Portela, Luis Pinto, Joaquim Mesquita Jr. e VergÃ­lio Pinto de Azevedo', 'EstÃ¡dio Municipal de FamalicÃ£o');
-INSERT INTO `clubes1` VALUES (18, 'Boavista Futebol Clube', 'images/ClubesNovo/boavista.jpg', 1903, 'Major Valentim Loureiro', 'EstÃ¡dio do Bessa SÃ©culo XXI');
 
 -- ----------------------------
 -- Table structure for epocas
