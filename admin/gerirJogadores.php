@@ -66,7 +66,7 @@ $result=mysqli_query($con,$sql);
                     <td class="text-center">
                         <input type="checkbox" name="jogador[]" value="<?php echo $dados['jogadorId']?>">
 
-                        <input size="5" type="text" name="numero[]" >
+                        <input size="5" type="text" name="numero<?php echo $dados['jogadorId']?>" >
                     </td>
                 </tr>
                 <?php

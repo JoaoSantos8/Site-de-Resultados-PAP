@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/admin/confirmaNovoResultado.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaNovoResultado.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/galeria2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Jogadores/img04.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/gerirJogadores.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/gerirJogadores.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/inscreveJogador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/inscreveJogador.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +30,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="26pXTY70sLkw82dpqQ2QnoEf4FT" />
   <component name="ProjectLevelVcsManager">
