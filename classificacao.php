@@ -73,7 +73,7 @@ $result=mysqli_query($con,$sql);
 			<tr>
 				<th scope="row" ><font color="black"><b><?php echo $i++?></b></font></th>
 				<td width="30px" align="right" style="padding-right: 0px; padding-left: 0px"><a href="#"><img src="<?php echo $dados['clubeLogoURL']?>" width="25px"; height="25px"></a></td>
-				<td width="160px" align="left" style="padding-left: 8px; padding-top: 14px; padding-bottom: 10px"><a href="Perfil.php?id=<?php echo $dados['clubeId']?>"><font color="black" size="4px"><b><?php echo $dados['clubeNome']?></b></font></a></td>
+				<td width="160px" align="left" style="padding-left: 8px; padding-top: 14px; padding-bottom: 10px"><a href="perfil.php?id=<?php echo $dados['clubeId']?>"><font color="black" size="4px"><b><?php echo $dados['clubeNome']?></b></font></a></td>
 				<td align="center"><font color="black" size="4px"><b><?php echo $dados['pontos']?></b></font></td>
 				<td align="center"><font color="black" size="4px"><b><?php echo $dados['nJogos']?></b></font></td>
 				<td align="center"><font color="black" size="4px"><b><?php echo $dados['nVit']?></b></font></td>

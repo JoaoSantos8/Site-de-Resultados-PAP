@@ -6,7 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/Perfil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/perfil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/confirmaEditaFoto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/editaGaleria.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/eliminaGaleria.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/body.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/config.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/config.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/listaGaleria.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/novaFoto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classificacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/classificacao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticia.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +112,7 @@
       <workItem from="1657270521489" duration="6026000" />
       <workItem from="1657531322633" duration="7097000" />
       <workItem from="1657818019796" duration="13334000" />
+      <workItem from="1657979596051" duration="7642000" />
     </task>
     <task id="LOCAL-00001" summary="Index Novo">
       <created>1648121546387</created>

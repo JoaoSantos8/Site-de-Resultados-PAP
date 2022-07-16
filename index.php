@@ -200,7 +200,7 @@
                 while($dados=mysqli_fetch_array($res)){
                 ?>
             <div class="services-block-two col-lg-3 col-md-6 col-sm-12">
-                <a href="Perfil.php?id=<?php echo $dados['clubeId']?>" ><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <a href="perfil.php?id=<?php echo $dados['clubeId']?>" ><div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="icon-box">
                             <img src="<?php echo $dados['clubeLogoURL']?>">
                         </div>
