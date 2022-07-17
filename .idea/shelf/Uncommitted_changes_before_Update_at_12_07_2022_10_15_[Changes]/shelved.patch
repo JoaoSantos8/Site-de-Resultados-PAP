@@ -1,0 +1,128 @@
+Index: admin/listaJogos.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\n\r\n    include_once(\"includes/body.inc.php\");\r\n    global $con;\r\n    drawTop(JOGOS );\r\n    $sql=\"select jogos.* \r\n            ,casa.clubeNome as casa\r\n            ,fora.clubeNome as fora\r\n            ,casa.clubeLogoURL as casaURL\r\n            ,fora.clubeLogoURL as foraURL\r\n            from jogos inner join clubes as casa on casa.clubeId=jogoCasaClubeId \r\n            inner join clubes as fora on fora.clubeId=jogoForaClubeId \";\r\n    $result=mysqli_query($con,$sql);\r\n\r\n?>\r\n    <div class=\"container w-100\">\r\n        <h1>Lista de Jogos</h1>\r\n        <table class=\"table table-striped table-hover \">\r\n            <tr>\r\n                <td colspan=\"7\" align=\"right\">\r\n                    <a href=\"novoJogo.php\" class=\"btn-sm btn-success\"><i class=\"bi bi-plus-circle\"></i> Novo Jogo</a>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <th style=\"width: 5%\" class=\"text-center\">\r\n                    Id\r\n                </th>\r\n                <th style=\"width: 40%\" class=\"text-center\">\r\n                    Clubes\r\n                </th>\r\n                <th style=\"width: 10%\" class=\"text-center\">\r\n                    Data\r\n                </th>\r\n                <th style=\"width: 10%\" class=\"text-center\">\r\n                    Hora\r\n                </th>\r\n                <th colspan=\"3\" style=\"width: 35%\" class=\"text-center\">\r\n                    Opções\r\n                </th>\r\n            </tr>\r\n            <?php\r\n\r\n            while($dados=mysqli_fetch_array($result)){\r\n                $sql=\"select resultadoGolosCasa,resultadoGolosFora \r\n                    from resultados where resultadoJogoId=\".$dados['jogoId'];\r\n                $res=mysqli_query($con,$sql);\r\n                $dadosRes=mysqli_fetch_array($res);\r\n            ?>\r\n            <tr valign=\"middle\">\r\n                <td style=\"width: 5%\" class=\"text-center\">\r\n                    <?php echo $dados['jogoId'];?>\r\n                </td>\r\n                <td width=\"30\" class=\"text-center\" style=\"padding-bottom: 12px; padding-top: 4px\">\r\n                    <img width=\"16\" src=\"../<?php echo $dados['casaURL'];?>\"> <span class=\"mt-5\">\r\n                        <?php echo $dados['casa']; ?></span>\r\n                    <span>&nbsp;- &nbsp;</span>\r\n                    <img width=\"16\" src=\"../<?php echo $dados['foraURL'];?>\"> <?php echo $dados['fora']?>\r\n                    <?php\r\n                    if(mysqli_affected_rows($con)>0) {// há resultados\r\n                        echo \" (\" . $dadosRes['resultadoGolosCasa'] . \"-\" . $dadosRes['resultadoGolosFora'] . \")\";\r\n                    }\r\n                    ?>\r\n                </td>\r\n\r\n                <td class=\"text-center\">\r\n                    <?php echo $dados['jogoData'];?>\r\n                </td>\r\n                <td class=\"text-center\">\r\n                    <?php echo $dados['jogoHora'];?>\r\n                </td>\r\n\r\n                <td style=\"width: 12%;\" class=\"text-center\">\r\n                    <a href=\"novoResultado.php?id=<?php echo $dados['jogoId'];?>\" class=\"btn-sm btn-secondary\"><i class=\"bi bi-dribbble\"></i></i> Resultado</a>\r\n                </td>\r\n                <td style=\"width: 11%;\" class=\"text-center\">\r\n                    <a href=\"editaJogo.php?id=<?php echo $dados['jogoId'];?>\" class=\"btn-sm btn-primary\"><i class=\"bi bi-pencil\"></i> Editar</a>\r\n                </td>\r\n                <td  style=\"width: 12%;\" class=\"text-center\">\r\n                    <a href=\"eliminaJogo.php?id=<?php echo $dados['jogoId'];?>\"  class=\"btn-sm btn-danger\"><i class=\"bi bi-trash\"></i> Eliminar</span></a>\r\n                </td>\r\n            </tr>\r\n                <?php\r\n            }\r\n\r\n                ?>\r\n\r\n        </table>\r\n\r\n\r\n\r\n\r\n    </div>\r\n<?php\r\n    drawBottom();\r\n?>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/admin/listaJogos.php b/admin/listaJogos.php
+--- a/admin/listaJogos.php	(revision aa51895b07f99d3c60821d34cfc9becc3169b957)
++++ b/admin/listaJogos.php	(date 1657610923884)
+@@ -3,13 +3,16 @@
+     include_once("includes/body.inc.php");
+     global $con;
+     drawTop(JOGOS );
++    $jornada=1;
++    if(isset($_POST['jornada']))
++        $jornada=$_POST['jornada'];
+     $sql="select jogos.* 
+             ,casa.clubeNome as casa
+             ,fora.clubeNome as fora
+             ,casa.clubeLogoURL as casaURL
+             ,fora.clubeLogoURL as foraURL
+             from jogos inner join clubes as casa on casa.clubeId=jogoCasaClubeId 
+-            inner join clubes as fora on fora.clubeId=jogoForaClubeId ";
++            inner join clubes as fora on fora.clubeId=jogoForaClubeId  where jogoJornada=$jornada";
+     $result=mysqli_query($con,$sql);
+ 
+ ?>
+@@ -17,13 +20,25 @@
+         <h1>Lista de Jogos</h1>
+         <table class="table table-striped table-hover ">
+             <tr>
+-                <td colspan="7" align="right">
++                <td colspan="3" align="left">
++                    <form action="" method="post" id="form1">Filtro:
++                        <select onchange="$('#form1').submit();" name="jornada">
++                            <option value="1">1ª jornada</option>
++                            <option value="2">2ª jornada</option>
++                            <option value="3">3ª jornada</option>
++                        </select>
++                    </form>
++                </td>
++                <td colspan="5" align="right">
+                     <a href="novoJogo.php" class="btn-sm btn-success"><i class="bi bi-plus-circle"></i> Novo Jogo</a>
+                 </td>
+             </tr>
+             <tr>
+                 <th style="width: 5%" class="text-center">
+                     Id
++                </th>
++                <th style="width: 5%" class="text-center">
++                    Jornada
+                 </th>
+                 <th style="width: 40%" class="text-center">
+                     Clubes
+@@ -49,6 +64,9 @@
+             <tr valign="middle">
+                 <td style="width: 5%" class="text-center">
+                     <?php echo $dados['jogoId'];?>
++                </td>
++                <td style="width: 5%" class="text-center">
++                    <?php echo $dados['jogoJornada'];?>ª Jorn.
+                 </td>
+                 <td width="30" class="text-center" style="padding-bottom: 12px; padding-top: 4px">
+                     <img width="16" src="../<?php echo $dados['casaURL'];?>"> <span class="mt-5">
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"51ac0f24-7971-4d4f-9c38-f91e712df2bd\" name=\"Changes\" comment=\"imagens\">\r\n      <change afterPath=\"$PROJECT_DIR$/admin/css/estilos.css\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/admin/images/logo.jpg\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/images/ClubesNovo/braga.jpg\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/images/ClubesNovo/porto.jpg\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/admin/includes/body.inc.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/admin/includes/body.inc.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/includes/body.inc.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/includes/body.inc.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/planteis.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/planteis.php\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"JavaScript File\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"UPDATE_TYPE\" value=\"REBASE\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"26pXTY70sLkw82dpqQ2QnoEf4FT\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\r\n    <property name=\"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"list.type.of.created.stylesheet\" value=\"CSS\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\wamp64\\www\\papJoao2022_07\" />\r\n      <recent name=\"C:\\wamp64\\www\\.....PAPs2022\\papJoao\\admin\" />\r\n      <recent name=\"C:\\wamp64\\www\\papJoao2022\\admin\" />\r\n      <recent name=\"C:\\wamp64\\www\\PAP\" />\r\n      <recent name=\"C:\\wamp64\\www\\papJoao2022\\admin\\includes\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"51ac0f24-7971-4d4f-9c38-f91e712df2bd\" name=\"Changes\" comment=\"\" />\r\n      <created>1648121509924</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1648121509924</updated>\r\n      <workItem from=\"1648121511242\" duration=\"1044000\" />\r\n      <workItem from=\"1648203744855\" duration=\"3644000\" />\r\n      <workItem from=\"1648452909145\" duration=\"9341000\" />\r\n      <workItem from=\"1648545557054\" duration=\"5066000\" />\r\n      <workItem from=\"1648637768681\" duration=\"623000\" />\r\n      <workItem from=\"1648715230549\" duration=\"6433000\" />\r\n      <workItem from=\"1649615683730\" duration=\"2551000\" />\r\n      <workItem from=\"1650403986286\" duration=\"858000\" />\r\n      <workItem from=\"1650492833437\" duration=\"3018000\" />\r\n      <workItem from=\"1650577278566\" duration=\"3551000\" />\r\n      <workItem from=\"1650659830914\" duration=\"4197000\" />\r\n      <workItem from=\"1650755488487\" duration=\"1330000\" />\r\n      <workItem from=\"1650799000177\" duration=\"5534000\" />\r\n      <workItem from=\"1650903697486\" duration=\"6315000\" />\r\n      <workItem from=\"1651272137033\" duration=\"3000\" />\r\n      <workItem from=\"1651608742114\" duration=\"2133000\" />\r\n      <workItem from=\"1652212739734\" duration=\"1869000\" />\r\n      <workItem from=\"1654029468235\" duration=\"2200000\" />\r\n      <workItem from=\"1655418724700\" duration=\"4418000\" />\r\n      <workItem from=\"1655548150755\" duration=\"6005000\" />\r\n      <workItem from=\"1656003403467\" duration=\"5729000\" />\r\n      <workItem from=\"1656017963557\" duration=\"219000\" />\r\n      <workItem from=\"1656860290172\" duration=\"595000\" />\r\n      <workItem from=\"1656879232524\" duration=\"3238000\" />\r\n      <workItem from=\"1656882589606\" duration=\"716000\" />\r\n      <workItem from=\"1656895638894\" duration=\"130000\" />\r\n      <workItem from=\"1656945556915\" duration=\"5379000\" />\r\n      <workItem from=\"1657041899168\" duration=\"17941000\" />\r\n      <workItem from=\"1657114211863\" duration=\"3374000\" />\r\n      <workItem from=\"1657270521489\" duration=\"6026000\" />\r\n      <workItem from=\"1657531322633\" duration=\"7097000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Index Novo\">\r\n      <created>1648121546387</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648121546387</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Index antigo\">\r\n      <created>1648121674489</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648121674489</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Notificaçoes2\">\r\n      <created>1648210976149</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648210976149</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"BackOffice\">\r\n      <created>1648467369272</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648467369272</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"BackOffice\">\r\n      <created>1648637783018</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648637783018</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"leandro Backoffice base de dados\">\r\n      <created>1657201854644</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1657201854644</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"trabalho_casa_08\">\r\n      <created>1657270733207</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1657270733207</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"trabalho_casa_08\">\r\n      <created>1657270756106</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1657270756106</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"trabalho_casa_11\">\r\n      <created>1657531741068</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1657531741068</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"10\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"Index Novo\" />\r\n    <MESSAGE value=\"Index antigo\" />\r\n    <MESSAGE value=\"Notificaçoes2\" />\r\n    <MESSAGE value=\"BackOffice\" />\r\n    <MESSAGE value=\"leandro Backoffice base de dados\" />\r\n    <MESSAGE value=\"trabalho_casa_08\" />\r\n    <MESSAGE value=\"trabalho_casa_11\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"trabalho_casa_11\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision aa51895b07f99d3c60821d34cfc9becc3169b957)
++++ b/.idea/workspace.xml	(date 1657617213658)
+@@ -4,15 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="imagens">
+-      <change afterPath="$PROJECT_DIR$/admin/css/estilos.css" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/admin/images/logo.jpg" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/images/ClubesNovo/braga.jpg" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/images/ClubesNovo/porto.jpg" afterDir="false" />
++    <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="jogos FRONT e BACK">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/admin/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/body.inc.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/planteis.php" beforeDir="false" afterPath="$PROJECT_DIR$/planteis.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/admin/listaJogos.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/listaJogos.php" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -107,6 +101,8 @@
+       <workItem from="1657114211863" duration="3374000" />
+       <workItem from="1657270521489" duration="6026000" />
+       <workItem from="1657531322633" duration="7097000" />
++      <workItem from="1657610533683" duration="408000" />
++      <workItem from="1657616352775" duration="605000" />
+     </task>
+     <task id="LOCAL-00001" summary="Index Novo">
+       <created>1648121546387</created>
+@@ -171,7 +167,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1657531741068</updated>
+     </task>
+-    <option name="localTasksCounter" value="10" />
++    <task id="LOCAL-00010" summary="jogos FRONT e BACK">
++      <created>1657554266010</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1657554266010</updated>
++    </task>
++    <option name="localTasksCounter" value="11" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -198,6 +201,7 @@
+     <MESSAGE value="leandro Backoffice base de dados" />
+     <MESSAGE value="trabalho_casa_08" />
+     <MESSAGE value="trabalho_casa_11" />
+-    <option name="LAST_COMMIT_MESSAGE" value="trabalho_casa_11" />
++    <MESSAGE value="jogos FRONT e BACK" />
++    <option name="LAST_COMMIT_MESSAGE" value="jogos FRONT e BACK" />
+   </component>
+ </project>
+\ No newline at end of file
