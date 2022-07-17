@@ -1,0 +1,2 @@
+retirar jogadores do benfica (BASE de DADOS) que são do Arouca
+ver porque é que no admin o jogador não é eliminado do clube?????
