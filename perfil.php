@@ -4,9 +4,9 @@ global $con;
 drawTop(HOME);
 $sql="select *
  from jogadorclubes 
-inner join jogadores  
+inner join jogadores 
 inner join clubes
-where ClubeId=jogadorClubeClubeId";
+ where jogadorClubeJogadorId=jogadorId";
 $res=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($res);
 ?>

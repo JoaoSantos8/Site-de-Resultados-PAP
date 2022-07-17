@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="51ac0f24-7971-4d4f-9c38-f91e712df2bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/perfil.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +104,8 @@
       <workItem from="1657818019796" duration="13334000" />
       <workItem from="1657979596051" duration="7642000" />
       <workItem from="1657988680871" duration="71000" />
-      <workItem from="1658000898108" duration="3857000" />
+      <workItem from="1658000898108" duration="4369000" />
+      <workItem from="1658053958286" duration="324000" />
     </task>
     <task id="LOCAL-00001" summary="Index Novo">
       <created>1648121546387</created>
@@ -212,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657988735026</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="perfil feito">
+      <created>1658019601981</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1658019601981</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +252,7 @@
     <MESSAGE value="Novo Resultado" />
     <MESSAGE value="commit" />
     <MESSAGE value="perfil" />
-    <option name="LAST_COMMIT_MESSAGE" value="perfil" />
+    <MESSAGE value="perfil feito" />
+    <option name="LAST_COMMIT_MESSAGE" value="perfil feito" />
   </component>
 </project>
