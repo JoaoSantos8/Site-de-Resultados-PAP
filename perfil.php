@@ -17,11 +17,11 @@ $dadosC=mysqli_fetch_array($res);
 	<!--End Main Header -->
 	<div style="padding-top: 50px; padding-bottom: 50px;">
 		<div class="text-center"><img src="<?php echo $dadosC['clubeLogoURL'] ?>"></div><p><p>
-		<div class="text-center">
-			<font class="text-center" color="black"><b>Nome Completo do Clube:</b></font><font class="texto">&nbsp;&nbsp;&nbsp;<?php echo $dadosC['clubeNome'] ?></font><p>
-			<font class="text-center" color="black"><b>Ano De Fundação do clube:</b></font><font class="texto">&nbsp;&nbsp;&nbsp;<?php echo $dadosC['clubeAnoFundacao'] ?></font><p>
-			<font class="text-center" color="black"><b>Fundador do Clube:</b></font><font class="texto">&nbsp&nbsp;&nbsp;<?php echo $dadosC['clubeFundadores'] ?></font><p>
-			<font class="text-center" color="black"><b>Estádio:</b></font><font class="texto">&nbsp&nbsp;&nbsp;<?php echo $dadosC['clubeEstadio'] ?></font><p>
+		<div class="text-center" style="height: 130px">
+			<font class="text-center" color="black" size="4"><b>Nome completo do clube:</b></font><font class="texto" size="3">&nbsp;&nbsp;&nbsp;<?php echo $dadosC['clubeNome'] ?></font><br><br>
+			<font class="text-center" color="black" size="4"><b>Ano de fundação do clube:</b></font><font class="texto" size="3">&nbsp;&nbsp;&nbsp;<?php echo $dadosC['clubeAnoFundacao'] ?></font><br><br>
+			<font class="text-center" color="black" size="4"><b>Fundador do Clube:</b></font><font class="texto" size="3">&nbsp&nbsp;&nbsp;<?php echo $dadosC['clubeFundadores'] ?></font><br><br>
+			<font class="text-center" color="black" size="4"><b>Estádio:</b></font><font class="texto" size="3">&nbsp&nbsp;&nbsp;<?php echo $dadosC['clubeEstadio'] ?></font><br><br>
 		</div></div>
     <div style="padding-top: 30px">
 

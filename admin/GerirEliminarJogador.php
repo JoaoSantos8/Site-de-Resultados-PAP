@@ -4,7 +4,7 @@ include_once ("includes/body.inc.php");
 global $con;
 $id=intval($_GET['id']);
 drawTop(JOGADORES);
-$sql="select * from jogadores where jogadorId=$id";
+$sql="select * from jogadorClubes inner join jogadores on jogadorClubeJogadorId=jogadorId  inner join clubes on clubeId=jogadorClubeClubeId where jogadorClubeClubeId=ClubeId and jogadorClubeJogadorId=$id";
 $result=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($result);
 ?>
@@ -19,11 +19,13 @@ $dados=mysqli_fetch_array($result);
             <img src="../<?php echo $dados['jogadorFotoURL'] ?>">
         </div>
         <div class="mb-3">
+            <input type="hidden" name="jogadorId" value="<?php echo $dados['jogadorClubeJogadorId'];?>">
+            <input type="hidden" name="clubeId" value="<?php echo $dados['jogadorClubeClubeId'];?>">
             <input type="submit" class="btn-sm btn-danger" value="Confirma">
             <button onclick="history.back();" type="button" class="btn-sm btn-secondary"> Voltar </button>
 
         </div>
-        <input type="hidden" name="id" value="<?php echo $id?>">
+
     </form>
 </div>
 <?php

@@ -1,12 +1,13 @@
 <?php
 include_once ("includes/body.inc.php");
 global $con;
-$cId=intval($_POST['cId']);
-$jId=intval($_POST['jId']);
+$id=intval($_POST['jogadorId']);
+$idc=intval($_POST['clubeId']);
 
-$sql="delete from jogadorClubes where jogadorClubeJogadorId=$jId and jogadorClubeClubeId=$cId";
+$sql="delete from jogadorClubes where jogadorClubeJogadorId=$id";
 
 
 mysqli_query($con,$sql);
-header("location:gerirPlantel.php?id=$cId");
+//die($sql);
+header("location:gerirPlantel.php?id=$idc");
 ?>
