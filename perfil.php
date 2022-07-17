@@ -2,13 +2,12 @@
 include_once("includes/body.inc.php");
 global $con;
 drawTop(HOME);
+$idClube=intval($_GET['id']);
 $sql="select *
- from jogadorclubes 
-inner join jogadores 
-inner join clubes
- where jogadorClubeJogadorId=jogadorId";
+ from clubes
+ where clubeId=$idClube";
 $res=mysqli_query($con,$sql);
-$dados=mysqli_fetch_array($res);
+$dadosC=mysqli_fetch_array($res);
 ?>
     <section class="page-title" style="background-image:url(images/background/background.png);">
     <div class="auto-container">
@@ -17,12 +16,12 @@ $dados=mysqli_fetch_array($res);
 </section>
 	<!--End Main Header -->
 	<div style="padding-top: 50px; padding-bottom: 50px;">
-		<div class="text-center"><img src="<?php echo $dados['clubeLogoURL'] ?>"></div><p><p>
+		<div class="text-center"><img src="<?php echo $dadosC['clubeLogoURL'] ?>"></div><p><p>
 		<div class="text-center">
-			<font class="text-center" color="black"><b>Nome Completo do Clube:</b></font><font class="texto">&nbsp;&nbsp;&nbsp;<?php echo $dados['clubeNome'] ?></font><p>
-			<font class="text-center" color="black"><b>Ano De Fundação do clube:</b></font><font class="texto">&nbsp;&nbsp;&nbsp;<?php echo $dados['clubeAnoFundacao'] ?></font><p>
-			<font class="text-center" color="black"><b>Fundador do Clube:</b></font><font class="texto">&nbsp&nbsp;&nbsp;<?php echo $dados['clubeFundadores'] ?></font><p>
-			<font class="text-center" color="black"><b>Estádio:</b></font><font class="texto">&nbsp&nbsp;&nbsp;<?php echo $dados['clubeEstadio'] ?></font><p>
+			<font class="text-center" color="black"><b>Nome Completo do Clube:</b></font><font class="texto">&nbsp;&nbsp;&nbsp;<?php echo $dadosC['clubeNome'] ?></font><p>
+			<font class="text-center" color="black"><b>Ano De Fundação do clube:</b></font><font class="texto">&nbsp;&nbsp;&nbsp;<?php echo $dadosC['clubeAnoFundacao'] ?></font><p>
+			<font class="text-center" color="black"><b>Fundador do Clube:</b></font><font class="texto">&nbsp&nbsp;&nbsp;<?php echo $dadosC['clubeFundadores'] ?></font><p>
+			<font class="text-center" color="black"><b>Estádio:</b></font><font class="texto">&nbsp&nbsp;&nbsp;<?php echo $dadosC['clubeEstadio'] ?></font><p>
 		</div></div>
     <div style="padding-top: 30px">
 
@@ -38,6 +37,10 @@ $dados=mysqli_fetch_array($res);
                 </thead>
                 <tbody>
                 <?php
+                $sql="select * from jogadorclubes inner join jogadores on jogadorId=jogadorClubeJogadorId
+                        where jogadorClubeClubeId=$idClube";
+                $res=mysqli_query($con,$sql);
+                $dados=mysqli_fetch_array($res);
                 while($dados=mysqli_fetch_array($res)){
                     ?>
                     <tr>
