@@ -21,7 +21,11 @@ drawTop(HOME);
                         ?>
                         <thead>
                         <tr>
-                            <th colspan="4"><font color="black"><?php echo $jornada."ª jornada"?></font></th>
+                            <th colspan="4"><font color="black">
+                                    <select>
+                                        <option value=" <?php echo $jornada?>"> <?php echo $jornada."Âª jornada"?></option>
+                                    </select>
+                                   </font></th>
                         </tr>
                         <tr>
                             <th style="width: 20%" scope="col"><font color="black"><b> Data</b></font></th>

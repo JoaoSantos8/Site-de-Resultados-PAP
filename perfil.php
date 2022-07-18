@@ -38,7 +38,7 @@ $dadosC=mysqli_fetch_array($res);
                 <tbody>
                 <?php
                 $sql="select * from jogadorclubes inner join jogadores on jogadorId=jogadorClubeJogadorId
-                        where jogadorClubeClubeId=$idClube";
+                        where jogadorClubeClubeId=$idClube order by jogadorClubeNumero";
                 $res=mysqli_query($con,$sql);
                 $dados=mysqli_fetch_array($res);
                 while($dados=mysqli_fetch_array($res)){

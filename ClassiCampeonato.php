@@ -18,15 +18,15 @@ background: linear-gradient(90deg, rgba(254,254,254,1) 0%, rgba(255,66,25,1) 10%
 		<table class="table" style=" border-top-left-radius:10px; border-top-right-radius:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px; ">
 			<thead class="table-dark">
 			<tr>
-				<th scope="col" style=" border-top-left-radius:10px; border-top: 0px">Posição</th>
-				<th scope="col" colspan="2" style="padding-right: 90px; border-top: 0px"><font color="white"><b>Equipa</b></font></th>
-				<th scope="col" width="30px" style=" border-top: 0px">Pts</th>
-				<th scope="col" style=" border-top: 0px">Jogos</th>
-				<th scope="col" style=" border-top: 0px">Vitórias</th>
-				<th scope="col" style=" border-top: 0px">Empates</th>
-				<th scope="col" style=" border-top: 0px">Derrotas</th>
-				<th scope="col" style=" border-top: 0px">Golos Sofridos</th>
-				<th scope="col" style="	border-top-right-radius:10px; border-top: 0px">Golos Marcados</th>
+				<th scope="col" style="width: 8%; border-top-left-radius:10px; border-top: 0px">Posição</th>
+				<th scope="col" colspan="2" style="width: 36%; padding-right: 90px; border-top: 0px"><font color="white"><b>Equipa</b></font></th>
+				<th scope="col" width="30px" style="width: 8%;  border-top: 0px">Pts</th>
+				<th scope="col" style=" width: 8%; border-top: 0px">Jogos</th>
+				<th scope="col" style=" width: 8%; border-top: 0px">Vitórias</th>
+				<th scope="col" style=" width: 8%; border-top: 0px">Empates</th>
+				<th scope="col" style=" width: 8%; border-top: 0px">Derrotas</th>
+				<th scope="col" style=" width: 8%; border-top: 0px">Golos Marcados</th>
+				<th scope="col" style="	width: 8%; border-top-right-radius:10px; border-top: 0px">Golos Sofridos</th>
 			</tr>
 			</thead>
 			<tbody>
