@@ -11,7 +11,7 @@ $dadosC=mysqli_fetch_array($res);
 ?>
     <section class="page-title" style="background-image:url(images/background/background.png);">
     <div class="auto-container">
-        <h1>Detalhes do Clube</h1>
+        <h1><?php echo $dadosC['clubeNome'] ?></h1>
     </div>
 </section>
 	<!--End Main Header -->
@@ -40,7 +40,7 @@ $dadosC=mysqli_fetch_array($res);
                 $sql="select * from jogadorclubes inner join jogadores on jogadorId=jogadorClubeJogadorId
                         where jogadorClubeClubeId=$idClube order by jogadorClubeNumero";
                 $res=mysqli_query($con,$sql);
-                $dados=mysqli_fetch_array($res);
+
                 while($dados=mysqli_fetch_array($res)){
                     ?>
                     <tr>

@@ -14,16 +14,28 @@ drawTop(HOME);
             <div class="lower-section"  style="padding-top: 10px;">
                 <div class="text" ><table id="tabelaJogos" class="table">
                         <?php
-                        $sql="select max(jogoJornada) from jogos";
+                        $sql="select max(jogoJornada) as mx from jogos";
                         $res=mysqli_query($con,$sql);
                         $dados=mysqli_fetch_array($res);
-                        $jornada=$dados[0];
+                        $max=$dados['mx'];
+                        if(isset($_POST['jornada'])) {
+                            $jornada=$_POST['jornada'];
+                        }else{
+
+                            $jornada=$max;
+                        }
                         ?>
                         <thead>
                         <tr>
                             <th colspan="4"><font color="black">
                                     <select>
-                                        <option value=" <?php echo $jornada?>"> <?php echo $jornada."ª jornada"?></option>
+                                    <?php
+                                    for($i=1;$i<=$max;$i++){
+                                        ?>
+                                        <option <?php if($i==$jornada) echo "selected "?> value=" <?php echo $jornada?>"> <?php echo $i."ª jornada"?></option>
+                                        <?php
+                                    }
+                                    ?>
                                     </select>
                                    </font></th>
                         </tr>
