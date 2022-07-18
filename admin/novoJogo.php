@@ -21,15 +21,21 @@ drawTop(JOGOS,'nj' );
         <div class="mb-3">
             <label for="clube" class="form-label">Nome do clube - Casa</label>
             <select class="form-select" name="clubeCasaId" id="clubesCasa">
-
-
             </select>
         </div>
         <div class="mb-3">
             <label for="clube" class="form-label">Nome do clube - Fora</label>
-            <select disabled class="form-select" name="clubeForaId" id="clubesFora">
-
+            <select disabled class="form-select" name="clubeForaId" id="clubesFora">0
             </select>
+        <label for="data" class="form-label">Jornada</label>
+        <input type="text" class="form-control" id="Jornada" name="jornadaJogo">
+
+        <label for="data" class="form-label">Clube casa</label>
+        <input type="text" class="form-control" id="Jornada" name="cCasa">
+        <label for="data" class="form-label">Clube fora</label>
+        <input type="text" class="form-control" id="Jornada" name="cFora">
+</div>
+
         </div>
 
         <div class="mb-3 text-end">

@@ -41,7 +41,7 @@ $result=mysqli_query($con,$sql);
                 </th>
 
                 <th style="width: 25%"  class="text-center">
-                    Opções
+                    Número
                 </th>
             </tr>
             <form id="listaForm" action="inscreveJogador.php" method="post">

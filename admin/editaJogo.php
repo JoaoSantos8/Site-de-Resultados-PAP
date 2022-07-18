@@ -7,7 +7,7 @@ drawTop(JOGOS,'ej');
 $sql="select * from jogos where jogoId=$id";
 $result=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($result);
-var_dump($dados);
+//var_dump($dados);
 ?>
     <div class="container form ">
 
