@@ -16,7 +16,7 @@ drawTop(HOME);
             <div class="lower-section" style="padding-top: 10px;">
                 <div class="row clearfix" style=" width: 1500px;" align="center">
                     <?php
-                    $sql="select * from noticias order by noticiaData desc";
+                    $sql="select * from noticias order by noticiaData asc ";
                     $res=mysqli_query($con,$sql);
                     while($dados=mysqli_fetch_array($res)){
                     ?>
