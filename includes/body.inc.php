@@ -1,7 +1,8 @@
 <?php
+
 include_once ("admin/includes/config.inc.php");
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
-
+$con->set_charset('UTF-8');
 function lastSpace($str){
     $num=strlen($str);
     while($num>0){
