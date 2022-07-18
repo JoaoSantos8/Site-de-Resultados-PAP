@@ -18,8 +18,23 @@ drawTop(HOME);
                 $path="images/noticias";
                 $d = dir($path);
                 while (false !== ($entry = $d->read())) {
-                    if($entry!="." && $entry!=".." )
-                        echo '<img src="'.$path.'/'.$entry.'" width="300" style="padding-right: 15px; padding-bottom: 15px">';
+                    if($entry!=="." && $entry!==".." ){?>
+                <div class="gallery-block col-lg-3 col-md-4 col-sm-10">
+                    <div class="inner-box">
+                        <figure class="image-box">
+                        <?php echo '<img src="'.$path.'/'.$entry.'" width="300">';?>
+                <div class="overlay-box">
+                    <div class="overlay-inner">
+                    <div class="content">
+                        <?php echo '<a href="'.$path.'/'.$entry.'" data-fancybox="gallery" data-caption="" class="link"><span class="icon flaticon-plus-symbol"></span></a>';?>
+                  </div>
+                    </div>
+                </div>
+                    </figure>
+                    </div>
+                    </div>
+                <?php
+                    }
                 }
                 $d->close();
                 ?>
@@ -30,3 +45,6 @@ drawTop(HOME);
 <?php
 drawBottom();
 ?>
+
+
+

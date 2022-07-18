@@ -10,7 +10,7 @@ $GolosFora=intval($_POST['resultadoFora']);
 
 $sql="update resultados
 set resultadoGolosCasa=$GolosCasa
-, resultadoGolosFora=$GolosFora";
+, resultadoGolosFora=$GolosFora where resultadoJogoId=$jogoId";
 /*
 if($GolosCasa > $GolosFora){
             $sql="update pontos set pontosResultado='V'

@@ -233,8 +233,8 @@
             <!-------------------------------------------------------------------------------------------------------------------------- -->
         </div>
 	</div>
-    <button onclick="myFunction()" id="myBtn" style="background-color: #FF3300; position: absolute; left: 47.5%; width: 100px; height: 30px; color: white;" ><b>Ver Mais</b></button>
-</section>
+    <!--<button onclick="myFunction()" id="myBtn" style="background-color: #FF3300; position: absolute; left: 47.5%; width: 100px; height: 30px; color: white;" ><b>Ver Mais</b></button>
+--></section>
 <!--End Services Section Two-->
 
 

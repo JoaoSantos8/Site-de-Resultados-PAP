@@ -209,7 +209,7 @@ function drawTop(){
                             <ul class="navigation clearfix">
                                 <li><a href="planteis.php">Planteis</a></li>
                                 <li><a href="galeria.php">Galeria</a></li>
-                                <li><a href="ClassiCampeonato.php">Classificação do campeonato</a></li>
+                                <li><a href="classificacao.php">Classificação do campeonato</a></li>
                                 <li><a href="jogos.php">Jogos</a></li>
                                 <li><a href="noticias.php">Noticias</a></li>
                             </ul>
@@ -291,7 +291,7 @@ function drawBottom(){
                                 <div class="footer-widget footer-links">
                                     <h2>Links úteis</h2>
                                     <ul class="links">
-                                        <li><a href="ClassiCampeonato.php">CLassificações</a></li>
+                                        <li><a href="classificacao.php">CLassificações</a></li>
                                         <li><a href="planteis.php">Planteis</a></li>
                                         <li><a href="jogos.php">Jogos</a></li>
                                         <li><a href="noticias.php">Noticias</a></li>
@@ -318,7 +318,7 @@ function drawBottom(){
                             <li><a href="index.php">Home</a></li>
                             <li><a href="planteis.php">Planteis</a></li>
                             <li><a href="galeria.php">Galeria</a></li>
-                            <li><a href="ClassiCampeonato.php">Classificações</a></li>
+                            <li><a href="classificacao.php">Classificações</a></li>
                             <li><a href="jogos.php">Jogos</a></li>
                             <li><a href="noticias.php">Noticias</a></li>
                         </ul>

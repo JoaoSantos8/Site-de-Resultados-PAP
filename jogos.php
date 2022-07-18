@@ -28,11 +28,11 @@ drawTop(HOME);
                         <thead>
                         <tr>
                             <th colspan="4"><font color="black">
-                                    <select>
+                                    <select name="jornada" onchange="$('#filtro').submit();">
                                     <?php
                                     for($i=1;$i<=$max;$i++){
                                         ?>
-                                        <option <?php if($i==$jornada) echo "selected "?> value=" <?php echo $jornada?>"> <?php echo $i."ª jornada"?></option>
+                                        <option <?php if($i==$jornada)  echo "selected "?>  value=" <?php echo $jornada?>"> <?php echo $i."ª jornada"?></option>
                                         <?php
                                     }
                                     ?>
@@ -74,7 +74,6 @@ drawTop(HOME);
                                 $boldForaIni="<font color='black'><strong>";
                                 $boldCasaFim="</strong></font>";
                             }
-
                             ?>
                             <tr>
                                 <td class="text-center" ><?php echo $dados['jogoData']?></td>
