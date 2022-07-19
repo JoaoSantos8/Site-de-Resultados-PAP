@@ -132,7 +132,7 @@ function drawTop($menu=HOME,$page=''){
     <body>
     <div class="container w-100  " style="border: solid 1px #888">
     <div id="topo" class="p-2" >
-    <img style="float:left; margin-right: 20px" src="images/logo.jpg">
+    <a href="index.php"><img style="float:left; margin-right: 20px" src="images/logo.jpg"></a>
     <h1 class="ml-5" style="color: #ff2d00">Site de resultados</h1>
     <ul class="nav nav-pills nav-justified ">
         <li class="nav-item">

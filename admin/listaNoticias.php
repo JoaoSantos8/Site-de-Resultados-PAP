@@ -12,7 +12,7 @@
         <table class="table table-striped table-hover ">
             <tr>
                 <td colspan="7" align="right">
-                    <a href="novaNoticia.php" class="btn-sm btn-success"><i class="bi bi-plus-circle"></i> Nova Noticia</a>
+                    <a href="novaNoticia.php" class="btn-sm btn-success"><i class="bi bi-plus-circle"></i> Nova Noticias</a>
                 </td>
             </tr>
             <tr>

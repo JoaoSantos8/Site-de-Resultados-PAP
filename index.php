@@ -55,7 +55,7 @@
 					<!--Campeonato de portugal-->
 					<div class="services-block col-lg-4 col-md-6 col-sm-12">
 						<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-							<h3><a href="ClassiCampeonato.html"><font color="#FF3300"><b>Campeonato de Portugal</b></font> </a></h3>
+							<h3><a href="classificacao.php"><font color="#FF3300"><b>Campeonato de Portugal</b></font> </a></h3>
 							<table id="tabelaReduzida" class="table">
 								<thead>
 								<tr>

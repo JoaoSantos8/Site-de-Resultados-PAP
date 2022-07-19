@@ -170,7 +170,7 @@ function drawTop(){
                                     <li><a href="galeria.php">Galeria</a></li>
                                     <li><a href="classificacao.php">Classificação do campeonato</a></li>
                                     <li><a href="jogos.php">Jogos</a></li>
-                                    <li><a href="noticias.php">Noticias</a></li>
+                                    <li><a href="noticias.php">Notícias</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -211,7 +211,7 @@ function drawTop(){
                                 <li><a href="galeria.php">Galeria</a></li>
                                 <li><a href="classificacao.php">Classificação do campeonato</a></li>
                                 <li><a href="jogos.php">Jogos</a></li>
-                                <li><a href="noticias.php">Noticias</a></li>
+                                <li><a href="noticias.php">Notícias</a></li>
                             </ul>
                         </div>
 
@@ -236,15 +236,15 @@ function drawBottom(){
             <div class="sponsors-outer">
                 <!--Sponsors Carousel-->
                 <ul class="sponsors-carousel owl-carousel owl-theme">
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="https://www.nike.com/pt/"><img src="images/clients/1.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="https://www.adidas.pt/"><img src="images/clients/2.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="https://eu.puma.com/pt/"><img src="images/clients/3.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="https://www.hummel.net/"><img src="images/clients/4.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="https://www.macron.pt/"><img src="images/clients/5.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="https://www.nike.com/pt/"><img src="images/clients/1.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="https://www.adidas.pt/"><img src="images/clients/2.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="https://eu.puma.com/pt/"><img src="images/clients/3.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="https://www.hummel.net/"><img src="images/clients/4.png" alt=""></a></figure></li>
                 </ul>
             </div>
 
@@ -294,7 +294,7 @@ function drawBottom(){
                                         <li><a href="classificacao.php">CLassificações</a></li>
                                         <li><a href="planteis.php">Planteis</a></li>
                                         <li><a href="jogos.php">Jogos</a></li>
-                                        <li><a href="noticias.php">Noticias</a></li>
+                                        <li><a href="noticias.php">Notícias</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -320,7 +320,7 @@ function drawBottom(){
                             <li><a href="galeria.php">Galeria</a></li>
                             <li><a href="classificacao.php">Classificações</a></li>
                             <li><a href="jogos.php">Jogos</a></li>
-                            <li><a href="noticias.php">Noticias</a></li>
+                            <li><a href="noticias.php">Notícias</a></li>
                         </ul>
                     </div>
 
