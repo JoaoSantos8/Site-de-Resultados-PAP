@@ -30,10 +30,10 @@ drawTop(JOGOS,'nj' );
         <label for="data" class="form-label">Jornada</label>
         <input type="text" class="form-control" id="Jornada" name="jornadaJogo">
 
-        <label for="data" class="form-label">Clube casa</label>
+        <!--<label for="data" class="form-label">Clube casa</label>
         <input type="text" class="form-control" id="Jornada" name="cCasa">
         <label for="data" class="form-label">Clube fora</label>
-        <input type="text" class="form-control" id="Jornada" name="cFora">
+        <input type="text" class="form-control" id="Jornada" name="cFora">-->
 </div>
 
         </div>

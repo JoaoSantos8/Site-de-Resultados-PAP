@@ -87,11 +87,11 @@ function drawTop(){
 
             if (dots.style.display === "none") {
                 dots.style.display = "inline";
-                btnText.innerHTML = "Ler Mais";
+                btnText.innerHTML = "Ver Mais";
                 moreText.style.display = "none";
             } else {
                 dots.style.display = "none";
-                btnText.innerHTML = "Ler Menos";
+                btnText.innerHTML = "Ver Menos";
                 moreText.style.display = "flex";
             }
         }
@@ -238,12 +238,12 @@ function drawBottom(){
                 <ul class="sponsors-carousel owl-carousel owl-theme">
                     <li class="slide-item"><figure class="image-box"><a href="https://www.nike.com/pt/"><img src="images/clients/1.png" alt=""></a></figure></li>
                     <li class="slide-item"><figure class="image-box"><a href="https://www.adidas.pt/"><img src="images/clients/2.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="https://eu.puma.com/pt/"><img src="images/clients/3.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="https://eu.puma.com/de/en/home"><img src="images/clients/3.png" alt=""></a></figure></li>
                     <li class="slide-item"><figure class="image-box"><a href="https://www.hummel.net/"><img src="images/clients/4.png" alt=""></a></figure></li>
                     <li class="slide-item"><figure class="image-box"><a href="https://www.macron.pt/"><img src="images/clients/5.png" alt=""></a></figure></li>
                     <li class="slide-item"><figure class="image-box"><a href="https://www.nike.com/pt/"><img src="images/clients/1.png" alt=""></a></figure></li>
                     <li class="slide-item"><figure class="image-box"><a href="https://www.adidas.pt/"><img src="images/clients/2.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="https://eu.puma.com/pt/"><img src="images/clients/3.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="https://eu.puma.com/de/en/home"><img src="images/clients/3.png" alt=""></a></figure></li>
                     <li class="slide-item"><figure class="image-box"><a href="https://www.hummel.net/"><img src="images/clients/4.png" alt=""></a></figure></li>
                 </ul>
             </div>
