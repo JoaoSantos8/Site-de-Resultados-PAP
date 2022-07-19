@@ -62,7 +62,7 @@ $dados=mysqli_fetch_array($result);
                     </td>
                     <td class="text-center">
                         <a href="editaJogador.php?id=<?php echo $dados['jogadorId'];?>" class="btn-sm btn-primary"><i class="bi bi-pencil"></i> Editar</a>
-                        <a href="GerirEliminarJogador.php?id=<?php echo $dados['jogadorId'];?>" class="btn-sm btn-danger"><i class="bi bi-trash"></i> Eliminar</span></a>
+                        <a href="GerirEliminarJogador.php?id=<?php echo $dados['jogadorId'];?>" class="btn-sm btn-danger"><i class="bi bi-trash"></i> Retirar jogador </span></a>
                     </td>
                 </tr>
                 <?php
