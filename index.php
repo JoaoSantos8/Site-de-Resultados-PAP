@@ -87,6 +87,11 @@
                                     $i++;
                                 }
                                 ?>
+                                <tr valign="bottom" class="mt-5">
+                                    <td colspan="4" class="text-center ">
+                                        <a href="classificacao.php">Ver classificação</a>
+                                    </td>
+                                </tr>
 								</tbody>
 							</table>
 						</div>

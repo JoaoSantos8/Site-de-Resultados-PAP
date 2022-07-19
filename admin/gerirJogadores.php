@@ -9,7 +9,7 @@ $result=mysqli_query($con,$sql);
 $dadosClube=mysqli_fetch_array($result);
 
 
-$sql="select * from jogadores where jogadorId not in (select jogadorClubeJogadorId from jogadorclubes)";
+$sql="select * from jogadores where jogadorId not in (select jogadorClubeJogadorId from jogadorclubes) order by jogadorNome asc";
 $result=mysqli_query($con,$sql);
 
 
