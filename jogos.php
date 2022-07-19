@@ -2,6 +2,7 @@
 include_once("includes/body.inc.php");
 global $con;
 drawTop(HOME);
+
 ?>
     <section class="page-title" style="background-image:url(images/background/background.png);">
         <div class="auto-container">
@@ -14,6 +15,7 @@ drawTop(HOME);
             <div class="lower-section"  style="padding-top: 10px;">
                 <div class="text" ><table id="tabelaJogos" class="table">
                         <?php
+                        //var_dump($_POST);
                         $sql="select max(jogoJornada) as mx from jogos";
                         $res=mysqli_query($con,$sql);
                         $dados=mysqli_fetch_array($res);
@@ -28,15 +30,17 @@ drawTop(HOME);
                         <thead>
                         <tr>
                             <th colspan="4"><font color="black">
+                                    <form action="" id="filtro" method="post">
                                     <select name="jornada" onchange="$('#filtro').submit();">
                                     <?php
                                     for($i=1;$i<=$max;$i++){
                                         ?>
-                                        <option <?php if($i==$jornada)  echo "selected "?>  value=" <?php echo $jornada?>"> <?php echo $i."ª jornada"?></option>
+                                        <option <?php if($i==$jornada)  echo "selected "?>  value="<?php echo $i?>"> <?php echo $i."ª jornada"?></option>
                                         <?php
                                     }
                                     ?>
                                     </select>
+                                    </form>
                                    </font></th>
                         </tr>
                         <tr>
