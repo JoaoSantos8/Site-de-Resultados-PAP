@@ -5,7 +5,7 @@ global $con;
 $idJogo=intval($_GET['id']);
 drawTop(CLUBES);
 $sql="select casa.clubeId as cId, fora.clubeId as fId , casa.clubeNome as cNome, fora.clubeNome as fNome , resultadoGolosCasa, resultadoGolosFora  from clubes as casa inner join jogos on casa.clubeId=jogoCasaClubeId ";
-$sql.=" inner join clubes as fora on fora.clubeId=jogoForaClubeId inner join resultados on resultadoJogoId=jogoId";
+$sql.=" inner join clubes as fora on fora.clubeId=jogoForaClubeId left join resultados on resultadoJogoId=jogoId";
 $sql.=" where jogoId= $idJogo";
 $result=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($result);
