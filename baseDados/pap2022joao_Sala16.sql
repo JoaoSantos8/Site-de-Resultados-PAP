@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : LocalHost
-Source Server Version : 50731
+Source Server         : Localhost
+Source Server Version : 80021
 Source Host           : localhost:3306
 Source Database       : pap2022joao
 
 Target Server Type    : MYSQL
-Target Server Version : 50731
+Target Server Version : 80021
 File Encoding         : 65001
 
-Date: 2022-07-19 17:28:30
+Date: 2022-07-20 10:32:20
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -19,10 +19,10 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `clubes`;
 CREATE TABLE `clubes` (
-  `clubeId` int(11) NOT NULL AUTO_INCREMENT,
+  `clubeId` int NOT NULL AUTO_INCREMENT,
   `clubeNome` varchar(255) NOT NULL,
   `clubeLogoURL` varchar(255) NOT NULL,
-  `clubeAnoFundacao` int(11) NOT NULL,
+  `clubeAnoFundacao` int NOT NULL,
   `clubeFundadores` text NOT NULL,
   `clubeEstadio` varchar(255) NOT NULL,
   PRIMARY KEY (`clubeId`) USING BTREE
@@ -55,7 +55,7 @@ INSERT INTO clubes VALUES ('18', 'Boavista Futebol Clube', 'images/ClubesNovo/bo
 -- ----------------------------
 DROP TABLE IF EXISTS `epocas`;
 CREATE TABLE `epocas` (
-  `epocaId` int(11) NOT NULL AUTO_INCREMENT,
+  `epocaId` int NOT NULL AUTO_INCREMENT,
   `epocaNome` varchar(9) NOT NULL DEFAULT '2021/2022',
   PRIMARY KEY (`epocaId`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
@@ -70,10 +70,10 @@ INSERT INTO epocas VALUES ('1', '2022/2023');
 -- ----------------------------
 DROP TABLE IF EXISTS `jogadorclubes`;
 CREATE TABLE `jogadorclubes` (
-  `jogadorClubeClubeId` int(11) NOT NULL,
-  `jogadorClubeJogadorId` int(11) NOT NULL,
-  `jogadorClubeEpocaId` int(11) NOT NULL,
-  `jogadorClubeNumero` int(11) NOT NULL,
+  `jogadorClubeClubeId` int NOT NULL,
+  `jogadorClubeJogadorId` int NOT NULL,
+  `jogadorClubeEpocaId` int NOT NULL,
+  `jogadorClubeNumero` int NOT NULL,
   PRIMARY KEY (`jogadorClubeClubeId`,`jogadorClubeJogadorId`,`jogadorClubeEpocaId`) USING BTREE,
   KEY `fk_clubes_has_jogadores_jogadores1_idx` (`jogadorClubeJogadorId`) USING BTREE,
   KEY `fk_clubes_has_jogadores_clubes_idx` (`jogadorClubeClubeId`) USING BTREE,
@@ -703,7 +703,7 @@ INSERT INTO jogadorclubes VALUES ('18', '304', '1', '24');
 -- ----------------------------
 DROP TABLE IF EXISTS `jogadores`;
 CREATE TABLE `jogadores` (
-  `jogadorId` int(11) NOT NULL AUTO_INCREMENT,
+  `jogadorId` int NOT NULL AUTO_INCREMENT,
   `jogadorNome` varchar(45) NOT NULL,
   `jogadorFotoURL` varchar(255) NOT NULL,
   `jogadorDataNascimento` date NOT NULL,
@@ -716,19 +716,19 @@ CREATE TABLE `jogadores` (
 INSERT INTO jogadores VALUES ('148', 'Helton Leite', 'images/jogadores/168622_20210901182311_helton_leite.png', '1991-07-09');
 INSERT INTO jogadores VALUES ('149', 'Odysseas Vlachodimos', 'images/jogadores/197106_20210901182629_odysseas_vlachodimos.png', '1994-06-04');
 INSERT INTO jogadores VALUES ('150', 'Mile Svilar', 'images/jogadores/423229_20210905103238_mile_svilar.png', '2000-01-27');
-INSERT INTO jogadores VALUES ('151', 'LÃ©o Kokubo', 'images/jogadores/696613_20201001181257_leo_kokubo.png', '2001-06-10');
+INSERT INTO jogadores VALUES ('151', 'Léo Kokubo', 'images/jogadores/696613_20201001181257_leo_kokubo.png', '2001-06-10');
 INSERT INTO jogadores VALUES ('152', 'Gilberto', 'images/jogadores/134600_20210905115853_gilberto.png', '1993-07-22');
-INSERT INTO jogadores VALUES ('153', 'AndrÃ© Almeida', 'images/jogadores/74377_20210905120428_andre_almeida.png', '1991-03-07');
-INSERT INTO jogadores VALUES ('154', 'Lucas VerÃ­ssimo', 'images/jogadores/491981_20210905113913_lucas_verissimo.png', '1996-07-25');
-INSERT INTO jogadores VALUES ('155', 'TomÃ¡s AraÃºjo', 'images/jogadores/520353_20210905120712_tomas_araujo.png', '2002-07-23');
+INSERT INTO jogadores VALUES ('153', 'André Almeida', 'images/jogadores/74377_20210905120428_andre_almeida.png', '1991-03-07');
+INSERT INTO jogadores VALUES ('154', 'Lucas Verí­ssimo', 'images/jogadores/491981_20210905113913_lucas_verissimo.png', '1996-07-25');
+INSERT INTO jogadores VALUES ('155', 'Tomás Araújo', 'images/jogadores/520353_20210905120712_tomas_araujo.png', '2002-07-23');
 INSERT INTO jogadores VALUES ('156', 'Jan Vertonghen', 'images/jogadores/32809_20210905113512_jan_vertonghen.png', '1987-03-24');
-INSERT INTO jogadores VALUES ('157', 'NicolÃ¡s Otamendi', 'images/jogadores/67588_20210905114704_nicolas_otamendi.png', '1988-05-04');
-INSERT INTO jogadores VALUES ('158', 'Pedro Ãlvaro', 'images/jogadores/372435_20220706141246_pedro_alvaro.jpg', '2000-06-24');
+INSERT INTO jogadores VALUES ('157', 'Nicolás Otamendi', 'images/jogadores/67588_20210905114704_nicolas_otamendi.png', '1988-05-04');
+INSERT INTO jogadores VALUES ('158', 'Pedro Álvaro', 'images/jogadores/372435_20220706141246_pedro_alvaro.jpg', '2000-06-24');
 INSERT INTO jogadores VALUES ('159', 'Morato', 'images/jogadores/681311_20210905114928_morato.png', '2001-01-24');
 INSERT INTO jogadores VALUES ('160', 'Ferro', 'images/jogadores/214368_20220217120748_ferro.jpg', '1997-07-28');
 INSERT INTO jogadores VALUES ('161', 'Sandro Cruz', 'images/jogadores/423979_20220127152520_sandro_cruz.jpg', '2001-05-03');
 INSERT INTO jogadores VALUES ('162', 'Alex Grimaldo', 'images/jogadores/214579_20210901225257_alex_grimaldo.png', '1996-04-16');
-INSERT INTO jogadores VALUES ('163', 'Valentino LÃ¡zaro', 'images/jogadores/287013_20210905114403_valentino_lazaro.png', '1996-03-06');
+INSERT INTO jogadores VALUES ('163', 'Valentino Lázaro', 'images/jogadores/287013_20210905114403_valentino_lazaro.png', '1996-03-06');
 INSERT INTO jogadores VALUES ('164', 'Martim Neto', 'images/jogadores/586713_20201002190141_martim_neto.png', '2003-03-12');
 INSERT INTO jogadores VALUES ('165', 'Julian Weigl', 'images/jogadores/395624_20210901185757_julian_weigl.png', '1996-05-03');
 INSERT INTO jogadores VALUES ('166', 'Florentino LuÃ­s', 'images/jogadores/166229_20220525095239_florentino_luis.jpg', '2000-03-04');
@@ -749,7 +749,7 @@ INSERT INTO jogadores VALUES ('180', 'Haris Seferovic', 'images/jogadores/102379
 INSERT INTO jogadores VALUES ('181', 'Roman Yaremchuk', 'images/jogadores/414421_20210905103720_roman_yaremchuk.png', '1996-02-09');
 INSERT INTO jogadores VALUES ('182', 'Rodrigo Pinho', 'images/jogadores/392306_20210905103457_rodrigo_pinho.png', '1991-02-09');
 INSERT INTO jogadores VALUES ('183', 'GonÃ§alo Ramos', 'images/jogadores/428376_20210901185536_goncalo_ramos.png', '2001-07-23');
-INSERT INTO jogadores VALUES ('184', 'Carlos VinÃ­cius', 'images/jogadores/520581_20211224202305_carlos_vinicius.jpg', '1995-07-23');
+INSERT INTO jogadores VALUES ('184', 'Carlos Vinícius', 'images/jogadores/520581_20211224202305_carlos_vinicius.jpg', '1995-07-23');
 INSERT INTO jogadores VALUES ('185', 'Everton', 'images/jogadores/392484_20220620191344_everton.png', '1996-01-21');
 INSERT INTO jogadores VALUES ('186', 'Gil Dias', 'images/jogadores/368221_20210901183344_gil_dias.png', '1997-01-08');
 INSERT INTO jogadores VALUES ('187', 'Diego Moreira', 'images/jogadores/722999_20220512115736_diego_moreira.jpg', '2005-06-10');
@@ -1330,12 +1330,12 @@ INSERT INTO jogadores VALUES ('834', 'Salvador Agra', 'images/jogadores/123840_2
 -- ----------------------------
 DROP TABLE IF EXISTS `jogos`;
 CREATE TABLE `jogos` (
-  `jogoId` int(11) NOT NULL AUTO_INCREMENT,
-  `jogoCasaClubeId` int(11) NOT NULL,
-  `jogoForaClubeId` int(11) NOT NULL,
+  `jogoId` int NOT NULL AUTO_INCREMENT,
+  `jogoCasaClubeId` int NOT NULL,
+  `jogoForaClubeId` int NOT NULL,
   `jogoData` date NOT NULL,
   `jogoHora` time NOT NULL,
-  `jogoJornada` int(11) NOT NULL DEFAULT '1',
+  `jogoJornada` int NOT NULL DEFAULT '1',
   PRIMARY KEY (`jogoId`) USING BTREE,
   KEY `casa_idx` (`jogoCasaClubeId`) USING BTREE,
   KEY `fora_idx` (`jogoForaClubeId`) USING BTREE,
@@ -1450,7 +1450,7 @@ INSERT INTO jogos VALUES ('98', '8', '1', '2021-11-07', '20:00:00', '11');
 -- ----------------------------
 DROP TABLE IF EXISTS `noticias`;
 CREATE TABLE `noticias` (
-  `noticiaId` int(11) NOT NULL AUTO_INCREMENT,
+  `noticiaId` int NOT NULL AUTO_INCREMENT,
   `noticiaTitulo` varchar(225) NOT NULL,
   `noticiaData` date NOT NULL,
   `noticiaFotoURL` varchar(255) NOT NULL,
@@ -1473,11 +1473,11 @@ INSERT INTO noticias VALUES ('9', 'TÃ©cnico que estreou alvo do FC Porto garan
 -- ----------------------------
 DROP TABLE IF EXISTS `pontos`;
 CREATE TABLE `pontos` (
-  `pontosId` int(11) NOT NULL AUTO_INCREMENT,
-  `pontosJogoId` int(11) NOT NULL,
-  `pontosClubeId` int(11) NOT NULL,
+  `pontosId` int NOT NULL AUTO_INCREMENT,
+  `pontosJogoId` int NOT NULL,
+  `pontosClubeId` int NOT NULL,
   `pontosResultado` enum('V','E','D') NOT NULL DEFAULT 'E',
-  `pontosValor` int(11) NOT NULL DEFAULT '0',
+  `pontosValor` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`pontosId`) USING BTREE,
   KEY `fk_vitorias_jogos1_idx` (`pontosJogoId`) USING BTREE,
   KEY `fk_vitorias_clubes1_idx` (`pontosClubeId`) USING BTREE,
@@ -1690,9 +1690,9 @@ INSERT INTO pontos VALUES ('204', '98', '1', 'V', '3');
 -- ----------------------------
 DROP TABLE IF EXISTS `resultados`;
 CREATE TABLE `resultados` (
-  `resultadoJogoId` int(11) NOT NULL,
-  `resultadoGolosCasa` int(11) NOT NULL,
-  `resultadoGolosFora` int(11) NOT NULL,
+  `resultadoJogoId` int NOT NULL,
+  `resultadoGolosCasa` int NOT NULL,
+  `resultadoGolosFora` int NOT NULL,
   PRIMARY KEY (`resultadoJogoId`) USING BTREE,
   KEY `fk_resultados_jogos1_idx` (`resultadoJogoId`) USING BTREE,
   CONSTRAINT `fk_resultados_jogos1` FOREIGN KEY (`resultadoJogoId`) REFERENCES `jogos` (`jogoId`)
