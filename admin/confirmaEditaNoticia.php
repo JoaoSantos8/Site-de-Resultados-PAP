@@ -9,7 +9,7 @@ $sql="update noticias set noticiaTitulo='$titulo', noticiaData='$data' ";
 if($_FILES['fotoNoticia']['name']==''){
     ;
 }else{
-    $urlImagem='images/jogadores/'.$_FILES['fotoNoticia']['name'];
+    $urlImagem='images/Noticias/'.$_FILES['fotoNoticia']['name'];
     copy($_FILES['fotoNoticia']['tmp_name'],'../'.$urlImagem);
     $sql.=", noticiaFotoURL='$urlImagem'";
 }
